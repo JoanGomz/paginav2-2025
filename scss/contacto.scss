@@ -1,0 +1,356 @@
+.contact-space-background {
+    background-image: url("../images/fotos/contactos/imagenes/fondo.png");
+    background-size: 100% 53%;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+
+// Caja main
+.contact-panel {
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+    /* Sección título */
+    .informacion-contacto {
+        width: 100%;
+        // background-color: rgba(253, 253, 253, 0.537);
+
+        h1 {
+            color: #00f7ff;
+            text-align: center;
+            font-size: 2.5rem;
+            text-shadow: 0 0 0.9375rem rgba(0, 247, 255, 0.61);
+            margin-bottom: 2rem;
+        }
+
+        .info-container {
+            background-color: transparent;
+
+            /* Monitor con información */
+            .monitor-container {
+                // background-color: rgba(127, 255, 212, 0.541);
+                position: relative;
+                width: 50rem;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+
+                .screen-overlay {
+                    // background-color: rgba(245, 245, 220, 0.267);
+                    position: absolute;
+                    top: 21%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    height: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .contact-info {
+                        width: 80%;
+                        min-height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: transparent;
+
+                        p {
+                            display: flex;
+                            justify-content: center;
+                            margin: 0.4rem 0;
+                            font-size: 1.3rem;
+                            font-weight: bold;
+
+                        }
+
+                        span {
+                            padding-left: 1rem;
+                            color: #00f7ff;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Banner trabaja con nosotros */
+    .trabaja-con-nosotros {
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        .contact-trabaja-banner {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+
+    .formulario-contacto {
+        width: 100%;
+
+        /* Sección del formulario */
+        .main-contact-form {
+            position: relative;
+            width: 100%;
+            background-color: #08f4fc;
+
+            .contact-form-bgImage {
+                width: 100%;
+                bottom: 0;
+            }
+
+            .contact-form-container {
+
+                .contact-form {
+                    
+                    position: absolute;
+                    top: 20%;
+                    left: 35%;
+                    // transform: translateX(-50%);
+                    width: 35%;
+
+                    .contact-form-input {
+                        margin-bottom: 1rem;
+
+                        .contact-input-icon {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+
+                            i {
+                                position: absolute;
+                                left: 0.625rem;
+                                margin: 1rem;
+                                font-size: 1.5rem;
+                                /* Aumentado de tamaño */
+                                width: 2rem;
+                                /* Ancho fijo para el icono */
+                                text-align: center;
+                                /* Centrar icono en su espacio */
+                                color: rgb(255, 255, 255);
+                                /* Mejor visibilidad */
+                                z-index: 2;
+                            }
+
+                            input,
+                            textarea {
+                                width: 100%;
+                                font-size: large;
+                                padding: 2rem 0.9375rem 2rem 5rem;
+                                background: #383c94;
+                                border: 0.0625rem solid rgba(0, 247, 255, 0.842);
+                                border-radius: 1rem;
+                                color: white;
+                            }
+
+                            textarea {
+                                height: 6.25rem;
+                                resize: none;
+
+                            }
+
+                            label {
+                                position: absolute;
+                                font-size: medium;
+                                left: 5rem;
+                                color: rgba(255, 255, 255, 0.596);
+                                transition: all 0.3s ease;
+                                pointer-events: none;
+                            }
+                        }
+
+                        input:focus+label,
+                        input:valid+label,
+                        textarea:focus+label,
+                        textarea:valid+label {
+                            top: -0.625rem;
+                            left: 3rem;
+                            font-weight: bold;
+                            text-align: center;
+                            font-size: 1em;
+                            color: #00f7ff;
+                            background: rgba(0, 20, 40, 0.8);
+                            padding: 0.2rem 0.3125rem;
+                            border-radius: 2rem;
+                        }
+
+                    }
+
+                    .contact-form-terms {
+                        margin: 1rem 0;
+                        font-size: 1rem;
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"] {
+                            /* Tamaño aumentado */
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin-right: 0.75rem;
+                            cursor: pointer;
+                            /* Estilo personalizado */
+                            appearance: none;
+                            -webkit-appearance: none;
+                            background-color: #383c94;
+                            border: 0.0625rem solid rgba(0, 247, 255, 0.5);
+                            border-radius: 0.25rem;
+                            position: relative;
+                            outline: none;
+
+                            /* Efecto al marcar el checkbox */
+                            &:checked {
+                                background-color: rgba(0, 247, 255, 0.3);
+                                border-color: #00f7ff;
+
+                                /* Icono de check personalizado */
+                                &::before {
+                                    content: '✓';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 1rem;
+                                    color: #00f7ff;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        a {
+                            color: #07f7ff;
+                            text-decoration: none;
+                            font-weight: bolder;
+                        }
+                    }
+
+                    .contact-register-btn {
+                        width: 40%;
+                        padding: 0.75rem;
+                        background: #4b0082;
+                        border: none;
+                        color: white;
+                        font-weight: bold;
+                        border-radius: 1rem;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        letter-spacing: 0.0625rem;
+                        transition: all 0.3s ease-in-out;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        /* Centrar el botón horizontalmente */
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media queries simplificadas */
+@media (max-width: 62rem) {
+    .screen-overlay {
+        top: 18%;
+    }
+}
+
+@media (max-width: 48rem) {
+    .contact-info p {
+        font-size: 0.85rem;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 36rem) {
+    .contact-info p {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 1350px) {
+    .contact-space-background {
+        background-size: 100% 70%;
+    }
+}
+@media (max-width: 768px) {
+    .contact-panel {
+        /* Sección título */
+        .informacion-contacto {
+            .info-container {
+                .monitor-container {
+                    width: 100vw;
+                    margin: 0 auto;
+                    height: 60rem;
+                }
+            }
+        }
+        /* Banner trabaja con nosotros */
+        .trabaja-con-nosotros {
+            .contact-trabaja-banner {
+                width: 100%;
+                height: 5rem;
+                // height: 100%;
+            }
+        }
+
+        .formulario-contacto {
+            .main-contact-form {
+                overflow: hidden;
+                .contact-form-bgImage {
+                    width: 150%;
+                    height: 60rem;
+                    transform: translateX(-18%); /* Desplazamos a la izquierda 1/4 del ancho */
+                }
+
+                .contact-form-container {
+
+                    .contact-form {
+                        top: 5%;
+                        left: 25%;
+                        // transform: translateX(-50%);
+                        width: 55%;
+                        height: 100%;
+                        .contact-form-input {
+                            .contact-input-icon {
+                                input,
+                                textarea {
+                                    width: 100%;
+                                    font-size: large;
+                                    padding: 0.5rem 0.9375rem 2rem 5rem;
+                                    background: #383c94;
+                                    border: 0.0625rem solid rgba(0, 247, 255, 0.842);
+                                    border-radius: 1rem;
+                                    color: white;
+                                }
+                            }
+                        }
+                        .contact-register-btn {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

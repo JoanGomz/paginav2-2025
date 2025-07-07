@@ -1,0 +1,31 @@
+# Dependencias
+node_modules
+
+# Archivos de construcción
+dist
+build
+
+# Archivos de entorno local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# BFG artifacts
+*.bfg-report/
+deleted-files.txt
+object-id-map-old-new.txt
+cache-stats.txt
+bfg-*.jar

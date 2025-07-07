@@ -1,0 +1,294 @@
+/* Configuracion general de la pagina */
+body {
+  overflow-x: hidden;
+  // height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation-container {
+  width: 100%;
+  height: 10rem;
+  background-image: url("../images/fotos/Parques/imagenes/parte_superior.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  object-fit: contain;
+  position: relative;
+  z-index: 10;
+
+  a {
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    width: 30rem;
+    height: 6rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  margin: 1rem 1rem 0 0;
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+
+  i {
+    color: #ffffff;
+    font-size: 3rem;
+  }
+}
+
+/* Menu lateral */
+.sidebar-menu {
+  position: fixed;
+  width: 15.625rem;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  background-color: #400645;
+  z-index: 15;
+  transition: 0.3s ease;
+  padding-top: 3.75rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+
+    &:hover {
+      color: #00ffff;
+
+    }
+  }
+}
+
+.sidebar-menu.active {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+
+  i {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Estilos de la seccion de De Interés (FOOER) */
+.de-interes {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../images/fotos/Home/imagenes/final_de_la_nave.png");
+  background-color: #410645;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  gap: 18rem;
+  padding-top: 1rem;
+  bottom: 0;
+  position: relative;
+
+  /* Columnas del footer */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 80%;
+      height: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 0.9rem 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #00ffff;
+
+      }
+    }
+  }
+
+
+  /* Redes sociales */
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+
+    a {
+      width: 5rem;
+      height: 5rem;
+      margin-top: 0.9rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+/* Estilos whatsapp y dominik icon*/
+
+.enlaces-derecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 55%;
+  right: 0.125rem;
+  z-index: 5;
+
+  i {
+    display: none;
+    top: 30rem;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+
+    }
+  }
+  a img {
+    margin-top: 0.625rem;
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+
+    }
+
+  }
+}
+/* Media query sólo para ajustes mínimos en pantallas muy pequeñas */
+@media (max-width: 950px) {
+  :root {
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  }
+  .navigation-container {
+    a {
+      left: 0;
+      img {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+  .de-interes {
+    gap: 0.5rem;
+  }
+  .de-interes li {
+    margin: 0.1rem 0;
+  }
+  .de-interes .redes-sociales a {
+    width: 5.5rem;
+    height: 0rem;
+    margin-top: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1000px) {
+  .de-interes {
+    gap: 10rem;
+  }
+  .de-interes li {
+    margin: 0.5rem 0;
+  }
+  .de-interes .redes-sociales a {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+/* Media query para pantallas grandes */
+@media (min-width: 1400px) {
+  :root {
+    font-size: calc(0.4vw + 0.4vh + 0.4vmin);
+  }
+  .de-interes {
+    gap: 5rem;
+  }
+  .de-interes li {
+    margin: 0.1rem 0;
+    width: 10rem;
+  }
+}

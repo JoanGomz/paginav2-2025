@@ -1,0 +1,163 @@
+[33mcommit 81978ac8879dcbd6dd300b1873ea48136720a9ca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mPruebas[m[33m, [m[1;31morigin/Pruebas[m[33m)[m
+Merge: 51ea98a 718102e
+Author: DiegoAlejandro1245 <desarrollo1.starpark@gmail.com>
+Date:   Fri Apr 4 16:36:29 2025 -0500
+
+    Merge branch 'Pruebas' of https://github.com/MichelleCamelo/paginaweb2025 into Pruebas
+
+[33mcommit 51ea98a6cc4898446f8812c80ffe2baf5b682325[m
+Author: DiegoAlejandro1245 <desarrollo1.starpark@gmail.com>
+Date:   Fri Apr 4 16:33:26 2025 -0500
+
+    Responsive
+
+[33mcommit 718102ec28bac2927157847ef45f238877286034[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Fri Apr 4 16:09:58 2025 -0500
+
+    Ajuste carrusel parques
+
+[33mcommit e5184d139cc76ca5dfeddfbbcbd1e49b701c24e5[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Fri Apr 4 13:01:43 2025 -0500
+
+    Integración carousel en apartado parques completa. Nuevo archivo carouselParques.js
+
+[33mcommit 1cf09bf133ed346dec220d9c2802ac62aed5127a[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Thu Apr 3 16:39:30 2025 -0500
+
+    ajustes inicio y parque
+
+[33mcommit 524c1613c92883e71bc2ba37e7000232eafd5a29[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Apr 2 17:44:22 2025 -0500
+
+    cambio mensaje
+
+[33mcommit 5753a215d0dfa891e8fb5cf2698ea55cb85dcbc9[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Apr 2 17:41:49 2025 -0500
+
+    Implementacion de la API de instagram y ajustes en la sección cotizar
+
+[33mcommit 031136c5e9ae27197a3feefa9bd8a72bf789c8aa[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Apr 2 11:32:54 2025 -0500
+
+    Ajuste formulario servicio al cliente
+
+[33mcommit fefb99a3f2fae2c4bcdfb8485e17b97ed9dce865[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Apr 1 17:59:49 2025 -0500
+
+    Cambios sección servicio y contacto, ajustes imágenes e integración de archivos php faltantes
+
+[33mcommit 5f176db6e020dea21197c08b2a8f673b2a32ee50[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Mar 31 21:20:53 2025 -0500
+
+    Cambio estructura contacto
+
+[33mcommit 43aa29633913ddeb63c5038367166e8fe059ed7a[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Mar 31 17:47:07 2025 -0500
+
+    Cambios en la mayoria de los apartados
+
+[33mcommit a213bf65928f6084150cd6593015a7096b2b4a9f[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Mar 31 15:28:16 2025 -0500
+
+    archivo git ignore
+
+[33mcommit ea2874efd987f65fec74ced2031be47d00506cf9[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Mar 31 12:56:56 2025 -0500
+
+    Eliminar archivo grande que excede el límite de GitHub
+
+[33mcommit 5bf170ce516d888fcc453b72718085b222e81820[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Mar 31 12:40:24 2025 -0500
+
+    Cambios importantes, generalizando secciones
+
+[33mcommit 436dc1c4db4255efc694d6d49f58bd1d6d0f7a50[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Mar 26 17:52:53 2025 -0500
+
+    Cambios en la mayoría de secciónes y ajuste del apartado servicio al cliente
+
+[33mcommit e50eccf1b2ef34e8b9228924de063ed655e6aa41[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Mar 25 20:09:13 2025 -0500
+
+    ajustes apartado de paises y correccion hamburguermenu
+
+[33mcommit 03acb3d8fe36b89b24fba788dfd2e742c1f09f54[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Mar 25 17:23:47 2025 -0500
+
+    Cambio de rutas en los archivos, por el sass
+
+[33mcommit cfd41efe1e088b831c6ff2f2131ccb5b11cfb9de[m
+Merge: ec70921 70be1de
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Mar 25 16:44:14 2025 -0500
+
+    Merge branch 'Pruebas' of https://github.com/MichelleCamelo/paginaweb2025 into Pruebas
+
+[33mcommit ec7092145724e764399c4378a0381158628cb564[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Mar 25 16:43:51 2025 -0500
+
+    implementacion sass
+
+[33mcommit 70be1deb0746113c8fc53ee40b93e50229676a7d[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Feb 26 22:04:50 2025 -0500
+
+    Cambios importantes en la pagina
+
+[33mcommit 19456be51ff349f43a87405d01a7050af4d13ec6[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Mon Feb 24 19:17:58 2025 -0500
+
+    Cambios en seccion parque, normatividad, preguntas frecuentes y nuestra empresa
+
+[33mcommit 15ac3566ae8d28ef4ca5aa880b2e288b2bc34d95[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Fri Feb 21 16:22:13 2025 -0500
+
+    Cambios menu hamburguesa (aun falta)
+
+[33mcommit d7a1eb0c41bcdb9bf5ad7ad4070593108076bfbe[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Fri Feb 21 15:47:30 2025 -0500
+
+    Cambios en el archivo parques.php (falta el menu de hamburguesa) y ajustes de las imagenes (recorte)
+
+[33mcommit 67013ae81701efcf2cbd06710c8804125917175a[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Wed Feb 19 17:21:35 2025 -0500
+
+    Cambios en el carrusel (aún faltan cambios por un slider)
+
+[33mcommit 4780777fd962e0a84756320e9bd157d37179aeae[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Feb 18 17:54:09 2025 -0500
+
+    Cambios para el carousel
+
+[33mcommit 4402e75c0318d5ff8294356111932378738bfc0b[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Tue Feb 18 12:33:20 2025 -0500
+
+    Cambios en la estructura y los estilos de la pagina principal, sin carousel todavia
+
+[33mcommit 84f39c65cd31ecd29174191eb79c7dec2fe50f70[m
+Author: MichelleCamelo <desarrollo2.starpark@gmail.com>
+Date:   Sat Feb 15 11:27:15 2025 -0500
+
+    Mi primer commit, Pagina de inicio

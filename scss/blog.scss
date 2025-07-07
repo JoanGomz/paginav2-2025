@@ -1,0 +1,143 @@
+.blog-space-background {
+    background-image: url("../images/fotos/blog/imagenes/fondo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+/* Titulo de la pagina */
+.blog-img-container {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3.125rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Grid de posts con altura dinámica */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    gap: 1.875rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem;
+
+    /* MODIFICADO: Se añade grid-auto-rows para que todas las filas tengan la misma altura */
+    @supports (grid-auto-rows: 1fr) {
+        .posts-grid {
+            grid-auto-rows: 1fr;
+        }
+    }
+
+    .post-card {
+        background: rgba(67, 51, 156, 0.548);
+        border-radius: 0.9375rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        /* Asegura que todas las tarjetas ocupen el 100% de la altura de su celda */
+        &:hover {
+            transform: translateY(-0.3125rem);
+        }
+
+        img {
+            width: 100%;
+            height: 12.5rem;
+            object-fit: fill;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        /* Contenido con estructura flexible */
+        .post-content {
+            padding: 1.25rem;
+            flex-grow: 1;
+            /* Permite que el contenido crezca y ocupe el espacio disponible */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* AÑADIDO: Distribuir espacio entre título/texto y acciones */
+            height: 100%;
+
+            /* AÑADIDO: Asegura que el contenido llene toda la tarjeta */
+            h2 {
+                color: #00f7ff;
+                font-size: 1.5rem;
+                margin-bottom: 0.625rem;
+            }
+
+            p {
+                color: white;
+                margin-bottom: 1.25rem;
+            }
+
+            /* Posicionamiento del botón siempre al final */
+            .post-actions {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: auto;
+
+                /* Asegura que las acciones estén al final del contenedor */
+                .read-more {
+                    color: #00f7ff;
+                    text-decoration: none;
+                    padding: 0.5rem 1rem;
+                    border: 0.0625rem solid #00f7ff;
+                    border-radius: 0.3125rem;
+                    transition: all 0.3s ease;
+                    display: inline-block;
+
+                    /* Mejor control del tamaño del botón */
+                    &:hover {
+                        background: rgba(35, 108, 110, 0.623);
+                        box-shadow: 0 0 0.625rem rgba(28, 228, 235, 0.63);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* Media queries */
+@media (max-width: 48rem) {
+
+    /* 768px */
+    .posts-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        /* Aumentamos el ancho en móviles */
+    }
+}
+
+/* Para asegurar que las tarjetas mantengan una altura mínima razonable */
+@media (max-width: 36rem) {
+
+    /* 576px */
+    .post-card {
+        min-height: 21.875rem;
+        /* 350px convertido a rem */
+    }
+}

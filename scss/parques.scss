@@ -1,0 +1,258 @@
+/* Background principal */
+.parques-space-background {
+  width: 100%;
+  min-height: 100vh;
+  /* Cambiado de height a min-height */
+  background-image: url("../images/fotos/Parques/imagenes/fondo.png");
+  background-size: cover;
+  /* Cambiado para mejor ajuste */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* Asegura que los elementos fluyan verticalmente */
+  position: relative;
+  /* Para posicionamiento adecuado */
+}
+
+/* Seccion de los parques */
+.cc-parques {
+  width: 100%;
+  min-height: 100vh;
+  /* Cambiado de height fija a min-height */
+  display: flex;
+  flex-direction: column;
+  /* Asegura flujo vertical */
+  padding-bottom: 5rem;
+  /* Espacio para el footer */
+
+  .location-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    .location-central {
+      width: 20rem;
+      height: 18rem;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      /* Espacio entre el título y los planetas */
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 10%;
+      }
+    }
+  }
+}
+
+.resto-pais {
+  margin-top: 2rem;
+  /* Reducido para mejor espaciado */
+  padding-top: 3rem;
+  /* Añadido espacio superior */
+}
+
+/* Configuracion de los planetas */
+.planets-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Permite que los planetas se ajusten en pantallas pequeñas */
+  gap: 2rem;
+  margin-bottom: 3rem;
+  /* Espacio después de cada fila */
+}
+
+.planet-item,
+.planet-item2 {
+  position: relative;
+  width: 12rem;
+  /* Reducido ligeramente para mejor ajuste */
+  height: 12rem;
+  transition: transform 0.3s ease;
+
+  /* Eliminar el posicionamiento absoluto que causaba problemas */
+}
+.planet-item2 {
+  // position: relative;
+  top: 15rem;
+  padding-bottom: 15rem;
+}
+
+
+.planet-item:hover,
+.planet-item2:hover {
+  transform: scale(1.1);
+}
+
+.planet-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Efectos de brillo para los planetas */
+.planet-orange {
+  filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.6));
+}
+
+.planet-purple {
+  filter: drop-shadow(0 0 20px rgba(147, 112, 219, 0.6));
+}
+
+.planet-yellow {
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+}
+
+.planet-pink {
+  filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.6));
+}
+
+.planet-blue {
+  filter: drop-shadow(0 0 20px rgba(0, 191, 255, 0.6));
+}
+
+.planet-red {
+  filter: drop-shadow(0 0 20px rgba(220, 20, 60, 0.6));
+}
+
+.planet-green {
+  filter: drop-shadow(0 0 20px rgba(50, 205, 50, 0.6));
+}
+
+.planet-earth {
+  filter: drop-shadow(0 0 20px rgba(100, 149, 237, 0.6));
+}
+
+.planet-saturn {
+  filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.6));
+}
+
+
+@media (max-width: 768px) {
+  /* Ajustes para los títulos */
+  .location-central {
+    width: 12rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajuste general para primera sección (Bogotá) */
+  .starpark-locations .planets-row {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Ajustes para los planetas de Bogotá - TAMAÑO AUMENTADO */
+  .starpark-locations .planet-item {
+    position: absolute;
+    width: 10rem;  /* Aumentado de 7rem a 10rem */
+    height: 10rem; /* Aumentado de 7rem a 10rem */
+  }
+  
+  /* Posicionamiento específico para planetas de Bogotá */
+  .starpark-locations .planet-orange {
+    top: 10%;
+    left: 15%;
+  }
+  
+  .starpark-locations .planet-purple {
+    top: 10%;
+    right: 15%;
+  }
+  
+  .starpark-locations .planet-yellow {
+    bottom: 15%;
+    left: 15%;
+  }
+  
+  .starpark-locations .planet-pink {
+    bottom: 15%;
+    right: 15%;
+  }
+  
+  /* Ajustes para la sección Resto del País */
+  .resto-pais {
+    margin-top: 0;
+  }
+  .location-central{
+    height: 40%;
+    width: 40%;
+  }
+  .resto-pais .planets-row {
+    position: relative;
+    height: 500px;
+    width: 100%;
+  }
+  
+  /* Resetear todos los estilos previos para los planetas de Resto del País */
+  .resto-pais .planet-item,
+  .resto-pais .planet-item2,
+  .resto-pais .planet-item-3 {
+    position: absolute;
+    width: 10rem;  /* Aumentado de 7rem a 10rem */
+    height: 10rem; /* Aumentado de 7rem a 10rem */
+    padding: 0;
+    margin: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+  
+  /* Posicionamiento específico para cada planeta de Resto del País */
+  .resto-pais .planet-red {
+    top: 20%;
+    left: 15%;
+  }
+  
+  .resto-pais .planet-saturn {
+    top: 20%;
+    right: 15%;
+  }
+  
+  .resto-pais .planet-earth {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .resto-pais .planet-blue {
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .resto-pais .planet-green {
+    bottom: 10%;
+    right: 15%;
+  }
+  
+  /* Ajustar comportamiento de hover en móvil */
+  .resto-pais .planet-item:hover,
+  .resto-pais .planet-item2:hover {
+    transform: scale(1.1);
+  }
+  
+  .resto-pais .planet-earth:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+}

@@ -1,0 +1,427 @@
+.sedes-space-background {
+  width: 100%;
+  height: auto;
+  background-color: #314c9c;
+}
+
+.info-parques-floor {
+  background-image: url("../images/fotos/Planetas_Sedes/piso.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+.nave-container {
+  position: relative;
+  z-index: 2;
+  top: -10rem;
+  left: 0;
+  width: 100%;
+  height: 60rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: relative;
+    z-index: 2;
+  }
+
+  .sede-container {
+    position: absolute;
+    top: 48.5%;
+    left: 23.5%;
+    width: 14rem;
+    height: 4rem;
+    z-index: 3;
+
+    .park-site {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      /* background-color: rgb(0, 0, 0); */
+    }
+  }
+}
+
+.ubication {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ubication-map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.parque-images-floor {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+
+  /* Estilos para el park-info fuera del contenedor main */
+  .park-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    max-width: 100%;
+
+    /* Evita que se desborde en pantallas pequeñas */
+    .galeria-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  // Todo el contenido de carousel
+  .park-carousel-container {
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .park-carousel {
+    width: 90%;
+    height: 55rem;
+    position: relative;
+    perspective: 62.5rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+
+  .park-carousel-items {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-out;
+  }
+
+  .park-carousel-item {
+    position: absolute;
+    width: 50rem;
+    height: 80%;
+    top: 5%;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #410645;
+    border-radius: 2rem;
+    box-shadow: 0 0.8px 1.875rem rgba(46, 46, 46, 0.623);
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scale(0.8) translateY(0) translateZ(-400px);
+    z-index: 0;
+    object-fit: contain;
+
+    .park-image-media {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 2rem;
+    }
+  }
+
+
+  /* Clases para las posiciones de los elementos del carrusel */
+  .park-carousel-item.active {
+    opacity: 1;
+    transform: scale(1) translateX(0) translateY(0) translateZ(0);
+    z-index: 5;
+    box-shadow: 0 1rem 1rem rgba(46, 46, 46, 0.623);
+  }
+
+  .park-carousel-item.prev {
+    opacity: 0.7;
+    transform: scale(0.85) translateX(-90%) translateY(0) translateZ(-6.25rem);
+    z-index: 2;
+  }
+
+  .park-carousel-item.next {
+    opacity: 0.7;
+    transform: scale(0.85) translateX(90%) translateY(0) translateZ(-6.25rem);
+    z-index: 2;
+  }
+
+  .park-carousel-item.far-prev {
+    opacity: 0.3;
+    transform: scale(0.7) translateX(-180%) translateY(0) translateZ(-12.5rem);
+    z-index: 1;
+  }
+
+  .park-carousel-item.far-next {
+    opacity: 0.3;
+    transform: scale(0.7) translateX(180%) translateY(0) translateZ(-12.5rem);
+    z-index: 1;
+  }
+
+  .park-carousel-item.back {
+    opacity: 0.3;
+    transform: scale(0.6) translateY(10%) translateZ(-18.75rem);
+    z-index: 0;
+  }
+
+  /* Estilos para los controles del carrusel */
+  .park-carousel .carousel-controls {
+    position: absolute;
+    margin: 2rem auto;
+    /* Cambia 0 por auto para centrar horizontalmente */
+    left: 0;
+    right: 0;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    /* Añade display flex */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    gap: 2rem;
+  }
+
+
+  .park-carousel .carousel-prev,
+  .park-carousel .carousel-next {
+    width: 3.125rem;
+    height: 3.125rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.9rem rgb(99, 181, 192);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .park-carousel .carousel-prev:hover,
+  .park-carousel .carousel-next:hover {
+    background: rgb(122, 228, 228);
+    transform: scale(1.1);
+  }
+
+  .park-carousel .carousel-indicators {
+    display: flex;
+    gap: 10px;
+  }
+
+  .park-carousel .indicator {
+    width: 12px;
+    height: 12px;
+    background: rgb(149, 160, 160);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .park-carousel .indicator.active {
+    background: rgb(59, 255, 255);
+    transform: scale(1.2);
+    gap: 10rem;
+    z-index: 10;
+  }
+}
+
+.info-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  .lines {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
+
+.hablemos-content {
+  width: 100%;
+  height: 70rem;
+  padding-top: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  top: -8rem;
+
+  .dominick-container {
+    width: 50%;
+    height: 100%;
+    margin-left: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.hablemos-button {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: rgba(63, 177, 78, 0.404); */
+  margin-left: 2rem;
+
+  img {
+    width: 20rem;
+    height: 5rem;
+    object-fit: fill;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  span {
+    font-size: 3.8rem;
+  }
+
+  p {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00eeffd3, 0 0 10px #00eeffd3, 0 0 15px #00eeffd3;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nave-container {
+    .sede-container {
+      .park-site {
+        width: 40%;
+        height: 70%;
+      }
+    }
+  }
+
+  .parque-images-floor {
+    .park-info {
+      width: 90%;
+    }
+  }
+
+  .info-container {
+    .hablemos-content {
+      width: 95%;
+      height: 100%;
+      padding-top: 3rem;
+      padding-right: 3rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      top: -8rem;
+
+      .dominick-container {
+        width: 100%;
+        height: 100%;
+        margin-left: 2rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+        }
+      }
+
+      .hablemos-button {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: rgba(63, 177, 78, 0.404); */
+        margin-left: 2rem;
+
+        img {
+          width: 20rem;
+          height: 5rem;
+          object-fit: fill;
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        span {
+          font-size: 3.8rem;
+        }
+
+        p {
+          color: #ffffff;
+          text-shadow: 0 0 5px #00eeffd3, 0 0 10px #00eeffd3, 0 0 15px #00eeffd3;
+          text-align: center;
+          font-size: 3em;
+          font-weight: bold;
+          margin: 2rem 2rem;
+        }
+      }
+    }
+  }
+}
