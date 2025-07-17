@@ -1,4 +1,4 @@
-window.onscroll= scrollListener;
+/*window.onscroll= scrollListener;
 const enlaces = document.querySelectorAll(".enlaces-flotantes");
 function scrollListener() {
     let scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
@@ -16,4 +16,4 @@ function scrollListener() {
             element.style.transition = 'all 0.5s ease-in-out';
         });
     }
-}
+} */

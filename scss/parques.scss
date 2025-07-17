@@ -36,8 +36,8 @@
     margin-top: 2rem;
 
     .location-central {
-      width: 20rem;
-      height: 18rem;
+      width: 100%;
+      height: 100%;
       text-align: center;
       margin-bottom: 2rem;
 
@@ -65,17 +65,34 @@
   justify-content: center;
   flex-wrap: wrap;
   /* Permite que los planetas se ajusten en pantallas pequeñas */
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 4rem;
+  margin-bottom: 25rem;
+  padding: 10rem;
   /* Espacio después de cada fila */
+}
+.superior{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inferior{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  gap: 26rem;
+  position:relative;
+  left: 23.5rem;
 }
 
 .planet-item,
 .planet-item2 {
   position: relative;
-  width: 12rem;
+  width: 16rem;
   /* Reducido ligeramente para mejor ajuste */
-  height: 12rem;
+  height: auto;
   transition: transform 0.3s ease;
 
   /* Eliminar el posicionamiento absoluto que causaba problemas */
@@ -115,10 +132,14 @@
 
 .planet-purple {
   filter: drop-shadow(0 0 20px rgba(147, 112, 219, 0.6));
+  position: relative;
+  top:8rem;
 }
 
 .planet-yellow {
   filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+  position: relative;
+  top:8rem;
 }
 
 .planet-pink {
@@ -135,6 +156,8 @@
 
 .planet-green {
   filter: drop-shadow(0 0 20px rgba(50, 205, 50, 0.6));
+  position: relative;
+  top: 7rem;
 }
 
 .planet-earth {
@@ -164,29 +187,29 @@
   /* Ajustes para los planetas de Bogotá - TAMAÑO AUMENTADO */
   .starpark-locations .planet-item {
     position: absolute;
-    width: 10rem;  /* Aumentado de 7rem a 10rem */
-    height: 10rem; /* Aumentado de 7rem a 10rem */
+    width: 13rem;  /* Aumentado de 7rem a 10rem */
+    height: auto; /* Aumentado de 7rem a 10rem */
   }
   
   /* Posicionamiento específico para planetas de Bogotá */
   .starpark-locations .planet-orange {
-    top: 10%;
-    left: 15%;
+    top: 0%;
+    left: 25%;
   }
   
   .starpark-locations .planet-purple {
-    top: 10%;
-    right: 15%;
+    top: 70%;
+    right: 20%;
   }
   
   .starpark-locations .planet-yellow {
-    bottom: 15%;
-    left: 15%;
+    top: 70%;
+    left: 25%;
   }
   
   .starpark-locations .planet-pink {
-    bottom: 15%;
-    right: 15%;
+    bottom: 41%;
+    right: 20%;
   }
   
   /* Ajustes para la sección Resto del País */
@@ -199,7 +222,7 @@
   }
   .resto-pais .planets-row {
     position: relative;
-    height: 500px;
+    height: auto;
     width: 100%;
   }
   
@@ -221,29 +244,29 @@
   
   /* Posicionamiento específico para cada planeta de Resto del País */
   .resto-pais .planet-red {
-    top: 20%;
-    left: 15%;
+    top: 9rem;
+    left: -50%;
   }
   
   .resto-pais .planet-saturn {
-    top: 20%;
-    right: 15%;
+    top:114%;
+    right: 20%;
   }
   
   .resto-pais .planet-earth {
-    top: 50%;
-    left: 50%;
+    top: -30%;
+    left: -7%;
     transform: translateX(-50%);
   }
   
   .resto-pais .planet-blue {
-    bottom: 10%;
-    left: 15%;
+    bottom: 40%;
+    left: 20%;
   }
   
   .resto-pais .planet-green {
-    bottom: 10%;
-    right: 15%;
+    bottom: 40%;
+    right: 20%;
   }
   
   /* Ajustar comportamiento de hover en móvil */

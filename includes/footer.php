@@ -1,30 +1,32 @@
-<footer class="de-interes">
-    <section class="enlaces">
-        <img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/de_interes.png" alt="De interés">
-        <ul>
-            <li><a href="<?php echo SITE_URL; ?>source/preguntasfrecuentes.php">Preguntas frecuentes</a></li>
-            <li><a href="<?php echo SITE_URL; ?>source/nuestraempresa.php">Nuestra Empresa</a></li>
-            <li><a href="<?php echo SITE_URL; ?>source/servicio.php">Servicio al cliente</a></li>
-            <li><a href="<?php echo SITE_URL; ?>source/blog.php">Blog</a></li>
-        </ul>
-    </section>
-
-    <section class="redes">
-        <img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/redes_sociales.png" alt="Redes sociales">
+<footer class="footer">
+<div class="footer-content"> 
+    <div class="footer-column starpark-social">
+        <div class="starpark-logo">
+             <img src="../images/fotos/Home/imagenes/star-pie.png" alt="">
+        </div>
         <div class="redes-sociales">
+            <h3>Redes Sociales</h3> 
+            <div class="iconos">
             <a href="https://www.facebook.com/starparkco" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png" alt="Instagram"></a>
             <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png" alt="TikTok"></a>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="normatividad">
-        <img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/normatividad.png" alt="Normatividad">
-        <ul>
-            <li><a href="<?php echo SITE_URL; ?>source/politica.php">Política tratamiento de datos</a></li>
-        </ul>
-    </section>
+    <div class="footer-column">
+        <h3>De Interés</h3> <ul>
+            <p><a href="<?php echo SITE_URL; ?>source/preguntasfrecuentes.php">Preguntas Frecuentes</a></p>
+            <p><a href="<?php echo SITE_URL; ?>source/nuestraempresa.php">Nuestra Empresa</a></p>
+            <p><a href="<?php echo SITE_URL; ?>source/servicio.php">Servicio Al Cpente</a></p>
+            </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Normatividad</h3> <ul>
+            <p><a href="<?php echo SITE_URL; ?>source/poptica.php">Política Tratamiento De Datos</a></p>
+            <p><a href="#">Trabaja Con Nosotros</a></p> </ul>
+    </div>
+
+</div>
 </footer>
-</body>
-
-</html>

@@ -6,6 +6,91 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-image: url("../images/fotos/Home/imagenes/BACKGROUND.png");
+  
+}
+.opciones{
+  display:flex;
+  flex-direction: row;
+  color:white;
+  gap: 4rem;
+  position: absolute;
+  left: 39%;
+  top: 19%;
+  font-size:19px;
+ h3 a{
+    color: white;
+    text-decoration: none;  
+    left: 6%;
+    top: 10%;
+    font-size:19px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+}
+.direeciones{
+  position: relative;
+  color: whithe;
+  padding:0 15px;
+  cursor:pointer;
+  transition: color 0.3s ease;
+  h3 a{
+    position: relative;
+    top: 1rem;
+
+  }
+  &:hover{
+    transform: scale(1);
+  }
+  &:not(:last-child)::after { // Aplica a todos los .direeciones EXCEPTO el último
+    content: ''; // Obligatorio para pseudo-elementos
+    position: absolute;
+    right: 0; // Posiciona la línea en el borde derecho del h3
+    top: 50%; // Centra verticalmente
+    transform: translateY(-50%); // Ajusta para un centrado perfecto
+    width: 3px; // Grosor de la línea
+    height: 90%; // Altura de la línea (ajusta este porcentaje si quieres que sea más larga/corta)
+    background-color: #4da3cf; // Color de la línea
+    margin-right:  -20px ;
+}
+&.active { 
+  color: #4da3cf;
+  padding-bottom: 5px; // Espacio para el subrayado activo
+  &::after { // Pseudo-elemento para el subrayado del activo
+      content: '';
+      display: block;
+      width: 80%; // Ajusta el largo del subrayado
+      height: 3px;
+      background-color: #4da3cf;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
+}
+
+.media{
+  width: 25%;
+  position: absolute;
+  top: -2.5rem;
+  gap: 3px;
+  left: 57rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  img{
+      width: 12rem;
+      height: auto;
+      padding: 0.5rem;
+  }
+}
+
+
+.footer2{
+  width: 100%;
+    position: absolute;
+    height: 6rem; 
 }
 
 .navigation-container {
@@ -40,149 +125,68 @@ body {
     }
   }
 }
-
-.hamburger-menu {
-  margin: 1rem 1rem 0 0;
-  width: 5rem;
-  height: 5rem;
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  z-index: 10;
-
-  i {
-    color: #ffffff;
-    font-size: 3rem;
-  }
+.sidebar-menu,
+.overlay,.hamburger-menu  {
+    display: none;
 }
 
-/* Menu lateral */
-.sidebar-menu {
-  position: fixed;
-  width: 15.625rem;
-  height: 100vh;
-  top: 0;
-  right: -100%;
-  background-color: #400645;
-  z-index: 15;
-  transition: 0.3s ease;
-  padding-top: 3.75rem;
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    padding: 15px 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-
-    &:hover {
-      color: #00ffff;
-
-    }
-  }
-}
-
-.sidebar-menu.active {
-  right: 0;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  cursor: pointer;
-
-  i {
-    color: #ffffff;
-    font-size: 2rem;
-  }
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  display: none;
-}
-
-.overlay.active {
-  display: block;
-}
 
 /* Estilos de la seccion de De Interés (FOOER) */
-.de-interes {
+.footer {
   width: 100%;
-  height: 25rem;
-  background-image: url("../images/fotos/Home/imagenes/final_de_la_nave.png");
-  background-color: #410645;
-  background-size: 100% 100%;
+  background-image: url("../images/fotos/Home/imagenes/BACK_PIE.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  gap: 18rem;
-  padding-top: 1rem;
-  bottom: 0;
-  position: relative;
+  justify-content: space-between;
+  //background-color: #f2f2f2;
+  padding-top:6rem ;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10rem;
+}
 
-  /* Columnas del footer */
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: row;
+  font-weight: bold;
+}
 
-    img {
-      width: 80%;
-      height: 7vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+/* Línea divisoria más gruesa */
+.footer-column:not(:last-child) {
+  border-right: 3px solid #ac4fc6; /* Aumenta el grosor aquí */
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      margin: 0.9rem 0;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-
-      &:hover {
-        color: #00ffff;
-
-      }
-    }
+.starpark-logo{
+  width: 50%;
+  height: 50%;
+  display: contents;
+  img{
+    width: 100%;
+    height: auto;
   }
-
-
-  /* Redes sociales */
+}
+ /*Redes sociales*/
   .redes-sociales {
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
+    h3{
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      padding-bottom: 10px; /* Espacio para el subrayado */
+    }
     a {
       width: 5rem;
       height: 5rem;
@@ -197,7 +201,33 @@ body {
       }
     }
   }
-}
+  .iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1rem;
+  }
+  .footer-column{
+    h3{
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      padding-bottom: 10px; /* Espacio para el subrayado */
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size:18px;
+      padding-top: 10px;
+    }
+    a{
+      color: #ffffff;
+    }
+  }
+
 
 /* Estilos whatsapp y dominik icon*/
 
@@ -206,8 +236,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: fixed;
-  bottom: 55%;
+  position: absolute;
+  bottom: -40rem;
   right: 0.125rem;
   z-index: 5;
 
@@ -226,8 +256,8 @@ body {
   }
   a img {
     margin-top: 0.625rem;
-    width: 5rem;
-    height: 5rem;
+    width: 14rem;
+    height: 12rem;
     filter: drop-shadow(0 0 10px rgb(93, 189, 204));
     transition: all 0.3s ease-in-out;
 
@@ -239,9 +269,43 @@ body {
   }
 }
 /* Media query sólo para ajustes mínimos en pantallas muy pequeñas */
-@media (max-width: 950px) {
+@media(min-width:320px) and (max-width:428px) {
   :root {
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  }
+  .footer-content{
+    display: flex;
+    flex-direction:column ;
+  }
+  .starpark-logo{
+    width: 50%;
+    height: 50%;
+    display: contents;
+    img{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+  .footer-column{
+    h3{
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      padding-bottom: 10px; /* Espacio para el subrayado */
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size:18px;
+      padding-top: 10px;
+    }
+    a{
+      color: #ffffff;
+    }
   }
   .navigation-container {
     a {
@@ -252,13 +316,221 @@ body {
       }
     }
   }
-  .de-interes {
+
+  .opciones{
+    display: none;
+  }
+
+
+  .enlaces-derecha {
+   
+    position: relative; // Fija el aside en relación al viewport
+    top: -62rem;       // Distancia desde el borde superior
+    right: -35rem;     // Distancia desde el borde derecho
+    width: 6rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
+    height: auto;    // Ajusta la altura del contenedor
+    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
+
+
+    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
+      position: static; // Vuelve a su posicionamiento normal dentro del aside
+      display: block; // Asegura que el 'a' ocupe su propio espacio
+      width: 100%; // Hace que el 'a' ocupe el ancho del aside
+      height: 100%; // Hace que el 'a' ocupe la altura del aside
+    }
+
+    a.dominik-icon img {
+ 
+      position: static; // Vuelve a su posicionamiento normal dentro del <a>
+      left: auto;      // Desactiva 'left'
+      top: auto;       // Desactiva 'top'
+
+      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      height: auto;    // Mantiene la proporción
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  } 
+ 
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h3{
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      padding-bottom: 10px; /* Espacio para el subrayado */
+    }
+
+    a {
+      width: 5rem;
+      height: 5rem;
+      margin-top: 0.9rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .iconos{
+    flex-direction: row;
+    display:flex;
+    gap:2rem;
+    position: relative;
+    top:-2rem;
+    justify-content: center;
+  }
+  .hamburger-menu {
+    margin: 1rem 1rem 0 0;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  
+    i {
+      color: #ffffff;
+      font-size: 3rem;
+    }
+  }
+  
+  /* Menu lateral */
+  .sidebar-menu {
+    position: fixed;
+    width: 15.625rem;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background-color: #400645;
+    z-index: 15;
+    transition: 0.3s ease;
+    padding-top: 3.75rem;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      padding: 15px 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: block;
+  
+      &:hover {
+        color: #00ffff;
+  
+      }
+    }
+  }
+  
+  .sidebar-menu.active {
+    right: 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+  
+    i {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+}
+@media (width: 950px) {
+  :root {
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  }
+
+  .navigation-container {
+    a {
+      left: 0;
+      img {
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+
+  .enlaces-derecha {
+    position: fixed; // Fija el aside en relación al viewport
+    top: 1rem;       // Distancia desde el borde superior
+    right: 1rem;     // Distancia desde el borde derecho
+    width: 10rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
+    height: auto;    // Ajusta la altura del contenedor
+    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
+
+  
+    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
+      position: relative; // Vuelve a su posicionamiento normal dentro del aside
+      display: block; // Asegura que el 'a' ocupe su propio espacio
+      width: 100%; // Hace que el 'a' ocupe el ancho del aside
+      height: 100%; // Hace que el 'a' ocupe la altura del aside
+    }
+
+    a.dominik-icon img {
+      // **CLAVE:** Resetear los estilos de posicionamiento anteriores
+      position: static; // Vuelve a su posicionamiento normal dentro del <a>
+      left: auto;      // Desactiva 'left'
+      top: auto;       // Desactiva 'top'
+
+      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      height: auto;    // Mantiene la proporción
+      filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .footer {
     gap: 0.5rem;
   }
-  .de-interes li {
+  .footer li {
     margin: 0.1rem 0;
   }
-  .de-interes .redes-sociales a {
+  .footer .redes-sociales a {
     width: 5.5rem;
     height: 0rem;
     margin-top: 0.9rem;
@@ -268,27 +540,99 @@ body {
   }
 }
 @media (min-width: 1000px) {
-  .de-interes {
-    gap: 10rem;
-  }
-  .de-interes li {
-    margin: 0.5rem 0;
-  }
-  .de-interes .redes-sociales a {
-    width: 5rem;
-    height: 5rem;
-  }
+  .footer {
+  gap: 10rem;
 }
+.footer li {
+  margin: 0.5rem 0;
+}
+.footer .redes-sociales a {
+  width: 5rem;
+  height: 5rem;
+}
+}
+  
+
+
 /* Media query para pantallas grandes */
 @media (min-width: 1400px) {
   :root {
     font-size: calc(0.4vw + 0.4vh + 0.4vmin);
   }
-  .de-interes {
+  .footer {
     gap: 5rem;
   }
-  .de-interes li {
+  .footer li {
     margin: 0.1rem 0;
     width: 10rem;
+  }
+  @media (min-width: 1600px) {
+    .footer li {
+      margin: 0.1rem 0;
+      width: 10rem;
+    }
+    .enlaces-derecha{ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      bottom: -40rem;
+      right: 0.125rem;
+      left: 100rem;
+      z-index: 5;
+    }
+    a img {
+      width: 16rem;
+      height: 13rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-container .opciones {
+    display: none;
+  }
+  .cc-parques .location-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+  }
+  .sidebar-menu {
+    display: block;
+    width: 80vw;
+    max-width: 320px;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    padding-top: 4rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .sidebar-menu.active {
+    right: 0;
+  }
+  .close-btn {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .overlay {
+    display: none;
+  }
+  .overlay.active {
+    display: block;
   }
 }

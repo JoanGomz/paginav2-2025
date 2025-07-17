@@ -19,6 +19,13 @@ include_once '../includes/head.php';
             </section>
             <!-- Primera fila de planetas - Bogotá -->
             <section class="planets-row">
+            <div class="planet-item planet-orange">
+                    <a href="../source/parque.php?id=hayuelos">
+                        <div class="planet-content">
+                            <img src="../images/fotos/Parques/botones/hayuelos.png" alt="Hayuelos">
+                        </div>
+                    </a>
+                </div>
                 <div class="planet-item planet-purple">
                     <a href="../source/parque.php?id=altavista">
                         <div class="planet-content">
@@ -33,20 +40,13 @@ include_once '../includes/head.php';
                         </div>
                     </a>
                 </div>
-                <div class="planet-item planet-orange">
-                    <a href="../source/parque.php?id=hayuelos">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/hayuelos.png" alt="Hayuelos">
-                        </div>
-                    </a>
-                </div>
                 <div class="planet-item planet-pink">
                     <a href="../source/parque.php?id=paseovillaDelrio">
                         <div class="planet-content">
                             <img src="../images/fotos/Parques/botones/paseo_villa_del_rio.png" alt="Paseo Villa del Río">
                         </div>
                     </a>
-                </div>
+                </div> 
             </section>
         </article>
 
@@ -58,6 +58,14 @@ include_once '../includes/head.php';
             </section>
             <!-- Segunda fila de planetas - Resto del país -->
             <section class="planets-row">
+            <div class="superior">
+            <div class="planet-item2 planet-blue">
+                    <a href="../source/parque.php?id=mosquera">
+                        <div class="planet-content">
+                            <img src="../images/fotos/Parques/botones/mosquera.png" alt="Mosquera">
+                        </div>
+                    </a>
+                </div>
                 <div class="planet-item planet-green">
                     <a href="../source/parque.php?id=bello">
                         <div class="planet-content">
@@ -72,6 +80,15 @@ include_once '../includes/head.php';
                         </div>
                     </a>
                 </div>
+                </div>
+                <div class="inferior">
+                <div class="planet-item planet-red">
+                    <a href="../source/parque.php?id=neiva">
+                        <div class="planet-content">
+                            <img src="../images/fotos/Parques/botones/neiva.png" alt="Neiva">
+                        </div>
+                    </a>
+                </div>
                 <div class="planet-item planet-earth">
                     <a href="../source/parque.php?id=mayorca">
                         <div class="planet-content">
@@ -79,19 +96,7 @@ include_once '../includes/head.php';
                         </div>
                     </a>
                 </div>
-                <div class="planet-item2 planet-blue">
-                    <a href="../source/parque.php?id=mosquera">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/mosquera.png" alt="Mosquera">
-                        </div>
-                    </a>
-                </div>
-                <div class="planet-item planet-red">
-                    <a href="../source/parque.php?id=neiva">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/neiva.png" alt="Neiva">
-                        </div>
-                    </a>
+              
                 </div>
             </section>
         </article>
