@@ -76,7 +76,8 @@ include_once '../includes/head.php';
         </iframe>
       </div>
     </div>
-    <img class="footer2" src="../images/fotos/Home/imagenes/Footer2.png" alt="footer superior">
+    </div>
+    <img class="footer_2" src="../images/fotos/Home/imagenes/Footer2.png" alt="footer superior">
   </main>
 
 

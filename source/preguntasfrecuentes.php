@@ -82,14 +82,30 @@ include_once '../includes/head.php';
                     Ademas también puedes utilizarla en todos los parques de la compañía.
                 </div>
             </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const preguntas = document.querySelectorAll('.faq-question');
+
+                preguntas.forEach(pregunta => {
+                pregunta.addEventListener('click', () => {
+                const respuesta = pregunta.nextElementSibling;
+                respuesta.classList.toggle('active');
+                pregunta.classList.toggle('open');
+        });
+    });
+});
+</script>
+
         </div>
+        
+    </div>
+    <div class="footersup">
+        <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
     </div>
 </div>
 <!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
+
+
 <?php
 // Incluye el footer
 include_once '../includes/footer.php';

@@ -27,40 +27,39 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>2. FINALIDADES Y TRATAMIENTO AL CUAL SERÁN SOMETIDOS LOS DATOS PERSONALES:</h2>
-                <p>Los datos personales que la EMPRESA recolecta, almacena, use, circule y suprima, serán utilizados
-                    para alguna de las siguientes finalidades:</p>
+    <h2>2. FINALIDADES Y TRATAMIENTO AL CUAL SERÁN SOMETIDOS LOS DATOS PERSONALES:</h2>
+    <p>Los datos personales que la EMPRESA recolecta, almacena, use, circule y suprima, serán utilizados para alguna de las siguientes finalidades:</p>
 
-                <div class="subsection">
-                    <h3>2.1. En relación con la naturaleza y las funciones propias de La empresa:</h3>
-                    <p>El Tratamiento de los datos se realizará con la finalidad de hacer contacto de tipo comercial
-                        a personas interesadas en adquirir los servicios de recreación y fiestas infantiles que
-                        ofrece la empresa</p>
+    <div class="subsection">
+        <h3>2.1. En relación con la naturaleza y las funciones propias de La empresa:</h3>
+        <div class="expandable-section-wrapper">
+        <div class="expandable-content" style="display: none;">
+        <p>El Tratamiento de los datos se realizará con la finalidad de hacer contacto de tipo comercial a personas interesadas en adquirir los servicios de recreación y fiestas infantiles que ofrece la empresa</p>
 
-                    <h3>2.2. En relación con el funcionamiento de la Empresa</h3>
+        <h3>2.2. En relación con el funcionamiento de la Empresa</h3>
 
-                    <div class="policy-item">
-                        <h4>2.2.1. Recurso Humano:</h4>
-                        <p>El Tratamiento de los datos se realizará para la vinculación, desempeño de funciones o
-                            prestación de servicios, retiro o terminación, dependiendo del tipo de relación jurídica
-                            entablada con la Empresa (incluye, entre otros, funcionarios, ex funcionarios
-                            judicantes, practicantes y aspirantes a cargos).</p>
-                    </div>
-
-                    <div class="policy-item">
-                        <h4>2.2.2. Proveedores y Contratistas:</h4>
-                        <p>El Tratamiento de los datos se realizará para los fines relacionados con el desarrollo el
-                            proceso de gestión contractual de productos o servicios que la Empresa requiera para su
-                            funcionamiento de acuerdo a la normatividad vigente.</p>
-                    </div>
-
-                    <div class="policy-item">
-                        <h4>2.2.3. Seguridad en instalaciones:</h4>
-                        <p>El Tratamiento se realizará para la vigilancia y seguridad de las personas, los bienes e
-                            instalaciones de la Empresa.</p>
-                    </div>
+                <div class="policy-item">
+                    <h4>2.2.1. Recurso Humano:</h4>
+                    <p>El Tratamiento de los datos se realizará para la vinculación, desempeño de funciones o prestación de servicios, retiro o terminación, dependiendo del tipo de relación jurídica entablada con la Empresa (incluye, entre otros, funcionarios, ex funcionarios judicantes, practicantes y aspirantes a cargos).</p>
                 </div>
-            </section>
+
+                <div class="policy-item">
+                    <h4>2.2.2. Proveedores y Contratistas:</h4>
+                    <p>El Tratamiento de los datos se realizará para los fines relacionados con el desarrollo el proceso de gestión contractual de productos o servicios que la Empresa requiera para su funcionamiento de acuerdo a la normatividad vigente.</p>
+                </div>
+
+                <div class="policy-item">
+                    <h4>2.2.3. Seguridad en instalaciones:</h4>
+                    <p>El Tratamiento se realizará para la vigilancia y seguridad de las personas, los bienes e instalaciones de la Empresa.</p>
+                </div>
+            </div>
+
+            <button class="toggle-section-btn leer-mas-btn">Leer más </button>
+            <button class="toggle-section-btn leer-menos-btn" style="display: none;">Leer menos</button>
+        </div>
+    </div>
+</section>
+
 
             <section class="policy-section">
                 <h2>3. DERECHOS DE LOS TITULARES:</h2>
@@ -144,12 +143,11 @@ include_once '../includes/head.php';
             </section>
         </div>
     </div>
+    <div class="foot-policy">
+    <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+    </div>
 </div>
 <!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
 <?php
 // Incluye el footer
 include_once '../includes/footer.php';

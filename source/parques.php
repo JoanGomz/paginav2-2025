@@ -100,8 +100,12 @@ include_once '../includes/head.php';
                 </div>
             </section>
         </article>
+        <div class="footer2">
+        <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+    </div>
     </div>
 </main>
+<script>window.SITE_URL = '<?php echo SITE_URL; ?>';</script>
 <!-- Botones de whatsapp y dominick, lado derecho -->
 <?php
 // Incluye el aside

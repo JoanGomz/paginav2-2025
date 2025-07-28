@@ -65,7 +65,7 @@
   justify-content: center;
   flex-wrap: wrap;
   /* Permite que los planetas se ajusten en pantallas pequeñas */
-  gap: 4rem;
+  gap: 10rem;
   margin-bottom: 25rem;
   padding: 10rem;
   /* Espacio después de cada fila */
@@ -90,7 +90,7 @@
 .planet-item,
 .planet-item2 {
   position: relative;
-  width: 16rem;
+  width: 19rem;
   /* Reducido ligeramente para mejor ajuste */
   height: auto;
   transition: transform 0.3s ease;
@@ -168,6 +168,17 @@
   filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.6));
 }
 
+.footer2{      
+  position: absolute;
+  top:217rem;
+  transform:rotate(0.7deg) ;
+  z-index: 1;
+  img{
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+  } 
+}
 
 @media (max-width: 768px) {
   /* Ajustes para los títulos */
@@ -224,6 +235,7 @@
     position: relative;
     height: auto;
     width: 100%;
+    gap: 3rem;
   }
   
   /* Resetear todos los estilos previos para los planetas de Resto del País */
@@ -278,4 +290,16 @@
   .resto-pais .planet-earth:hover {
     transform: translateX(-50%) scale(1.1);
   }
-}
+  .footer2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 2rem;
+    img {
+      width: 100%;
+      height: 6vh;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+}   

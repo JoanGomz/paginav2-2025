@@ -24,3 +24,85 @@ document.addEventListener('DOMContentLoaded', function() {
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (overlay) overlay.addEventListener('click', closeMenu);
 });
+
+// funcion para el subrayado del menú de navegación 
+document.addEventListener('DOMContentLoaded', function () {
+  const desktopNavLinks = document.querySelectorAll('.direeciones .desktop-nav-header');
+  const currentPathname = window.location.pathname;
+
+  desktopNavLinks.forEach(link => {
+    const linkHref = link.href;
+    const linkPathname = new URL(linkHref).pathname;
+    const linkText = link.textContent.toLowerCase();
+
+    // Normalizador básico (sin necesidad de SITE_URL)
+    const normalize = (path) => path.replace(/\/+$/, '');
+
+    const current = normalize(currentPathname);
+    const target = normalize(linkPathname);
+
+    // Coincidencia exacta
+    if (current === target) {
+      link.classList.add('active');
+    }
+
+    // Coincidencia por subpágina (como parques.php y parque.php)
+    else if (
+      ['parques.php', 'parque.php'].includes(current.split('/').pop()) &&
+      linkPathname.includes('parques.php')
+    ) {
+      link.classList.add('active');
+    }
+
+    // Coincidencia con index
+    else if (current === '/' && linkPathname.includes('index.php')) {
+      link.classList.add('active');
+    }
+
+    //  Si estás en preguntas frecuentes, resaltar SERVICIOS
+    else if (
+      current.includes('preguntasfrecuentes') &&
+      linkText.includes('servicios')
+    ) {
+      link.classList.add('active');
+    }
+
+    //si esta en politica, resaltar servicios
+    else if(
+      current.includes('politica')&&
+      linkText.includes('servicios')
+    ){
+      link.classList.add('active')
+    }
+  });
+});
+// script de leer mas y leer menos en politica de privacidad
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleccionamos el contenedor principal de la funcionalidad de "leer más/menos" para esta sección
+  const expandableSectionWrapper = document.querySelector('.expandable-section-wrapper');
+
+  if (expandableSectionWrapper) {
+      const expandableContent = expandableSectionWrapper.querySelector('.expandable-content');
+      const leerMasBtn = expandableSectionWrapper.querySelector('.leer-mas-btn');
+      const leerMenosBtn = expandableSectionWrapper.querySelector('.leer-menos-btn');
+
+      // Aseguramos el estado inicial
+      expandableContent.style.display = 'none';
+      leerMenosBtn.style.display = 'none';
+      leerMasBtn.style.display = 'block';
+
+      // Event listener para el botón "Leer más"
+      leerMasBtn.addEventListener('click', function() {
+          expandableContent.style.display = 'block'; // Muestra el contenido
+          leerMasBtn.style.display = 'none';         // Oculta "Leer más"
+          leerMenosBtn.style.display = 'block';      // Muestra "Leer menos"
+      });
+
+      // Event listener para el botón "Leer menos"
+      leerMenosBtn.addEventListener('click', function() {
+          expandableContent.style.display = 'none';   // Oculta el contenido
+          leerMasBtn.style.display = 'block';         // Muestra "Leer más"
+          leerMenosBtn.style.display = 'none';        // Oculta "Leer menos"
+      });
+  }
+});

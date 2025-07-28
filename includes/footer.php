@@ -14,18 +14,20 @@
         </div>
     </div>
 
-    <div class="footer-column">
-        <h3>De Interés</h3> <ul>
-            <p><a href="<?php echo SITE_URL; ?>source/preguntasfrecuentes.php">Preguntas Frecuentes</a></p>
-            <p><a href="<?php echo SITE_URL; ?>source/nuestraempresa.php">Nuestra Empresa</a></p>
-            <p><a href="<?php echo SITE_URL; ?>source/servicio.php">Servicio Al Cpente</a></p>
+    <div class="footer-column central">
+        <h3>De Interés</h3> 
+        <ul>
+            <li><a href="<?php echo SITE_URL; ?>source/preguntasfrecuentes.php">Preguntas Frecuentes</a></li>
+            <li><a href="<?php echo SITE_URL; ?>source/nuestraempresa.php">Nuestra Empresa</a></li>
+            <li><a href="<?php echo SITE_URL; ?>source/servicio.php">Servicio Al Cliente</a></li>
             </ul>
     </div>
 
     <div class="footer-column">
-        <h3>Normatividad</h3> <ul>
-            <p><a href="<?php echo SITE_URL; ?>source/poptica.php">Política Tratamiento De Datos</a></p>
-            <p><a href="#">Trabaja Con Nosotros</a></p> </ul>
+        <h3>Normatividad</h3> 
+        <ul>
+            <li><a href="<?php echo SITE_URL; ?>source/politica.php">Política Tratamiento De Datos</a></li>
+            <li><a href="#">Trabaja Con Nosotros</a></li> </ul>
     </div>
 
 </div>

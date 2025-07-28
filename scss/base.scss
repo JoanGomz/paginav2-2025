@@ -16,7 +16,7 @@ body {
   gap: 4rem;
   position: absolute;
   left: 39%;
-  top: 19%;
+  top: 6%;
   font-size:19px;
  h3 a{
     color: white;
@@ -42,7 +42,7 @@ body {
   &:hover{
     transform: scale(1);
   }
-  &:not(:last-child)::after { // Aplica a todos los .direeciones EXCEPTO el último
+  &:not(:last-child)::after { 
     content: ''; // Obligatorio para pseudo-elementos
     position: absolute;
     right: 0; // Posiciona la línea en el borde derecho del h3
@@ -53,21 +53,24 @@ body {
     background-color: #4da3cf; // Color de la línea
     margin-right:  -20px ;
 }
-&.active { 
-  color: #4da3cf;
-  padding-bottom: 5px; // Espacio para el subrayado activo
-  &::after { // Pseudo-elemento para el subrayado del activo
-      content: '';
-      display: block;
-      width: 80%; // Ajusta el largo del subrayado
-      height: 3px;
-      background-color: #4da3cf;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-  }
 }
+.desktop-nav-header{
+  &.active { 
+    color: white;
+    padding-bottom: 5px; // Espacio para el subrayado activo
+    &::after { // Pseudo-elemento para el subrayado del activo
+        content: '';
+        display: block;
+        width: 103%; // Ajusta el largo del subrayado
+        height: 3px;
+        background-color: #ac4bc7;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 4px;
+    }
+  }
 }
 
 .media{
@@ -134,6 +137,7 @@ body {
 
 /* Estilos de la seccion de De Interés (FOOER) */
 .footer {
+  font-family: Arial, sans-serif;
   width: 100%;
   background-image: url("../images/fotos/Home/imagenes/BACK_PIE.png");
   background-size: cover;
@@ -142,20 +146,70 @@ body {
   display: flex;
   justify-content: space-between;
   //background-color: #f2f2f2;
-  padding-top:6rem ;
+  padding-top:3rem ;
+  align-items: center;
+  border-bottom: 18px solid #0a94ce;
 }
 .footer-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10rem;
+  width: 100%;
 }
 
 .footer-column {
   flex: 1;
   padding: 0 20px;
   flex-direction: row;
+  ul { // Estilos para las listas dentro de las columnas
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    li {
+        font-size: 20px;
+        margin-bottom: 8px; // Espacio entre los ítems de la lista
+        position: relative;
+        text-decoration: underline;
+        color: white;
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            &:hover {
+                color: #00eeffd3; // Color al pasar el ratón
+                text-decoration: underline;
+            }
+        }
+    }
+}
+h3{
+  font-size: 25px;
+  color: white;
+  background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+  background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+  background-repeat: no-repeat;
+  background-position: center bottom; 
+  padding-bottom: 10px; /* Espacio para el subrayado */
+  text-align: center;
+  width: 100%;
   font-weight: bold;
+}
+p{
+  text-align: center;
+  font-size:18px;
+  padding-top: 10px;
+  margin: 10px;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+  &:hover{
+    color: #00eeffd3;
+    text-decoration: underline;
+  }
+}
 }
 
 /* Línea divisoria más gruesa */
@@ -207,28 +261,6 @@ body {
     justify-content: center;
     gap:1rem;
   }
-  .footer-column{
-    h3{
-      font-size: 25px;
-      color: white;
-      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
-      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
-      background-repeat: no-repeat;
-      background-position: center bottom; 
-      padding-bottom: 10px; /* Espacio para el subrayado */
-      text-align: center;
-    }
-    p{
-      text-align: center;
-      font-size:18px;
-      padding-top: 10px;
-    }
-    a{
-      color: #ffffff;
-    }
-  }
-
-
 /* Estilos whatsapp y dominik icon*/
 
 .enlaces-derecha {
@@ -273,9 +305,48 @@ body {
   :root {
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);
   }
+  .footer-column{
+    justify-content: space-between;
+    text-align: center;
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li{
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    h3{
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
+      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-repeat: no-repeat;
+      background-position: center bottom; 
+      padding-bottom: 10px; /* Espacio para el subrayado */
+      text-align: center;
+    }
+    p{
+      text-align: center;
+      font-size:18px;
+      padding-top: 10px;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none; // Quita el subrayado por defecto de los enlaces
+        transition: color 0.3s ease; // Transición suave para el hover
+        &:hover {
+            color: #4da3cf; // Color azul al pasar el mouse
+            text-decoration: underline; // Añade un subrayado al pasar el mouse si lo deseas
+        }
+    }
+  }
+
   .footer-content{
     display: flex;
     flex-direction:column ;
+    gap: 0rem;
   }
   .starpark-logo{
     width: 50%;
@@ -325,8 +396,8 @@ body {
   .enlaces-derecha {
    
     position: relative; // Fija el aside en relación al viewport
-    top: -62rem;       // Distancia desde el borde superior
-    right: -35rem;     // Distancia desde el borde derecho
+    top: -68rem;       // Distancia desde el borde superior
+    right: -33rem;     // Distancia desde el borde derecho
     width: 6rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
     height: auto;    // Ajusta la altura del contenedor
     z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
@@ -403,7 +474,24 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 10;
-  
+    .desktop-nav-header{
+      &.active { 
+        color: white;
+        padding-bottom: 5px; // Espacio para el subrayado activo
+        &::after { // Pseudo-elemento para el subrayado del activo
+            content: '';
+            display: block;
+            width: 103%; // Ajusta el largo del subrayado
+            height: 3px;
+            background-color: #ac4bc7;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+      }
+    }
     i {
       color: #ffffff;
       font-size: 3rem;
@@ -417,7 +505,8 @@ body {
     height: 100vh;
     top: 0;
     right: -100%;
-    background-color: #400645;
+    background-color:#231884 ;
+    //background: linear-gradient(90deg, rgba(22, 82, 149, 1) 0%, rgba(22, 82, 149, 1) 26%, rgba(10, 148, 206, 1) 100%);
     z-index: 15;
     transition: 0.3s ease;
     padding-top: 3.75rem;
@@ -559,36 +648,9 @@ body {
   :root {
     font-size: calc(0.4vw + 0.4vh + 0.4vmin);
   }
-  .footer {
-    gap: 5rem;
-  }
-  .footer li {
-    margin: 0.1rem 0;
-    width: 10rem;
-  }
-  @media (min-width: 1600px) {
-    .footer li {
-      margin: 0.1rem 0;
-      width: 10rem;
-    }
-    .enlaces-derecha{ 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      bottom: -40rem;
-      right: 0.125rem;
-      left: 100rem;
-      z-index: 5;
-    }
-    a img {
-      width: 16rem;
-      height: 13rem;
-      transition: all 0.3s ease-in-out;
-    }
-  }
+ 
 }
+    
 
 @media (max-width: 768px) {
   .navigation-container .opciones {
@@ -613,11 +675,9 @@ body {
   }
   .sidebar-menu {
     display: block;
-    width: 80vw;
     max-width: 320px;
     right: -100%;
     top: 0;
-    height: 100vh;
     padding-top: 4rem;
     border-radius: 0 10px 10px 0;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
