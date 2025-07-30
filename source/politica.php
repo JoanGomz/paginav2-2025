@@ -15,7 +15,7 @@ include_once '../includes/head.php';
 
         <div class="privacy-content">
             <section class="policy-section">
-                <h2>1. IDENTIFICACIÓN DEL RESPONSABLE DEL TRATAMIENTO DE LA INFORMACIÓN:</h2>
+                <h2>IDENTIFICACIÓN DEL RESPONSABLE DEL TRATAMIENTO DE LA INFORMACIÓN:</h2>
                 <p>Star Park en adelante LA EMPRESA: con personería jurídica, autonomía administrativa y financiera
                     y patrimonio propio.</p>
                 <ul>
@@ -27,29 +27,29 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-    <h2>2. FINALIDADES Y TRATAMIENTO AL CUAL SERÁN SOMETIDOS LOS DATOS PERSONALES:</h2>
+    <h2>FINALIDADES Y TRATAMIENTO AL CUAL SERÁN SOMETIDOS LOS DATOS PERSONALES:</h2>
     <p>Los datos personales que la EMPRESA recolecta, almacena, use, circule y suprima, serán utilizados para alguna de las siguientes finalidades:</p>
 
     <div class="subsection">
-        <h3>2.1. En relación con la naturaleza y las funciones propias de La empresa:</h3>
+        <h3>En relación con la naturaleza y las funciones propias de La empresa:</h3>
         <div class="expandable-section-wrapper">
         <div class="expandable-content" style="display: none;">
         <p>El Tratamiento de los datos se realizará con la finalidad de hacer contacto de tipo comercial a personas interesadas en adquirir los servicios de recreación y fiestas infantiles que ofrece la empresa</p>
 
-        <h3>2.2. En relación con el funcionamiento de la Empresa</h3>
+        <h3>En relación con el funcionamiento de la Empresa</h3>
 
                 <div class="policy-item">
-                    <h4>2.2.1. Recurso Humano:</h4>
+                    <h4>Recurso Humano:</h4>
                     <p>El Tratamiento de los datos se realizará para la vinculación, desempeño de funciones o prestación de servicios, retiro o terminación, dependiendo del tipo de relación jurídica entablada con la Empresa (incluye, entre otros, funcionarios, ex funcionarios judicantes, practicantes y aspirantes a cargos).</p>
                 </div>
 
                 <div class="policy-item">
-                    <h4>2.2.2. Proveedores y Contratistas:</h4>
+                    <h4>Proveedores y Contratistas:</h4>
                     <p>El Tratamiento de los datos se realizará para los fines relacionados con el desarrollo el proceso de gestión contractual de productos o servicios que la Empresa requiera para su funcionamiento de acuerdo a la normatividad vigente.</p>
                 </div>
 
                 <div class="policy-item">
-                    <h4>2.2.3. Seguridad en instalaciones:</h4>
+                    <h4>Seguridad en instalaciones:</h4>
                     <p>El Tratamiento se realizará para la vigilancia y seguridad de las personas, los bienes e instalaciones de la Empresa.</p>
                 </div>
             </div>
@@ -62,7 +62,7 @@ include_once '../includes/head.php';
 
 
             <section class="policy-section">
-                <h2>3. DERECHOS DE LOS TITULARES:</h2>
+                <h2>DERECHOS DE LOS TITULARES:</h2>
                 <ul class="rights-list">
                     <li>Conocer, actualizar y rectificar sus datos personales</li>
                     <li>Solicitar prueba de la autorización otorgada</li>
@@ -74,7 +74,7 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>4. DATOS SENSIBLES:</h2>
+                <h2>DATOS SENSIBLES:</h2>
                 <p>El Titular tiene derecho a optar por no suministrar cualquier información sensible solicitada por
                     la Empresa, relacionada, entre otros, con datos sobre su origen racial o étnico, la pertenencia
                     a sindicatos, organizaciones sociales o de derechos humanos, convicciones políticas, religiosas,
@@ -82,20 +82,20 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>5. DATOS DE MENORES DE EDAD:</h2>
+                <h2>DATOS DE MENORES DE EDAD:</h2>
                 <p>El suministro de los datos personales de menores de edad es facultativo y debe realizarse con
                     autorización de los padres de familia o representantes legales del menor.</p>
             </section>
 
             <section class="policy-section">
-                <h2>6. AUTORIZACIÓN DEL TITULAR:</h2>
+                <h2>AUTORIZACIÓN DEL TITULAR:</h2>
                 <p>Sin perjuicio de las excepciones previstas en la ley, en el Tratamiento se requiere la
                     autorización previa, expresa e informada del Titular, la cual deberá ser obtenida por cualquier
                     medio que pueda ser objeto de consulta y verificación posterior.</p>
             </section>
 
             <section class="policy-section">
-                <h2>7. CASOS EN QUE NO SE REQUIERE LA AUTORIZACIÓN:</h2>
+                <h2>CASOS EN QUE NO SE REQUIERE LA AUTORIZACIÓN:</h2>
                 <ul>
                     <li>Información requerida por la Empresa en ejercicio de sus funciones legales o por orden
                         judicial.</li>
@@ -108,7 +108,7 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>8. ATENCIÓN DE PETICIONES, CONSULTAS Y RECLAMOS:</h2>
+                <h2>ATENCIÓN DE PETICIONES, CONSULTAS Y RECLAMOS:</h2>
                 <div class="contact-info">
                     <p>Para realizar peticiones, consultas o reclamos:</p>
                     <ul>
@@ -119,7 +119,7 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>9. PROCEDIMIENTO PARA EJERCER LOS DERECHOS:</h2>
+                <h2>PROCEDIMIENTO PARA EJERCER LOS DERECHOS:</h2>
                 <div class="subsection">
                     <h3>9.1. Consultas</h3>
                     <p>Se absolverán en un término máximo de diez (10) días hábiles contados a partir de la fecha de
@@ -137,7 +137,7 @@ include_once '../includes/head.php';
             </section>
 
             <section class="policy-section">
-                <h2>10. VIGENCIA:</h2>
+                <h2>VIGENCIA:</h2>
                 <p>La presente política rige a partir de su expedición y las bases de datos se mantendrán vigentes
                     mientras resulte necesario para las finalidades establecidas.</p>
             </section>

@@ -65,7 +65,7 @@
   justify-content: center;
   flex-wrap: wrap;
   /* Permite que los planetas se ajusten en pantallas pequeñas */
-  gap: 10rem;
+  gap: 9rem;
   margin-bottom: 25rem;
   padding: 10rem;
   /* Espacio después de cada fila */
@@ -179,7 +179,23 @@
     top: 1rem;
   } 
 }
-
+ @media(min-width:1280px){
+   .planets-row{
+     gap: 5rem;
+     margin-bottom: 15rem;
+     padding:0;
+   }
+   .inferior{
+     left:23rem;
+   }
+   .planet-earth{
+     left: 5rem;
+   }
+   .footer2{
+     top: 150rem;
+     transform: rotate(0.7deg);
+   }
+ }
 @media (max-width: 768px) {
   /* Ajustes para los títulos */
   .location-central {
@@ -300,6 +316,38 @@
       height: 6vh;
       position: absolute;
       top: 1rem;
+    }
+  }
+  .enlaces-derecha-parques {
+    position: static; // Fija el aside en relación al viewport
+    width: 10rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
+    height: auto;    // Ajusta la altura del contenedor
+    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
+
+  
+    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
+      position: relative; // Vuelve a su posicionamiento normal dentro del aside
+      display: block; // Asegura que el 'a' ocupe su propio espacio
+      width: 100%; // Hace que el 'a' ocupe el ancho del aside
+      height: 100%; // Hace que el 'a' ocupe la altura del aside
+      top: -63rem;
+      left: 32rem;
+    }
+
+    a.dominik-icon img {
+      // **CLAVE:** Resetear los estilos de posicionamiento anteriores
+      position: static; // Vuelve a su posicionamiento normal dentro del <a>
+      left: auto;      // Desactiva 'left'
+      top: auto;       // Desactiva 'top'
+
+      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      height: auto;    // Mantiene la proporción
+      filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }   

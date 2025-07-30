@@ -51,10 +51,17 @@
     transform: translateY(-0.3125rem);
   }
 
-  h2,
+  h2{
+    color:#ffffff;
+    font: size 1.5em;
+    text-align: center;
+    font-weight:900;
+    font-family: sans-serif;
+    z-index: 2;
+  }
   h3,
   h4 {
-    color: #00f7ff;
+    color: #ffff;
     font-size: 1.3em;
     margin-bottom: 1.25rem;
     position: relative;
@@ -64,7 +71,7 @@
   p {
     color: white;
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     z-index: 2;
     position: relative;
@@ -129,7 +136,7 @@
   z-index: 2;
 
   .policy-item {
-    background: rgba(0, 0, 0, 0.2);
+    background: transparent;
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -138,7 +145,7 @@
 
 
 .contact-info {
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
   padding: 1.25rem;
   border-radius: 1rem;
 }
@@ -191,6 +198,12 @@
       right: 8px;
       bottom: 8px;
       border-radius: 10px;
+      h2,h3{
+        color: #fff;
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: bold;
+      }
     }
   }
   .foot-policy{

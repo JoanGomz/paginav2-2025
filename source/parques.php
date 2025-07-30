@@ -104,13 +104,13 @@ include_once '../includes/head.php';
         <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
     </div>
     </div>
+    <aside class="enlaces-derecha-parques">
+    <a href="../source/index.php" class="dominik-icon ">
+        <img src="../images/fotos/Home/Botones/DOMINIC.png" alt="Dominick">
+    </a>
+</aside>
 </main>
-<script>window.SITE_URL = '<?php echo SITE_URL; ?>';</script>
 <!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
 <!-- Contenedor del footer -->
 <?php
 // Incluye el footer

@@ -644,16 +644,31 @@ a{
 
 
 /* Media query para pantallas grandes */
-@media (min-width: 1400px) {
-  :root {
-    font-size: calc(0.4vw + 0.4vh + 0.4vmin);
-  }
+// @media (max-width: 1280px) {
+//   :root {
+//     font-size: calc(0.4vw + 0.4vh + 0.4vmin);
+//   }
+//   .enlaces-derecha{
+//     bottom: -19rem;
+//     right: 9.125rem;
+//   }
+//  .opciones{
+//   gap: 1.3rem;
+//   left: 44%;
+//   top: 16%;
+//  }
+//  .media{
+//   top: -1.8rem;
+//   gap: 3px;
+//   left: 46rem;
+//  } 
  
-}
+ 
+// }
     
 
 @media (max-width: 768px) {
-  .navigation-container .opciones {
+  .navigation-container .direeciones {
     display: none;
   }
   .cc-parques .location-section {
@@ -695,4 +710,135 @@ a{
   .overlay.active {
     display: block;
   }
+}
+/*@media(max-width:834px){
+  .navigation-container{
+    .direeciones{
+      display: none;
+    }
+    .media{
+      left: 7rem;
+      width: 15rem;
+      height: auto;
+    }
+  }
+  .hamburger-menu {
+    margin: 1rem 1rem 0 0;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    .desktop-nav-header{
+      &.active { 
+        color: white;
+        padding-bottom: 5px; // Espacio para el subrayado activo
+        &::after { // Pseudo-elemento para el subrayado del activo
+            content: '';
+            display: block;
+            width: 103%; // Ajusta el largo del subrayado
+            height: 3px;
+            background-color: #ac4bc7;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+      }
+    }
+    i {
+      color: #ffffff;
+      font-size: 3rem;
+    }
+  }
+  
+  /* Menu lateral 
+  .sidebar-menu {
+    position: fixed;
+    width: 15.625rem;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background-color:#231884 ;
+    //background: linear-gradient(90deg, rgba(22, 82, 149, 1) 0%, rgba(22, 82, 149, 1) 26%, rgba(10, 148, 206, 1) 100%);
+    z-index: 15;
+    transition: 0.3s ease;
+    padding-top: 3.75rem;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      padding: 15px 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: block;
+  
+      &:hover {
+        color: #00ffff;
+  
+      }
+    }
+  }
+  
+  .sidebar-menu.active {
+    right: 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+  
+    i {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  .enlaces-derecha{
+    bottom: 29rem;
+    a{
+    img{
+      width: 12rem;
+      height: auto;
+
+    }
+  }
+
+  }
+}*/
+@media(width:428px) {
+  .enlaces-derecha{
+    top: -73rem;
+    right: -33rem;
+  }  
 }
