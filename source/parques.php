@@ -14,7 +14,7 @@ include_once '../includes/head.php';
     <div class="cc-parques">
         <article class="starpark-locations location-section">
             <!-- Bogotá Central -->
-            <section class="location-central">
+            <section class="location-central bogota">
                 <img src="../images/fotos/Parques/imagenes/bogotá.png" alt="SedesEnBogotá">
             </section>
             <!-- Primera fila de planetas - Bogotá -->

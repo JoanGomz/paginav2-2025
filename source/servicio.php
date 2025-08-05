@@ -11,12 +11,12 @@ include_once '../includes/head.php';
     <!-- contenedor principal con la imagen y formulario -->
     <main class="main-container-servicio">
         <section class="servicio-left">
-            <img src="../images/fotos/servicio_al_cliente/imagenes/informacion.png" alt="Información">
+            <img src="../images/fotos/servicio_al_cliente/imagenes/informacion.png" alt="Información"> 
         </section>
 
         <section class="servicio-right">
             <div class="service-form-container">
-                <h2>Servicio al <br> cliente</h2>
+                <img src="../images/fotos/servicio_al_cliente/imagenes/servicio_al_cliente.png" >
 
                 <form class="serviceForm" action="procesarservicio.php" method="post">
                     <div class="service-form-input">
@@ -68,7 +68,7 @@ include_once '../includes/head.php';
                         </div>
                     </div>
                     <div class="service-form-submit">
-                        <button type="submit">Enviar</button>
+                        <button type="submit"><img src="../images/fotos/servicio_al_cliente/imagenes/BOTON.png" alt="Boton de enviar"></button>
                     </div>
                 </form>
             </div>
@@ -76,10 +76,9 @@ include_once '../includes/head.php';
     </main>
 </div>
 <!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
+<div class="foot-service">
+    <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+    </div>
 <?php
 // Incluye el footer
 include_once '../includes/footer.php';

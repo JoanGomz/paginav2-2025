@@ -41,12 +41,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const current = normalize(currentPathname);
     const target = normalize(linkPathname);
 
+    // Elimina la clase 'active' de todos los enlaces al inicio del ciclo
+    link.classList.remove('active');
+
     // Coincidencia exacta
     if (current === target) {
       link.classList.add('active');
     }
 
-    // Coincidencia por subpágina (como parques.php y parque.php)
+    //Coincidencia por subpágina (ej: parques.php y parque.php)
     else if (
       ['parques.php', 'parque.php'].includes(current.split('/').pop()) &&
       linkPathname.includes('parques.php')
@@ -58,8 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
     else if (current === '/' && linkPathname.includes('index.php')) {
       link.classList.add('active');
     }
+    
+   
+    // Si la URL termina exactamente en '/servicios'
+    else if (current.endsWith('/servicios') && linkText.includes('servicios')) {
+        link.classList.add('active');
+    }
+    
+    // Si la URL termina exactamente en '/servicio.php para servicio al cliente'
+    else if (current.endsWith('servicio.php') && linkText.includes('contacto')) {
+        link.classList.add('active');
+    }
 
-    //  Si estás en preguntas frecuentes, resaltar SERVICIOS
+    // Si estás en preguntas frecuentes, resaltar SERVICIOS
     else if (
       current.includes('preguntasfrecuentes') &&
       linkText.includes('servicios')
@@ -67,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.classList.add('active');
     }
 
-    //si esta en politica, resaltar servicios
+    //Si está en política, resaltar servicios
     else if(
       current.includes('politica')&&
       linkText.includes('servicios')
@@ -76,6 +90,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
 // script de leer mas y leer menos en politica de privacidad
 document.addEventListener('DOMContentLoaded', function() {
   // Seleccionamos el contenedor principal de la funcionalidad de "leer más/menos" para esta sección

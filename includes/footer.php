@@ -27,7 +27,7 @@
         <h3>Normatividad</h3> 
         <ul>
             <li><a href="<?php echo SITE_URL; ?>source/politica.php">Política Tratamiento De Datos</a></li>
-            <li><a href="#">Trabaja Con Nosotros</a></li> </ul>
+            <li><a href="<?php echo SITE_URL; ?>source/contacto.php">Trabaja Con Nosotros</a></li> </ul>
     </div>
 
 </div>

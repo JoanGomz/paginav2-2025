@@ -65,9 +65,8 @@
   justify-content: center;
   flex-wrap: wrap;
   /* Permite que los planetas se ajusten en pantallas pequeñas */
-  gap: 9rem;
-  margin-bottom: 25rem;
-  padding: 10rem;
+  gap: 7rem;
+  margin-bottom: 5rem;
   /* Espacio después de cada fila */
 }
 .superior{
@@ -167,10 +166,19 @@
 .planet-saturn {
   filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.6));
 }
+.enlaces-derecha-parques{
+  position: absolute;
+  top: 65rem;
+  left: 99rem;
+  img{
+    width: 15rem;
+    height: auto;
+  }
 
+}
 .footer2{      
   position: absolute;
-  top:217rem;
+  top:133rem;
   transform:rotate(0.7deg) ;
   z-index: 1;
   img{
@@ -179,7 +187,7 @@
     top: 1rem;
   } 
 }
- @media(min-width:1280px){
+ @media(width:1280px){
    .planets-row{
      gap: 5rem;
      margin-bottom: 15rem;
@@ -196,7 +204,7 @@
      transform: rotate(0.7deg);
    }
  }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   /* Ajustes para los títulos */
   .location-central {
     width: 12rem;
@@ -220,23 +228,23 @@
   
   /* Posicionamiento específico para planetas de Bogotá */
   .starpark-locations .planet-orange {
-    top: 0%;
-    left: 25%;
+    top: -50%;
+    left: 7%;
   }
   
   .starpark-locations .planet-purple {
-    top: 70%;
-    right: 20%;
+    top: 120%;
+    right: 6%;
   }
   
   .starpark-locations .planet-yellow {
-    top: 70%;
-    left: 25%;
+    top: 120%;
+    left: 6%;
   }
   
   .starpark-locations .planet-pink {
-    bottom: 41%;
-    right: 20%;
+    top: -50%;
+    right: 6%;
   }
   
   /* Ajustes para la sección Resto del País */
@@ -272,29 +280,29 @@
   
   /* Posicionamiento específico para cada planeta de Resto del País */
   .resto-pais .planet-red {
-    top: 9rem;
-    left: -50%;
+    top: -3rem;
+    left: -42%;
   }
   
   .resto-pais .planet-saturn {
-    top:114%;
-    right: 20%;
+    top:2rem;
+    right: 6%;
   }
   
   .resto-pais .planet-earth {
-    top: -30%;
-    left: -7%;
+    top: -11rem;
+    left: -0%;
     transform: translateX(-50%);
   }
   
   .resto-pais .planet-blue {
-    bottom: 40%;
-    left: 20%;
+    top: -15rem;
+    left: 6%;
   }
   
   .resto-pais .planet-green {
-    bottom: 40%;
-    right: 20%;
+    top: -15rem;
+    right: 6%;
   }
   
   /* Ajustar comportamiento de hover en móvil */
@@ -319,20 +327,12 @@
     }
   }
   .enlaces-derecha-parques {
-    position: static; // Fija el aside en relación al viewport
+    position: absolute; // Fija el aside en relación al viewport
     width: 10rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
     height: auto;    // Ajusta la altura del contenedor
-    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
-
-  
-    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
-      position: relative; // Vuelve a su posicionamiento normal dentro del aside
-      display: block; // Asegura que el 'a' ocupe su propio espacio
-      width: 100%; // Hace que el 'a' ocupe el ancho del aside
-      height: 100%; // Hace que el 'a' ocupe la altura del aside
-      top: -63rem;
-      left: 32rem;
-    }
+    z-index: 100;
+    top: 70rem;
+    left: 39rem;    // Asegura que esté por encima de la mayoría de los otros elementos
 
     a.dominik-icon img {
       // **CLAVE:** Resetear los estilos de posicionamiento anteriores
@@ -351,3 +351,163 @@
     }
   }
 }   
+@media(min-width:320px) and (max-width:420px){
+  .cc-parques{
+    .location-section{
+      .location-central{
+        img{
+          position: relative;
+          top: -15rem;
+        }
+      }
+    }
+  }
+  .location-central {
+    width: 12rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajuste general para primera sección (Bogotá) */
+  .starpark-locations .planets-row {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Ajustes para los planetas de Bogotá - TAMAÑO AUMENTADO */
+  .starpark-locations .planet-item {
+    position: absolute;
+    width: 13rem;  /* Aumentado de 7rem a 10rem */
+    height: auto; /* Aumentado de 7rem a 10rem */
+  }
+  
+  /* Posicionamiento específico para planetas de Bogotá */
+  .starpark-locations .planet-orange {
+    top: -5%;
+    left: 7%;
+  }
+  
+  .starpark-locations .planet-purple {
+    top: 40%;
+    right: 6%;
+  }
+  
+  .starpark-locations .planet-yellow {
+    top: 40%;
+    left: 6%;
+  }
+  
+  .starpark-locations .planet-pink {
+    top: -5%;
+    right: 6%;
+  }
+  
+  /* Ajustes para la sección Resto del País */
+  .resto-pais {
+    margin-top: 0;
+  }
+  .location-central{
+    height: 40%;
+    width: 40%;
+  }
+  .resto-pais .planets-row {
+    position: relative;
+    height: auto;
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  /* Resetear todos los estilos previos para los planetas de Resto del País */
+  .resto-pais .planet-item,
+  .resto-pais .planet-item2,
+  .resto-pais .planet-item-3 {
+    position: absolute;
+    width: 10rem;  /* Aumentado de 7rem a 10rem */
+    height: 10rem; /* Aumentado de 7rem a 10rem */
+    padding: 0;
+    margin: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+  
+  /* Posicionamiento específico para cada planeta de Resto del País */
+  .resto-pais .planet-red {
+    top: -1rem;
+    left: -52%;
+  }
+  
+  .resto-pais .planet-saturn {
+    top:2rem;
+    right: 6%;
+  }
+  
+  .resto-pais .planet-earth {
+    top: -11rem;
+    left: -6%;
+    transform: translateX(-50%);
+  }
+  
+  .resto-pais .planet-blue {
+    top: -15rem;
+    left: 6%;
+  }
+  
+  .resto-pais .planet-green {
+    top: -15rem;
+    right: 6%;
+  }
+  
+  /* Ajustar comportamiento de hover en móvil */
+  .resto-pais .planet-item:hover,
+  .resto-pais .planet-item2:hover {
+    transform: scale(1.1);
+  }
+  
+  .resto-pais .planet-earth:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+  .footer2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 5rem;
+    img {
+      width: 100%;
+      height: 7vh;
+      position: absolute;
+      top: 1rem;
+    }
+  }
+  .bogota{
+    position: relative;
+    top: 14rem;
+  }
+  .enlaces-derecha-parques {
+    position: absolute; // Fija el aside en relación al viewport
+    width: 8rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
+    height: auto;    // Ajusta la altura del contenedor
+    z-index: 100;
+    top: 54rem;
+    left: 29rem;    // Asegura que esté por encima de la mayoría de los otros elementos
+
+    a.dominik-icon img {
+      // **CLAVE:** Resetear los estilos de posicionamiento anteriores
+      position: static; // Vuelve a su posicionamiento normal dentro del <a>
+      left: auto;      // Desactiva 'left'
+      top: auto;       // Desactiva 'top'
+
+      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      height: auto;    // Mantiene la proporción
+      filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
