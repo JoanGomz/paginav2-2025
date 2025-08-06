@@ -129,7 +129,7 @@ function cargarImagenesCarrusel(galeriaSelector, itemsSelector) {
                 content.appendChild(img);
             } else {
                 content = document.createElement('img');
-                content.classList.add('park-image-media');
+                content.classList.add('park-image-media-service');
                 content.src = src;
                 content.alt = "Imagen del parque";
             }

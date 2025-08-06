@@ -407,7 +407,8 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width:800px)
+ {
   .nave-container {
     .sede-container {
       position: absolute;
@@ -431,19 +432,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -4rem;
+    top: -1rem;
     left: -0.5rem;
   }
   .park-info {
     width: 100%;
     display: flex;
     flex-direction: column;
+    .galeria-item{
+      img{
+        position: relative;
+        left: 22px;
+      }
+    }
   }
   .planeta{
     img{
       position: relative;
       top: 0px;
-      left: -80px;
+      left: -135px;
       width: 52vw;
       height: auto;
     }
@@ -509,6 +516,8 @@
           font-size: 3em;
           font-weight: bold;
           margin: 2rem 2rem;
+          position:relative;
+          top: 3rem;
         }
       }
     }
@@ -519,29 +528,14 @@
     top: -133px;
     }
   }
-  .ubication{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    width: 103%;
-    height: 37vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .ubication-map {
-      position: relative;
-      width: 208vw;
-      height: 105vh;
-      transform: rotate(-2deg);
-      z-index: 1;
-  }
-  .map-container{
-    iframe{
-      max-width: 110%;
-      height: 25vh;
-      left: 1%;
+  .llegar{
+    top: 7rem;
+
+    .map{
+      iframe{
+        top: -1rem;
+      }
     }
-  }
   }
   .sede-container {
     position: absolute;
@@ -559,7 +553,7 @@
         width: 100%;
         height: 100%;
         position: relative;
-        top: -2.6rem;
+        top: 0.5rem;
       }
       /* background-color: rgb(0, 0, 0); */
     }
@@ -571,8 +565,8 @@
     top: -107rem;
     left: 9px;
     img {
-      width: 100%;
-      height: 6vh;
+      width: 104%;
+      height: 8vh;
       position: absolute;
       top:104rem;
       left: 0rem;
@@ -580,72 +574,105 @@
   }
 }
 @media(min-width: 320px) and (max-width:420px){
- .llegar{
-    width: 100%;
-    height: 40vh;
-    top: 1rem;
-  
+  .planeta{
     img{
-    width: 102%;
-    height: 8vh;
-    position: relative;
-    top:3.5rem;
-    left: -1rem;
-    z-index:1;
-  }
- 
-  .map {
-    transform: rotate(-2.1deg);
-    position: relative;
-    top: -0.5rem;
-    height: 100%;
-    iframe {
-      max-width: 110%;
-      height: 115%;
-      top:0rem ;
+      width: 40vw;
+      top: 14px;  
+      left:-7rem;
     }
   }
-  .park-info {
-   
-    .galeria-item {
-    
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
+  .park-carousel-container{
+    height: 55vh;
+    left: 2rem;
+    top: -1rem;
+  }
+  .sede-container{
+    width: 100%;
+    left: 0;
+    top:8.5%;
+
+    .park-site{
+      img{
+        width:100%;
         position: relative;
-        left: 10px;
+        top:-1rem;
       }
     }
   }
-}
-.park-site {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  img{
-    width: 100%;
-    height: 100%;
+  .llegar{
+     width: 100%;
+     height: 40vh;
+     top: 1rem;
+   
+     img{
+     width: 102%;
+     height: 8vh;
+     position: relative;
+     top:3.5rem;
+     left: -1rem;
+     z-index:1;
+   }
+  
+   .map {
+     transform: rotate(-2.1deg);
+     position: relative;
+     top: -0.5rem;
+     height: 100%;
+     iframe {
+       max-width: 110%;
+       height: 115%;
+       top:0rem ;
+       transform: rotate(-0.1deg);
+     }
+   }
+    
+ }
+ .hablemos-content{
+  flex-direction: column;
+  .dominick-container{
+    width: 90%;
+    top: 0;
+  }
+ }
+ .hablemos-button{
+  p{
     position: relative;
-    top: -1.6rem;
+    top: 5rem;
   }
-  /* background-color: rgb(0, 0, 0); */
-}
-}
-@media(min-width:390px) and (max-width:414px) and (height:892px){
-  .info-container{
-    top:0;
+ }
+ .park-info {
+  flex-direction: column;
+   .galeria-item {
+   
+     img {
+       max-width: 100%;
+       max-height: 100%;
+       object-fit: contain;
+       position: relative;
+       left: 10px;
+     }
+   }
+ }
+ .info-container{
+   top:0;
+ }
+ .map-container{
+   top:15rem;
+   iframe{
+     width: 103vw;
+     height: 23vh;
+     position: absolute;
+     top: -20.9rem;
+   }
+ }
+ .footer-2{
+  img{
+    height: 6vh;
+    top: 192rem;
+    transform: rotate(1deg);
   }
-  .map-container{
-    top:15rem;
-    iframe{
-      width: 103vw;
-      height: 23vh;
-      position: absolute;
-      top: -20.9rem;
-    }
-  }
-}
+ }
+ }
 @media(min-width:414px){
   .map-container{
     top:15rem;
@@ -657,7 +684,76 @@
     }
   }
 }
-@media(width:1280px){
+@media(width:820px){
+  .llegar{
+    top: 4rem;
+    .map{
+      top: 3.5rem;
+      iframe{
+        height: 45vh;
+      }
+  
+    }
+  }
+  .footer-2{
+    top: 78rem;
+   }
+ }
+@media(min-width:820px) and (max-width:834px){
+  .planeta{
+    img{
+      top: 30px;
+      width: 25vw;
+    }
+  }
+.sede-container{
+  width: 80%;
+  top: 9.5%;
+  left: 10%;
+}
+.park-carousel{
+  width: 100%;
+  height: 50%;  
+}
+.park-carousel-container{
+  width: 108vw;
+}
+.hablemos-content{
+  flex-direction: column;
+  .dominick-container{
+    width: 50%;
+    top: -115px;
+    img{
+      width: 100%;
+      position: relative;
+      top: 181px;
+    }
+  }
+}
+.hablemos-button{
+  p{
+    position: relative;
+    top: 7rem;
+  }
+}
+.llegar{
+  top: 3rem;
+  .map{
+    top: 3.5rem;
+    iframe{
+      height: 45vh;
+    }
+
+  }
+}
+.footer-2{
+  img{
+    top: 113rem;
+    height: 8vh;
+  }
+}
+}
+@media(min-width:1280px){
   .sede-container{
     top: 9.5%;
   }

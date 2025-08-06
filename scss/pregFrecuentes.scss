@@ -133,7 +133,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width:790px){
   .preguntas-frecuentes-container {
     width: 100%;
     height: 6rem;
@@ -141,10 +141,12 @@
       width: 106vw;
       height: auto;
       object-fit: contain;
+      top: 1rem !important;
     }
   }
   .faq-container{
     padding: 0;
+    top:1rem !important;  
   }
   .cta-section h2 {
     font-size: 2em;
@@ -168,8 +170,20 @@
   }
 }
 @media(max-width:834px){
+  .preguntas-frecuentes-container{
+    img{
+      position: relative;
+      top: -13rem;
+    }
+  }
   .cta-section{
     position: relative;
     top: 4rem;
+    height: 135vh;
+  }
+  .faq-container{
+    position: relative;
+    top: -22rem;
+    padding: 0;
   }
 }

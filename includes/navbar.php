@@ -23,10 +23,10 @@
         <i class="fa-solid fa-xmark"></i>
     </div>
     <ul>
-        <li><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/index.php">Inicio</a></li>
-        <li><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/parques.php">Parques</a></li>
-        <li><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/servicios.php">Servicios</a></li>
-        <li><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/contacto.php">Contacto</a></li>
+        <li><a href="<?php echo SITE_URL; ?>source/index.php">Inicio</a></li>
+        <li><a  href="<?php echo SITE_URL; ?>source/parques.php">Parques</a></li>
+        <li><a  href="<?php echo SITE_URL; ?>source/servicios.php">Servicios</a></li>
+        <li><a  href="<?php echo SITE_URL; ?>source/contacto.php">Contacto</a></li>
     </ul>
 </section>
 <div class="overlay"></div>

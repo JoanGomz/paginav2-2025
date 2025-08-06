@@ -182,37 +182,6 @@
 /* Responsive */
 @media (min-width: 340px) and (max-width:420px) {
 
-    .main-container-servicio{
-        .servicio-left{
-            position: relative;
-            top: 1rem;
-        }
-    }
-    .servicio-right{
-        top: -7rem;
-        position: relative;
-        img{
-            top: 8rem;
-            height:11vh;
-        }
-        .service-form-container{
-            .serviceForm{
-                top: 30%;
-            }
-        }
-}
-.foot-service{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: -4rem;
-    img{
-        width: 100%;
-        height: 7vh;
-}
-}
-}
-@media (max-width: 768px) {
     .main-container-servicio {
         flex-direction: column;
         margin-top: 0;
@@ -227,7 +196,17 @@
             img {
                 width: 100%;
                 height: 100%;
+                position: relative;
+                top: 9rem;
             }
+        }
+    }
+    .servicio-right{
+        .service-form-container{
+            top: -8rem;
+        }
+        img{
+            top: 7rem;
         }
     }
     .servicio-left,
@@ -237,5 +216,65 @@
 
     .form-container {
         padding-top: 120px;
+    }
+.foot-service{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -4rem;
+    img{
+        width: 100%;
+        height: 7vh;
+}
+}
+}
+@media (min-width: 768px) {
+    .main-container-servicio {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .main-container-servicio {
+        /* Lado izquierdo con la imagen de información */
+        .servicio-left {
+            width: 100vw;
+            height: 40%;
+            padding: 0;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: 7rem;
+            }
+        }
+    }
+    .servicio-right{
+        img{
+            top: -5rem;
+        }
+    }
+    .servicio-left,
+    .servicio-right {
+        width: 100%;
+    }
+
+    .form-container {
+        padding-top: 120px;
+    }
+}
+@media (min-width:820px)and (max-width:834px){
+    .servicio-right{
+        img{
+            top: -2rem;
+        }
+        .service-form-container{
+            .serviceForm{
+                top: 19%;
+                .service-form-submit{
+                    width: 70%;
+                    translate: 100px;
+                }
+            }
+        }
     }
 }
