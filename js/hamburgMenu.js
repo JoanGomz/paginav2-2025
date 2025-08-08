@@ -80,6 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       link.classList.add('active');
     }
+    else if(
+      current.includes('cotizar') &&
+      linkText.includes('servicios')
+    ){
+      link.classList.add('active');
+    }
 
     //Si está en política, resaltar servicios
     else if(
@@ -122,3 +128,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 });
+//script del aside
+var dropdownButton = document.querySelector('.dropbtn');
+
+
+dropdownButton.addEventListener('click', function() {
+  document.getElementById("myDropdown").classList.toggle("show");
+});
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn') && !event.target.closest('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

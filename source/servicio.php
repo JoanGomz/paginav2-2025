@@ -67,6 +67,11 @@ include_once '../includes/head.php';
                             <label for="descripcion">Descripción</label>
                         </div>
                     </div>
+                    <div class="contact-form-terms">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones.
+                                <a href="#">Ver Términos de Uso</a></label>
+                        </div>
                     <div class="service-form-submit">
                         <button type="submit"><img src="../images/fotos/servicio_al_cliente/imagenes/BOTON.png" alt="Boton de enviar"></button>
                     </div>

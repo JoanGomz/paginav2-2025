@@ -101,10 +101,7 @@ include_once '../includes/head.php';
     </div>
 </main>
 <!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
+
 <!-- Contenedor del footer -->
 <?php
 // Incluye el footer

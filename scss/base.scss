@@ -264,7 +264,7 @@ a{
 /* Estilos whatsapp y dominik icon*/
 
 .enlaces-derecha {
-  display: flex;
+  display: fixed;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -321,6 +321,7 @@ a{
       font-size: 3rem;
     }
   }
+ 
   
   /* Menu lateral */
   .sidebar-menu {
@@ -360,6 +361,12 @@ a{
     }
   }
   
+  .home{
+    i{
+      color: white;
+      font-size: 2rem;
+    }
+  }
   .sidebar-menu.active {
     right: 0;
   }
@@ -578,7 +585,7 @@ a{
 
   
     a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
-      position: relative; // Vuelve a su posicionamiento normal dentro del aside
+      position: fixed; // Vuelve a su posicionamiento normal dentro del aside
       display: block; // Asegura que el 'a' ocupe su propio espacio
       width: 100%; // Hace que el 'a' ocupe el ancho del aside
       height: 100%; // Hace que el 'a' ocupe la altura del aside

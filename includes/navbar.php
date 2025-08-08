@@ -23,7 +23,9 @@
         <i class="fa-solid fa-xmark"></i>
     </div>
     <ul>
-        <li><a href="<?php echo SITE_URL; ?>source/index.php">Inicio</a></li>
+        <li><a class="home" href="<?php echo SITE_URL; ?>source/index.php">
+        <i class="fa-solid fa-roller-coaster"></i>    
+        Inicio</a></li>
         <li><a  href="<?php echo SITE_URL; ?>source/parques.php">Parques</a></li>
         <li><a  href="<?php echo SITE_URL; ?>source/servicios.php">Servicios</a></li>
         <li><a  href="<?php echo SITE_URL; ?>source/contacto.php">Contacto</a></li>

@@ -120,7 +120,7 @@
         .main-contact-form {
             position: relative;
             width: 100%;
-            background-color: #08f4fc;
+            
 
             .contact-form-bgImage {
                 width: 100%;
@@ -347,9 +347,21 @@
 }
 
 /* Media queries simplificadas */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width:800px){
     .contact-panel {
-        height: 150vh;
+        height: 130vh;
+        .formulario-contacto{
+            .main-contact-form{
+                .contact-form-container{
+                    .contact-form{
+                        .contact-form-terms{
+                            position: relative;
+                            top: 4.5rem;
+                        }
+                    }
+                }
+            }
+        }
         /* Sección título */
         .informacion-contacto {
             .info-container {
@@ -406,6 +418,7 @@
             width: 100%;
             position: relative;
             top: -29rem;
+            height: 90%;
             
             .main-contact-form {
                 overflow: hidden;
@@ -420,11 +433,11 @@
                 .contact-form-container {
 
                     .contact-form {
-                        top: -1rem;
-                        left: 0rem;
+                        top: 6rem;
+                        left: 4rem;
                         // transform: translateX(-50%);
                         width: 100%;
-                        height: 100vh;
+                        height:70vh;
                         .contact-form-input {
                             .contact-input-icon {
                                 input,
@@ -441,6 +454,9 @@
                         }
                         .contact-register-btn {
                             width: 50%;
+                            position: relative;
+                            top: 4rem;
+                            left: -3rem;
                         }
                     }
                 }
@@ -455,35 +471,164 @@
             top: -5.2rem;
         }
     }
+    .email{
+        width: 85%;
+        height: 3.5rem;
+    }
+    .comments{
+        width: 85%;
+    }
     .footer-contact{
-        top: 79rem;
+        top: 85rem;
     }
 }
-@media (min-width:820) and (max-width:834px){
+@media(width:800px){
+    .equipo-star-park{
+        h3{
+            position: relative;
+            top: -1rem;
+            left: -4rem;
+        }
+    }
     .contact-panel{
-        .informacion-contacto{
-            .info-container{
-                .monitor-container{
-                    .escribenos{
-                        top: 12rem;
-                        left: 13rem;
-                        .redes-sociales-contacto{
-                            top:0.5rem;
-                        }
-                        h3{
-                            left: 13.5rem;
-                        }
-                        img{
-                            width: 60%;
-                            left: 12rem;
-                        }
-                    }
-                    img{
-                        top: 0;
+        height: 100vh;
+        .formulario-contacto{
+            .main-contact-form{
+                height: 80vh;
+                .contact-form-container{
+                    .contact-form{
+                        left: 5rem;
                     }
                 }
             }
         }
+        .informacion-contacto{
+            top:-6rem;
+        }
+    }
+    .email{
+        width: 82%;
+    }
+    .comments{
+        width: 82%;
+    }
+    .footer-contact{
+        top: 86rem;
+    }
+}
+@media (min-width:820px) and (max-width:839px){
+    .media-contacto{
+        a{
+            top: -4.6rem;
+            left: 32.5rem;
+        }
+    }
+    .contact-panel{
+        height: 115vh;
+        .informacion-contacto{
+            .info-container{
+                .monitor-container{
+                    img{
+                        top: -3rem;
+                        height:auto;
+                    }
+                    .escribenos{
+                        top: 9rem;
+                        left: 13rem;
+                        .redes-sociales-contacto{
+                            top:0.5rem;
+                            img{
+                                width: 45vw;
+                            }
+                            h3{
+                                left: 19.5rem; 
+                                top: 8rem;
+                                width: 100vh;
+                            }
+                        }
+                        h3{
+                            left: 13.5rem ;
+                        }
+                        img{
+                            width: 60% ;
+                            left: 12rem;
+                        }
+                    }
+                }
+            }
+        }
+        .formulario-contacto{
+            .main-contact-form{
+                .contact-form-container{
+                    .contact-form{
+                        width: 100%;
+                        left: 5rem;
+                        .contact-register-btn{
+                            position: relative;
+                            left: -4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .equipo-star-park{
+        position: relative;
+        left: -4rem;
+
+    }
+    .trabaja-con-nosotros{
+        .contact-trabaja-banner{
+            top: -4rem !important;
+        }
+    }
+    .email{
+        width: 81.5%;
+    }
+    .comments{
+        width: 81.5%;
+    }
+    .footer-contact{
+        top: 86rem;
+    }
+}
+@media (min-width:834px) and (max-width:840px){
+    .media-contacto{
+        a{
+            top: -4.9rem;
+        }
+    }
+    .email{
+        width: 80.5%;
+    }
+    .comments{
+        width:80.5%;
+    }
+    .equipo-star-park{
+        h3{
+        position: relative;
+        left: 0rem;
+        }
+    }
+    .contact-panel{
+        .formulario-contacto{
+            .main-contact-form{
+                .contact-form-container{
+                    .contact-form{
+                        .contact-register-btn{
+                            img{
+                                position: relative;
+                                left: 0rem;
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-contact{
+        top: 88rem;
     }
 }
 @media(max-width:420px){
@@ -500,7 +645,7 @@
                     img{
                         width: 100%;
                         height: 40%;
-                        top: 0rem;
+                        top: 0.5rem;
                     }
                     .escribenos{
                         h3{
@@ -537,7 +682,7 @@
         .trabaja-con-nosotros {
             .contact-trabaja-banner {
                 width: 100%;
-                height: 14vh;
+                height: auto;
                 left: 0rem;
                 top: -31rem;
                 // height: 100%;
@@ -557,9 +702,9 @@
 
                     .contact-form {
                         top: 5%;
-                        left: 25%;
+                        left: 10%;
                         // transform: translateX(-50%);
-                        width: 55%;
+                        width: 80%;
                         height: 100%;
                         .contact-form-input {
                             .contact-input-icon {
@@ -572,6 +717,7 @@
                                     border: 0.0625rem solid rgba(0, 247, 255, 0.842);
                                     border-radius: 1rem;
                                     color: white;
+                                   
                                 }
                             }
                         }
@@ -582,6 +728,14 @@
                 }
             }
         }
+    }
+    .email{
+        height: 31px;
+
+    }
+    .number{ 
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .media-contacto{
         a{
@@ -595,3 +749,10 @@
         top: 79rem;
     }
 }
+@media(width:360px){
+    .footer-contact{
+        top:81rem; 
+    
+    }
+}
+

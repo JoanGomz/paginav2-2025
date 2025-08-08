@@ -294,7 +294,7 @@
   img{
     position: relative;
     top: 52px;
-    left: -92px;
+    left: -8.5rem;
     width: 17vw;
     height: auto;
   }
@@ -753,7 +753,7 @@
   }
 }
 }
-@media(min-width:1280px){
+@media(max-width:1280px){
   .sede-container{
     top: 9.5%;
   }

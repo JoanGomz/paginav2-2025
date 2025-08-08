@@ -89,8 +89,8 @@ include_once '../includes/head.php';
                         <div class="contact-form-input">
                             <div class="contact-input-icon">
                                 <i class="fa-solid fa-phone-flip"></i>
-                                <input type="tel" name="telefono" required>
-                                <label>Número telefónico...</label>
+                                <input class="number" placeholder="Numero de telefono.." type="tel" name="telefono" required>
+        
                             </div>
                         </div>
                         </div>
@@ -107,8 +107,7 @@ include_once '../includes/head.php';
 
                         <div class="contact-form-terms">
                             <input type="checkbox" id="terminos" name="terminos" required>
-                            <label for="terminos">Acepto los términos y condiciones.
-                                <a href="#">Ver Términos de Uso</a></label>
+                            <label for="terminos">Aplican los términos y condiciones.<a href="#">Ver Términos de Uso</a></label>
                         </div>
 
                         <button class="contact-register-btn" type="submit"><img src="../images/fotos/contactos/imagenes/registrar.png" alt="Boton para registrarse"></button>

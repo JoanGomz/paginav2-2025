@@ -187,3 +187,11 @@
     padding: 0;
   }
 }
+@media(max-width:400px){
+  .cta-section{
+    height:auto;
+  }
+  .faq-question{
+    font-size: 12px;
+  }
+}
