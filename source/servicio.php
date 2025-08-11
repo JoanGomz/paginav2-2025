@@ -68,9 +68,18 @@ include_once '../includes/head.php';
                         </div>
                     </div>
                     <div class="contact-form-terms">
-                            <input type="checkbox" id="terminos" name="terminos" required>
-                            <label for="terminos">Acepto los términos y condiciones.
-                                <a href="#">Ver Términos de Uso</a></label>
+                            <input type="checkbox" class="terminos" id="terminos" name="terminos" required>
+                            <label class="condiciones" for="terminos">APLICAN TERMINOS Y CONDICIONES
+                                </label><br>
+                                
+                                <div class="Terminos_adicionales">
+                                <span>Antes de presentar una PQRS</span> 
+                                <span>Politica de tratamiento de datos</span>
+                                </div>
+                                <div class="Terminos_adicionales adi">
+                                <span>Autorizacion de tratamiento de datos</span>
+                                <span>Aviso de privacidad </span>
+                                </div> 
                         </div>
                     <div class="service-form-submit">
                         <button type="submit"><img src="../images/fotos/servicio_al_cliente/imagenes/BOTON.png" alt="Boton de enviar"></button>

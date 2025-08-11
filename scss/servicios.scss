@@ -279,8 +279,35 @@
 }
 
 
-
-@media (max-width: 900px) {
+@media(min-width:320px) and (max-width:420px)
+{
+  .title-servicios{
+    img{
+      position: relative;
+      top: 5rem;
+    }
+  }
+  .servicios{
+    height: 100%;
+  }
+  .park-carousel-container-service {
+    height: 53vh ;
+    width: 100%;
+  }
+  .park-carousel-items-service .park-image-media {
+    position: relative;
+    height: 57vh ;
+    top: -15rem ;
+    width: 84vw ;
+    left: -27rem;
+  }
+  .cta-section-service{
+    img{
+      width: 90%;
+    }
+  }
+}
+@media (min-width:900px) and (max-width: 900px) {
   .park-carousel-container-service {
     height: 40vh;
   }
@@ -307,7 +334,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width:600px) and (max-width: 600px) {
   .park-carousel-container-service {
     height: 28vh;
   }

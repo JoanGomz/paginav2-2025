@@ -98,8 +98,10 @@
                     border: 0.3rem solid #19b0b7;
                     border-radius: 1rem;
                     color: white;
+                    box-shadow: 1px 1px black;
+                    
                 }
-
+                
                 textarea {
                     height: 5rem;
                     resize: none;
@@ -166,7 +168,83 @@
         }
     }
 }
+.contact-form-terms{
+    text-align: justify;
+}
+.terminos {
+    /* Tamaño aumentado */
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+    /* Estilo personalizado */
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0.0625rem solid rgba(0, 247, 255, 0.5);
+    border-radius: 0.25rem;
+    position: relative;
+    outline: none;
+    top: 0.6rem;
+    
 
+    /* Efecto al marcar el checkbox */
+    &:checked {
+        background-color: rgba(0, 247, 255, 0.3);
+        border-color: #00f7ff;
+
+        /* Icono de check personalizado */
+        &::before {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            color: #00f7ff;
+            font-weight: bold;
+        }
+    }
+}
+.condiciones{
+    color: #19809f;
+    text-align: center;
+    position: relative;
+    left: 3.2rem;
+    font-size: larger;
+    font-weight: normal;
+}
+.Terminos_adicionales {
+    width: 100%;
+    display: flex; 
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    gap: 2rem; /* Espacio entre los elementos */
+    position: relative;
+    top: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.5rem;
+    &:last-child{
+        left: -1.3rem;
+    }
+    span {
+        position: relative; /* Clave para el posicionamiento del pseudo-elemento */
+    }
+
+    span:not(:last-child)::after {
+        content: "/";
+        position: absolute;
+        right: -1.1rem; /* Ajusta este valor para el espaciado */
+        top: 50%;
+        transform: translateY(-50%);
+        color: #457bbd;
+        text-shadow:1px 0 #457bbd,-1px 0 #457bbd,0 1px #457bbd,0 -1px #457bbd;
+    }
+   
+}
 .foot-service{
     width: 100%;
     height: 0vh;
@@ -207,6 +285,9 @@
         }
         img{
             top: 7rem;
+        }
+        .serviceForm{
+            top: 26% !important;
         }
     }
     .servicio-left,
@@ -294,7 +375,7 @@
 @media (min-width:820px)and (max-width:834px){
     .servicio-right{
         img{
-            top: -2rem;
+            top: -5rem;
         }
         .service-form-container{
             .serviceForm{

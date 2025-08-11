@@ -26,9 +26,9 @@
         <li><a class="home" href="<?php echo SITE_URL; ?>source/index.php">
         <i class="fa-solid fa-roller-coaster"></i>    
         Inicio</a></li>
-        <li><a  href="<?php echo SITE_URL; ?>source/parques.php">Parques</a></li>
-        <li><a  href="<?php echo SITE_URL; ?>source/servicios.php">Servicios</a></li>
-        <li><a  href="<?php echo SITE_URL; ?>source/contacto.php">Contacto</a></li>
+        <li class="direeciones"><a class="desktop-nav-header"  href="<?php echo SITE_URL; ?>source/parques.php">Parques</a></li>
+        <li class="direeciones"><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/servicios.php">Servicios</a></li>
+        <li class="direeciones"><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/contacto.php">Contacto</a></li>
     </ul>
 </section>
 <div class="overlay"></div>
