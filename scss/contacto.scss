@@ -835,4 +835,47 @@
         }
     }
 }
+@media(min-width:1280px) and (max-width:1300px){
+    .footer-contact{
+        top: 149rem;
+        height: 7vh;
+    }
+   .redes-sociales-contacto {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.redes-sociales-contacto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.media-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Espacio entre íconos */
+    margin-top: -10px; /* Súbelo un poco para que se vea pegado a la imagen */
+}
+
+.media-contacto 
+a{ 
+    top: 0rem;
+    left: 0rem;
+    img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+}
+
+.media-contacto a img:hover {
+    transform: scale(1.1);
+}
+
+
+}
 

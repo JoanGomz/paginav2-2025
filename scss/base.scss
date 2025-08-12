@@ -638,27 +638,27 @@ a{
 
 
 /* Media query para pantallas grandes */
-// @media (min-width: 1280px) {
-//   :root {
-//     font-size: calc(0.4vw + 0.4vh + 0.4vmin);
-//   }
-//   .enlaces-derecha{
-//     bottom: -19rem;
-//     right: 9.125rem;
-//   }
-//  .opciones{
-//   gap: 1.3rem;
-//   left: 44%;
-//   top: 16%;
-//  }
-//  .media{
-//   top: -1.8rem;
-//   gap: 3px;
-//   left: 46rem;
-//  } 
+@media (min-width: 1280px) and (max-width:1300px){
+   :root {
+     font-size: calc(0.4vw + 0.4vh + 0.4vmin);
+   }
+   .enlaces-derecha{
+     bottom: -19rem;
+     right: 9.125rem;
+   }
+  .opciones{
+   gap: 1.3rem;
+   left: 44%;
+   top: 16%;
+  }
+  .media{
+   top: -1.8rem;
+   gap: 3px;
+   left: 46rem;
+  } 
  
  
-// }
+ }
     
 @media(width:800px){
 .enlaces-derecha{
