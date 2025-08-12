@@ -21,13 +21,14 @@ include_once '../includes/head.php';
                     <div class="redes-sociales-contacto">
                         <h3>O A NUESTRAS REDES</h3>
                         <img src="../images/fotos/contactos/imagenes/redes.png" alt="redes sociales">
-                    </div>
-                    <div class=" media-contacto">
+                        <div class="media-contacto">
                             <a href="https://www.facebook.com/starparkco" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png" alt="Facebook"></a>
                             <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png" alt="Instagram"></a>
                             <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png" alt="TikTok"></a>
                         </div>
                     </div>
+                    </div>
+                    
                     
                    
         </section>

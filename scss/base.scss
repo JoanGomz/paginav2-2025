@@ -559,7 +559,17 @@ a{
   
   }
   
-
+@media(width:1536px){
+  .enlaces-derecha{
+    bottom: -54rem;
+  }
+  .opciones{
+    left: 50%;
+  }
+  .media{
+    left: 33rem;
+  }
+}
 @media (width: 950px) {
   :root {
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);

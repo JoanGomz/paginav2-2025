@@ -406,7 +406,33 @@
    
   } 
 }
-
+@media(width:1536px){
+  
+  .sede-container{
+    top: 15.5%;
+  }
+.planeta{
+  img{
+    left: -6.5rem;
+  }
+}
+.llegar{
+  .map{
+    iframe{
+      top: -2rem;
+      height: 88vh;
+    }
+  }
+}
+.footer-2{
+  img{
+    top: 116rem;
+  }
+}
+.hablemos-content{
+  height: 47rem;
+}
+}
 @media (min-width: 768px) and (max-width:800px)
  {
   .nave-container {
@@ -753,7 +779,7 @@
   }
 }
 }
-@media(max-width:1280px){
+@media (min-width:1000px) and (max-width:1280px){
   .sede-container{
     top: 9.5%;
   }

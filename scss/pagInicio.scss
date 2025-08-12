@@ -466,6 +466,47 @@
 
   }
 }
+@media(min-width:1536px){
+  .nav-container{
+    a{
+      img{
+        width: 14rem;
+      }
+    }  
+  }
+  .background-header{
+    .logo-container{
+      img{
+        width: 70%;
+        height: 100%;
+      }
+    }
+  }
+.inicio-video-container{
+  video{
+  width: 82vw;
+  height: 158vh;
+  top:-18rem;
+}
+}
+.social-media{
+  left: 80rem;
+  img{
+    width: 3rem;
+    position: relative;
+    top: 0.7rem;
+  }
+}
+.mapa{
+  iframe{
+    top: -15.4rem;
+  }
+}
+.footer_2{
+  top: 199rem;
+  transform: rotate(1.3deg);
+}
+}
 @media(min-width:1280px) and (max-width:1300px){
 .fondo-header{
   width: 100%;

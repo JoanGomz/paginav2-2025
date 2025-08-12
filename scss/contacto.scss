@@ -49,32 +49,55 @@
                     top:20rem;
                     left:58rem;
                     h3{
-                        left: 11rem;
+                        left: 15rem;
+                        top: -3rem;
                         position: relative;
                     }
                     img{
-                        width: 30%;
+                        width: 60%;
                         height: auto;
                         position: absolute;
-                        top: 2.5rem;
-                        left: 8rem;
+                        top: -0.5rem;
+                        left: -1rem;
                     }
-                    .redes-sociales-contacto{
-                    position: absolute;
-                    width: 19vw;
-                    height: 19vh;
-                    h3{
-                        position: relative;                                                                         
-                        top: 10rem;
-                        left: 21rem;
-                    }
-                    img{
-                        width: 27vw;
-                        height: auto;
-                        top: 7rem;
-                    }    
-                    }
+                     .redes-sociales-contacto{
+                     position: relative;
+                     width: 19vw;
+                     height: 19vh;
+                     h3{
+                         position: relative;                                                                         
+                         top: 15rem;
+                         left: 21rem;
+                     }
+                     img{
+                         width: 200%;
+                         height: auto;
+                         top: 7.9rem;
+                     } 
+                     .media-contacto{
+                        width: 100%;
+                        height: 40%;
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        gap: 1rem;
+                        h3{
+                            position: relative;
+                            top:1rem;
+                            left: 1rem;
+                        }
+                        img{
+                            width: 6vw;
+                            position: relative;
+                            left: 16rem;
+                            top: 15.3rem;
+                            &:hover{
+                                top:19rem;
+                            }
+                        }
+                    }   
                 }
+            }
 
                 .screen-overlay {
                     // background-color: rgba(245, 245, 220, 0.267);
@@ -293,30 +316,7 @@
         }
     }
 }
-.media-contacto{
-    width: 27%;
-    height: 40%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    gap: 1rem;
-    h3{
-        position: relative;
-        top:1rem;
-        left: 1rem;
-    }
-    a{ 
-        position: relative;
-        width: 100px;
-        top: -19.6rem;
-        left: 75.6rem;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-   
- 
-}
+
 .nombres{
     width: 100%;
     display: flex;
@@ -390,11 +390,13 @@
                         left: 10rem;
                         h3{
                             left: 14rem;
+                            top: -1.8rem;
                         }
                         img{
                             width: 100%;
                             height: auto;
-                            left: 13.5rem;
+                            left: 12.5rem;
+                            top:1rem;
                         }
                         .redes-sociales-contacto{
                             width: 40vw;
@@ -405,7 +407,18 @@
                             img{
                                 width: 47vw;
                                 height: auto;
-                                top: 3.5rem;
+                                top: 2.2rem;
+                            }
+                            .media-contacto{
+                                width: 58%;
+                                left: 7.1rem;
+                                top: 5.7rem;
+                                img{
+                                    width: 9vw;
+                                    height: auto;
+                                    left: 12rem;
+                                    top: -1.5rem;
+                                }
                             }
                         }
                     }
@@ -472,17 +485,7 @@
             }
         }
     }
-    .media-contacto{
-        width: 58%;
-        left: 7.1rem;
-        top: 5.7rem;
-        a{
-            width: 50%;
-            height: 30%;
-            left: 0rem;
-            top: 0rem;
-        }
-    }
+    
     .email{
         width: 85%;
         height: 3.5rem;
@@ -528,13 +531,33 @@
         top: 86rem;
     }
 }
-@media (min-width:820px) and (max-width:839px){
-    .media-contacto{
-        a{
-            top: -4.6rem;
-            left: 32.5rem;
+@media(width:820px){
+    .contact-panel{
+        .informacion-contacto{
+            .info-container{
+                .monitor-container{
+                    .escribenos{
+                        .redes-sociales-contacto{
+                            .media-contacto{
+                                width: 58%;
+                                left: 7.1rem;
+                                top: 5.7rem;
+                                img{
+                                    width: 8vw;
+                                    top: -1rem !important;
+                                    left:11rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+    
+}
+@media (min-width:820px) and (max-width:839px){
+    
     .contact-panel{
         height: 115vh;
         .informacion-contacto{
@@ -551,19 +574,29 @@
                             top:0.5rem;
                             img{
                                 width: 45vw;
+                                top: 2.5rem;
                             }
                             h3{
-                                left: 19.5rem; 
-                                top: 8rem;
+                                left: 19rem; 
+                                top: 5rem;
                                 width: 100vh;
+                            }
+                            .media-contacto{
+                                img{
+                                    width: 8vw;
+                                    top: -6.5rem;
+                                    left:12rem;
+                                }
                             }
                         }
                         h3{
-                            left: 13.5rem ;
+                            top: -1rem;
+                            left: 12.5rem ;
                         }
                         img{
                             width: 60% ;
-                            left: 12rem;
+                            left: 11rem;
+                            top: 1.5rem;
                         }
                     }
                 }
@@ -648,6 +681,79 @@
         top: 88rem;
     }
 }
+@media(width:1536px){
+    
+   .contact-panel{
+    .formulario-contacto{
+        .main-contact-form{
+            .contact-form-container{
+                .contact-form{
+                    top: -2rem;
+                }
+            }
+        }
+    }
+    .trabaja-con-nosotros{
+        .contact-trabaja-banner{
+            top: -6rem;
+        }
+    }
+    .informacion-contacto{
+        .info-container{
+            .monitor-container{
+                img{
+                    top:-8.7rem;
+                }
+                .escribenos{
+                    img{
+                        width: 50%;
+                        top: -3.5rem;
+                        left: -13rem;
+                    }
+                    h3{
+                        left: -5rem;
+                        top: -6rem;
+                    }
+                    .redes-sociales-contacto{
+                        width: 50%;
+                        position: relative;
+                        h3{
+                            top: 5rem;
+                            left: 1rem;
+                        }
+                        img{
+                            top: 0.5rem;
+                            width: 90%;
+                        }
+                        .media-contacto{
+                            display: flex;
+                            flex-direction: row;
+                            position: relative;
+                            width: 80%;
+                            top: 4.6rem;
+                            left: 10rem;
+                            gap:2rem;
+                            img{
+                                width: 110%;
+                                position: relative;
+                                left: -89rem;
+                                top: 19.8rem;
+                                &:hover{
+                                    top:19rem;
+                                }
+                            }
+                        }
+                    }                  
+                }
+            }
+        }
+    }
+   } 
+  
+   .footer-contact{
+    top: 104rem;
+   }
+}
 @media(max-width:420px){
 
  .contact-panel {
@@ -681,10 +787,11 @@
                     img{
                         width: 100%;
                         height: 100%;
-                        top: 0.5rem;
+                        top: -2.5rem;
                     }
                     .escribenos{
                         h3{
+                            top: -2.5rem;
                             left: 1rem;
                             width: 22rem;
                             font-size: 10px;
@@ -697,18 +804,41 @@
                             width: 100%;
                             height: auto;
                             left: 0rem !important;
+                            top: 0.1rem;
                         }
                         .redes-sociales-contacto{
                             width: 80%;
                             h3{
-                                top: 4rem;
-                                left: 4rem;
+                                top: 3rem;
+                                left: 5rem;
                             }
                             img{
-                                width: 84%;
+                                width: 100%;
                                 //height: 57%;
-                                top: 3.5rem;
+                                top: 1.5rem;
                             }
+                            .media-contacto{
+                                width: 100%;
+                                height: 40%;
+                                display: flex;
+                                flex-direction: row;
+                                position: relative;
+                                gap: 1rem;
+                                h3{
+                                    position: relative;
+                                    top:1rem;
+                                    left: 1rem;
+                                }
+                                img{
+                                    width: 6vw;
+                                    position: relative;
+                                    left: 16rem;
+                                    top: 15.3rem;
+                                    &:hover{
+                                        top:0.5rem;
+                                    }
+                                }
+                            } 
                         }
                     }
                 }
@@ -785,20 +915,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    .media-contacto{
-        width: 50%;
-        height:50%;
-        left: 3.9rem;
-        top: 4rem;
-        overflow: hidden;
-        object-fit: contain;
-        a{
-            width: 29%;
-            height: 0%;
-            left: 0rem;
-            top: 0rem;
-        }
-    }
+    
     .footer-contact{
         top: 80rem;
         height:5vh ;
