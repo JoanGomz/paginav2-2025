@@ -347,6 +347,13 @@ a{
       padding: 15px 25px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+    svg{
+      width: 30px;
+      height: auto;
+      position: relative;
+      top: 10px;
+      left: -10px;
+    }
   
     a {
       color: white;
@@ -360,7 +367,9 @@ a{
       }
     }
   }
-  
+  .svg.active{
+    color: white;
+  }
   .home{
     i{
       color: white;
