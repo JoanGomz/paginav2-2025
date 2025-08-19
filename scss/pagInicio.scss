@@ -466,7 +466,7 @@
 
   }
 }
-@media(min-width:1536px){
+@media(width:1536px){
   .nav-container{
     a{
       img{
@@ -495,6 +495,13 @@
     width: 3rem;
     position: relative;
     top: 0.7rem;
+  }
+}
+.carousel-container{
+  .carousel{
+    .carousel-controls{
+      bottom: 1rem;
+    }
   }
 }
 .mapa{

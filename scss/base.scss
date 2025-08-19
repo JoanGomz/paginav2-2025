@@ -479,6 +479,9 @@ a{
     a{
       color: #ffffff;
     }
+    &:not(:last-child){
+      border-right: none;
+    }
   }
   .navigation-container {
     a {
@@ -514,11 +517,11 @@ a{
 
     a.dominik-icon img {
  
-      position: static; // Vuelve a su posicionamiento normal dentro del <a>
-      left: auto;      // Desactiva 'left'
-      top: auto;       // Desactiva 'top'
+      position: relative; // Vuelve a su posicionamiento normal dentro del <a>
+      left: 38rem;      // Desactiva 'left'
+      top: 28rem;       // Desactiva 'top'
 
-      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      width: 15%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
       height: auto;    // Mantiene la proporción
       transition: all .3s ease-in-out;
 
@@ -527,6 +530,20 @@ a{
       }
     }
   } 
+  .dropbtn {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: fixed;
+    img {
+      width: 40%;
+      left: 5rem;
+      top: 1rem;
+      position: relative; 
+    }
+  }
  
   .redes-sociales {
     display: flex;
