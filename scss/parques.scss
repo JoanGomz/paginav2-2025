@@ -205,6 +205,21 @@
     left:-5rem;
   }
 }
+@media(min-width:1366px) and (max-width:1380px){
+  .planets-row{
+    gap: 0rem;
+  }
+  .inferior{
+    left: 17.5rem;
+  }
+  .planet-earth{
+    position: relative;
+    left: -10rem;
+  }
+  .footer2{
+    top: 120rem;
+  }
+}
 @media (min-width:1000px) and (max-width:1195px){
   .planet-item,
   .planet-item2{

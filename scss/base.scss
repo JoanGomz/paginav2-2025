@@ -674,6 +674,20 @@ a{
 
 
 /* Media query para pantallas grandes */
+@media(width:1366px){
+  .enlaces-derecha{
+    display: flex;
+    bottom: -38rem;
+    right: -7.875rem;
+    width: 50%;
+  }
+  .opciones{
+    left: 45%;
+  }
+  .media{
+    left: 33rem;
+  }
+}
 @media (min-width: 1280px) and (max-width:1300px){
    :root {
      font-size: calc(0.4vw + 0.4vh + 0.4vmin);

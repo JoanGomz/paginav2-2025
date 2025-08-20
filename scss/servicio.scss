@@ -268,6 +268,46 @@
 }
 
 /* Responsive */
+@media(min-width:1366px){
+    .Terminos_adicionales{
+        top: -1.5rem;
+    }
+    .terminos{
+        top: -1.4rem;
+    }
+    .condiciones{
+        top: -2rem;
+    }
+    .servicio-right{
+        img{
+            top: 4rem;
+        }
+        .service-form-container{
+    .serviceForm{
+        top: 22%;
+        .service-form-submit{
+            button{
+                img{
+                    width: 40%;
+                    position: relative;
+                    top: -4.5rem;
+                }
+            }
+        }
+    }
+}
+}
+.foot-service{
+    background: none;
+    img{
+        height: 8vh;
+        top: 1rem;
+        position: relative;
+        transform: rotate(1deg);
+    }
+}
+    
+}
 @media(width:1536px){
 .servicio-right{
     img{
