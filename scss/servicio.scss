@@ -180,6 +180,8 @@
 }
 .contact-form-terms{
     text-align: justify;
+    // position:relative;
+    // top: 3rem;
 }
 .terminos {
     /* Tamaño aumentado */
@@ -268,7 +270,7 @@
 }
 
 /* Responsive */
-@media(min-width:1366px){
+@media(min-width:1366px) and (max-width:1400px){
     .Terminos_adicionales{
         top: -1.5rem;
     }
@@ -405,6 +407,7 @@
     .main-container-servicio {
         flex-direction: column;
         margin-top: 0;
+        height: 220vh;
     }
     .main-container-servicio {
         /* Lado izquierdo con la imagen de información */
@@ -427,7 +430,7 @@
         }
         .service-form-container{
             .serviceForm{
-                top: 10%;
+                top: 11%;
                 .service-form-submit{
                     button{
                         img{
@@ -479,6 +482,11 @@
             }
         }
     }
+}
+@media(width:800px){
+.main-container-servicio{
+    height: 200vh;
+}
 }
 @media(min-width:834px) and (max-width:840px){
     .servicio-right{

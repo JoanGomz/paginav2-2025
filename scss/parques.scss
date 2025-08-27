@@ -161,15 +161,16 @@
 
 .planet-earth {
   filter: drop-shadow(0 0 20px rgba(100, 149, 237, 0.6));
+  left: 8rem;
 }
 
 .planet-saturn {
   filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.6));
 }
 .enlaces-derecha-parques{
-  position: absolute;
-  top: 88rem;
-  left: 99rem;
+  position: fixed;
+  top: 20rem;
+  left: 104rem;
   z-index: 2;
   img{
     width: 15rem;
@@ -188,7 +189,7 @@
   img{
     width: 100%;
     position: absolute;
-    top: 1rem;
+    top: -10rem;
   } 
 }
 @media(width:1536px){
@@ -389,8 +390,8 @@
   width: 5rem;
   height: auto;
   z-index: 100;
-  top: 54rem;
-  left: 42rem;
+  top: 41rem;
+  left: 38rem;
 }
 
 /* The button that opens the dropdown */
@@ -413,7 +414,6 @@
   position: absolute;
   top: 100%; /* Position it below the button */
   left: 0;
-  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
@@ -445,7 +445,7 @@
   position: static;
   left: auto;
   top: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
   filter: drop-shadow(0 0 10px rgb(93, 189, 204));
   transition: all .3s ease-in-out;
