@@ -29,7 +29,7 @@
 }
 .sede-container {
   position: absolute;
-  top: 12.5%;
+  top: 11.5%;
   left: 30%;
   width: 40%;
   height: auto;
@@ -138,9 +138,11 @@
 
 /* --- Contenedor de los items individuales del carrusel --- */
 .park-carousel-items {
-    width: 100%;
-    height: 100%;
+    width: 121%;
+    height: 128.2%;
     position: relative; // Para que los items absolutos se posicionen respecto a este
+    top: -15rem;
+    left: -13rem;
 }
 
 /* --- Cada slide individual (el div.park-carousel-item generado por JavaScript) --- */
@@ -196,7 +198,7 @@
         object-position: center;
         display: block;
     }
-    
+
 }
 
 
@@ -401,7 +403,7 @@
   img{
     width: 107%;
     position: absolute;
-    top: 140rem;
+    top: 142rem;
     left: 0rem;
    
   } 
@@ -795,5 +797,14 @@
     img{
     top: 147rem;
   }
+  }
+}
+@media(width:1905px) and (height:3966px){
+  .park-carousel-items {
+    width: 121%;
+    height: 128.2%;
+    position: relative;
+    top: -12rem;
+    left: -13rem;
   }
 }

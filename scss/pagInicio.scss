@@ -284,7 +284,7 @@
 }
 .footer_2{      
   position: absolute;
-  top:207rem;
+  top:209rem;
   transform:rotate(1.7deg) ;
   z-index: 5;
   width: 100%;
@@ -514,7 +514,7 @@
   transform: rotate(1.3deg);
 }
 }
-@media(min-width:1366px) {
+@media(min-width:1366px) and (max-width:1400px) {
   .background-header{
     height: 75rem;
   }
