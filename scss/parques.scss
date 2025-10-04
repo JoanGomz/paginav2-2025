@@ -173,8 +173,10 @@
   left: 104rem;
   z-index: 2;
   img{
-    width: 15rem;
+    width: 10rem;
     height: auto;
+    position: relative;
+    left: 4rem;
   }
 
 }
@@ -280,8 +282,199 @@
   /* Ajustes para los planetas de Bogotá - TAMAÑO AUMENTADO */
   .starpark-locations .planet-item {
     position: absolute;
+    width: 13rem; 
+    height: auto; 
+  }
+  
+  /* Posicionamiento específico para planetas de Bogotá */
+  .starpark-locations .planet-orange {
+    top: -50%;
+    left: 7%;
+  }
+  
+  .starpark-locations .planet-purple {
+    top: 120%;
+    right: 6%;
+  }
+  
+  .starpark-locations .planet-yellow {
+    top: 120%;
+    left: 6%;
+  }
+  
+  .starpark-locations .planet-pink {
+    top: -50%;
+    right: 6%;
+  }
+  
+  /* Ajustes para la sección Resto del País */
+  .resto-pais {
+    margin-top: 0;
+  }
+  .location-central{
+    height: 40%;
+    width: 40%;
+  }
+  .resto-pais .planets-row {
+    position: relative;
+    height: auto;
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  /* Resetear todos los estilos previos para los planetas de Resto del País */
+  .resto-pais .planet-item,
+  .resto-pais .planet-item2,
+  .resto-pais .planet-item-3 {
+    position: absolute;
+    width: 10rem;  
+    height: 10rem; 
+    padding: 0;
+    margin: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+  
+  /* Posicionamiento específico para cada planeta de Resto del País */
+  .resto-pais .planet-red {
+    top: -3rem;
+    left: -42%;
+  }
+  
+  .resto-pais .planet-saturn {
+    top:2rem;
+    right: 6%;
+  }
+  
+  .resto-pais .planet-earth {
+    top: -11rem;
+    left: -0%;
+    transform: translateX(-50%);
+  }
+  
+  .resto-pais .planet-blue {
+    top: -15rem;
+    left: 6%;
+  }
+  
+  .resto-pais .planet-green {
+    top: -15rem;
+    right: 6%;
+  }
+  
+  
+  .resto-pais .planet-item:hover,
+  .resto-pais .planet-item2:hover {
+    transform: scale(1.1);
+  }
+  
+  .resto-pais .planet-earth:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+  .footer2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 2rem;
+    img {
+      width: 100%;
+      height: 6vh;
+      position: absolute;
+      top: 2rem;
+    }
+  }
+  
+.enlaces-derecha-parques {
+  position: fixed;
+  width: 5rem;
+  height: auto;
+  z-index: 100;
+  top: 41rem;
+  left: 38rem;
+}
+
+/* The button that opens the dropdown */
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropbtn img {
+  width: 70px;
+  left: 1rem;
+  position: relative; 
+}
+
+/* The dropdown content (hidden by default) */
+.dropdown-content {
+  
+  position: absolute;
+  top: 100%; /* Position it below the button */
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.show {
+  display: block;
+  top: -9rem;
+  left: -5rem;
+  background-color: transparent;
+}
+
+
+
+.enlaces-derecha-parques .dominik-icon {
+ 
+  display: block; 
+  padding: 12px 16px;
+  text-decoration: none;
+  background: none;
+}
+
+/* Styles for the image inside the link */
+.enlaces-derecha-parques .dominik-icon img {
+  position: static;
+  left: auto;
+  top: auto;
+  width: 90%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgb(93, 189, 204));
+  transition: all .3s ease-in-out;
+}
+
+
+.enlaces-derecha-parques .dominik-icon img:hover {
+  transform: scale(1.1);
+}
+}   
+@media(min-width:790px) and (max-width:840px) {
+  //planetas de bogota 
+  .location-central {
+    width: 12rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Ajuste general para primera sección (Bogotá) */
+  .starpark-locations .planets-row {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Ajustes para los planetas de Bogotá - TAMAÑO AUMENTADO */
+  .starpark-locations .planet-item {
+    position: absolute;
     width: 13rem;  /* Aumentado de 7rem a 10rem */
-    height: auto; /* Aumentado de 7rem a 10rem */
+    height: auto; 
   }
   
   /* Posicionamiento específico para planetas de Bogotá */
@@ -326,7 +519,7 @@
   .resto-pais .planet-item-3 {
     position: absolute;
     width: 10rem;  /* Aumentado de 7rem a 10rem */
-    height: 10rem; /* Aumentado de 7rem a 10rem */
+    height: 10rem; 
     padding: 0;
     margin: 0;
     top: auto;
@@ -363,7 +556,7 @@
     right: 6%;
   }
   
-  /* Ajustar comportamiento de hover en móvil */
+  
   .resto-pais .planet-item:hover,
   .resto-pais .planet-item2:hover {
     transform: scale(1.1);
@@ -381,10 +574,10 @@
       width: 100%;
       height: 6vh;
       position: absolute;
-      top: 2rem;
+      top: 1rem;
     }
   }
-  /* This is the new CSS for the dropdown button and container */
+ 
 .enlaces-derecha-parques {
   position: fixed;
   width: 5rem;
@@ -394,7 +587,7 @@
   left: 38rem;
 }
 
-/* The button that opens the dropdown */
+
 .dropbtn {
   background: none;
   border: none;
@@ -408,11 +601,11 @@
   position: relative; 
 }
 
-/* The dropdown content (hidden by default) */
+
 .dropdown-content {
   
   position: absolute;
-  top: 100%; /* Position it below the button */
+  top: 100%; 
   left: 0;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -427,20 +620,15 @@
   background-color: transparent;
 }
 
-/* ---------------------------------------------------- */
-/* Your original styles, adapted for the new structure */
-/* ---------------------------------------------------- */
-
-/* Styles for the link inside the dropdown */
 .enlaces-derecha-parques .dominik-icon {
-  /* You may want to adjust these styles to fit inside the dropdown */
-  display: block; /* Make the link a block-level element */
+  
+  display: block; 
   padding: 12px 16px;
   text-decoration: none;
   background: none;
 }
 
-/* Styles for the image inside the link */
+
 .enlaces-derecha-parques .dominik-icon img {
   position: static;
   left: auto;
@@ -455,60 +643,56 @@
 .enlaces-derecha-parques .dominik-icon img:hover {
   transform: scale(1.1);
 }
-}   
-@media(min-width:800px) and (max-width:834px) {
-  //planetas de bogota 
+}
+@media(min-width:884px){
+  .planets-row{
+    gap: 5rem; 
+  }
   .planet-item, .planet-item2{
-    width:16rem;
+    width: 14rem;
+    position: relative;
+    top: -6rem;
   }
-  .starpark-locations .planet-orange {
-    top: 0rem;
-    left: -5rem;
+  .superior{
+    position: relative;
+    top: -10rem;
   }
-  
-  .starpark-locations .planet-purple {
-    top: 0rem;
-    right: -5rem;
+  .inferior{
+    left: 9.5rem;
+    top: -28rem;
+    height: 50%;
   }
-  
-  .starpark-locations .planet-yellow {
-    top: -1rem;
-    left: -5rem;
+  .planet-purple{
+    top: 2rem;
   }
-  
-  .starpark-locations .planet-pink {
-    top: -1rem;
-    right: -5rem;
+  .planet-yellow{
+    top: 2rem;
   }
-  //planetas del resto del pais
-
-  .resto-pais .planet-red {
-    top: -50rem;
-    left: -35%;
+  .planet-earth{
+    filter: drop-shadow(0 0 20px rgba(100, 149, 237, 0.6));
+    left: -16rem;
   }
-  
-  .resto-pais .planet-saturn {
-    top:13rem;
-    right: 6%;
+  .planet-blue{
+    position: relative;
+    top: 1rem;
   }
-  
-  .resto-pais .planet-earth {
-    top: -74rem;
-    left: -19rem;
-    transform: translateX(-50%);
+  .planet-saturn{
+    position: relative;
+    top: 1rem;
   }
-  
-  .resto-pais .planet-blue {
-    top: -13rem;
-    left: 6%;
+  .planet-red{
+    left: 5rem;
+    top: -10rem;
   }
-  
-  .resto-pais .planet-green {
-    top: -9rem;
-    right: 0rem;
+  .planet-earth{
+    left: -1rem;
+    top: -10rem;
+  }
+  .footer2{
+    top: 114rem;
   }
 }
-@media(min-width:320px) and (max-width:420px){
+@media(min-width:320px) and (max-width:428px){
   .cc-parques{
     .location-section{
       .location-central{
@@ -710,6 +894,13 @@
   /* Your hover effect for the image */
   .enlaces-derecha-parques .dominik-icon img:hover {
     transform: scale(1.1);
+  }
+}
+@media(width:428px){
+  .footer2{
+    img{
+      top: 5rem;
+    }
   }
 }
 @media (max-width: 361px) and (height: 780px){

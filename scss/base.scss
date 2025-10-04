@@ -771,6 +771,14 @@ a{
   transition: 0.3s ease;
   padding-top: 3.75rem;
 
+  svg{
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: -10px;
+  }
+
   ul {
     list-style: none;
     padding: 0;
@@ -826,6 +834,17 @@ a{
   display: block;
 }
 
+}
+@media(min-width:800px) and (max-width:834px) {
+.sidebar-menu{
+  width: 32.625rem;
+  a{
+    font-size: 2.5rem;
+  }
+  svg{
+    width: 55px;
+  }
+}
 }
 
 @media(width:428px) {

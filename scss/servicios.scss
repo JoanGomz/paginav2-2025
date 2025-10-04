@@ -288,7 +288,7 @@
     }
   }
 }
-@media(min-width:820px) and (max-width:840px) {
+@media(min-width:820px) and (max-width:884px) {
   .park-carousel-container-service{
     width: 100vw;
     height: 50vh;
@@ -305,7 +305,7 @@
     }
   }
 }
-@media(min-width:320px) and (max-width:420px)
+@media(min-width:320px) and (max-width:428px)
 {
   .title-servicios{
     img{
@@ -319,6 +319,12 @@
   .park-carousel-container-service {
     height: 53vh ;
     width: 100%;
+  }
+  .park-carousel-service{
+    width: 100vh;
+    height: 100vh;
+    left: 2rem;
+    top: 3rem;
   }
   .park-carousel-items-service{
      

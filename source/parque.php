@@ -83,8 +83,8 @@ $parques = [
         'telefono' => '(+57) 3118080091',
         'park-site' => '../images/fotos/Planetas_Sedes/Neiva/imagenes/Neiva.png',
         'galeria' => [
-            '../images/fotos/prueba.jpg',
-            '../images/fotos/prueba1.jpg'
+            '../images/neiva.mp4',
+
         ],
         'mapa' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4944.343238870447!2d-75.29098342502962!3d2.9507458970254796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b7451271c5493%3A0x14bf201fa8730bf1!2sSan%20Pedro%20Plaza%20Shopping%20Center!5e1!3m2!1sen!2sco!4v1737477742421!5m2!1sen!2sco'
     ],
@@ -118,12 +118,12 @@ $parques = [
         'nombre' => 'CALI',
         'park_horarios' => '../images/fotos/Planetas_Sedes/cali/imagenes/Horario.png',
         'planeta' => '../images/fotos/Planetas_Sedes/cali/imagenes/planeta.png',
-        'park_ubicacion' => '../images/fotos/Planetas_Sedes/cali/imagenes/ubicacion.png',
+        'park_ubicacion' => '../images/fotos/Planetas_Sedes/cali/imagenes/Ubicacion.png',
         'telefono' => '(+57) 3118080084',
         'park-site' => '../images/fotos/Planetas_Sedes/Cali/imagenes/cali.png',
         'galeria' => [
-            '../images/fotos/prueba.jpg',
-            '../images/fotos/prueba1.jpg'
+            '../images/cali.mp4',
+
         ],
         'mapa' => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3645.6578972973143!2d-76.5473719!3d3.4137529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6a7e04342fd%3A0xc7fcee81107f9811!2sLa%2014%20Cosmo%20Centro%2C%20Cl.%205%20%2350-103%2C%20panamericano%2C%20Cali%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1740425339999!5m2!1ses!2sco'
     ]

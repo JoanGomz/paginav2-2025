@@ -355,10 +355,10 @@
 }
 .footer-contact{
     position: absolute;
-    top: 131rem;
+    top: 130rem;
     z-index: 5;
     width: 100%;
-    height: 7%;
+    height: 7vh;
 }
 
 /* Media queries simplificadas */
@@ -769,7 +769,7 @@
    }
 }
 
-@media (min-width:360px) and (max-width:420px){
+@media (min-width:360px) and (max-width:428px){
 
  .contact-panel {
         height: 100vh;
