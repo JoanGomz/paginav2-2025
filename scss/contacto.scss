@@ -81,6 +81,8 @@
                         flex-direction: row;
                         position: relative;
                         gap: 1rem;
+                        top: 7.5rem;
+                        left:16rem;
                         h3{
                             position: relative;
                             top:1rem;
@@ -89,10 +91,8 @@
                         img{
                             width: 6vw;
                             position: relative;
-                            left: 16rem;
-                            top: 15.3rem;
                             &:hover{
-                                top:19rem;
+                               transform:scaleX(1);
                             }
                         }
                     }   
@@ -355,7 +355,7 @@
 }
 .footer-contact{
     position: absolute;
-    top: 130rem;
+    top: 135rem;
     z-index: 5;
     width: 100%;
     height: 7vh;
@@ -770,18 +770,31 @@
 }
 
 @media (min-width:360px) and (max-width:428px){
-
+    .info-complementaria{
+        top: 30px;
+        position: relative;
+        padding-bottom: 22px;
+    }
+ .contact-space-background{
+    height: 850px;
+ }       
+ .info-container{
+    top:0;
+    height: auto;
+ }
  .contact-panel {
-        height: 100vh;
+        height: 694px;
         .formulario-contacto{
-            position: relative;
-            top:-52rem;
+            position: absolute;
+            top:352px;
+            height: 55vh;
             .main-contact-form{
+                height: 50vh;
                 .contact-form-container{
                     .contact-form{
                         .contact-form-terms{
                             position: relative;
-                            top: 10rem;
+                            top: 30px;
                             a{
                                 left: 0rem;
                             }
@@ -796,11 +809,14 @@
     
         /* Sección título */
         .informacion-contacto {
+            position: absolute;
+            top: 10rem;
+            left: -1rem;
             .info-container {
                 .monitor-container {
-                    width: 100%;
+                    width: 353px;
                     margin: 0 auto;
-                    height: 100%;
+                    height: auto;
                     img{
                         width: 100%;
                         height: 100%;
@@ -808,13 +824,13 @@
                     }
                     .escribenos{
                         h3{
-                            top: -2.5rem;
+                            top: -24.5px;
                             left: 1rem;
-                            width: 22rem;
+                            width: 192px;
                             font-size: 10px;
                         }
-                        width: 52%;
-                        height: 50%;
+                        width: 178px;
+                        height: auto;
                         top: 9.5rem;
                         left: 46%;
                         img{
@@ -825,6 +841,7 @@
                         }
                         .redes-sociales-contacto{
                             width: 80%;
+                            top: -2rem;
                             h3{
                                 top: 3rem;
                                 left: 5rem;
@@ -864,14 +881,14 @@
         /* Banner trabaja con nosotros */
         .trabaja-con-nosotros {
             height: 100%;
-            position: relative;
-            top: -10rem;
+            position: absolute;
+            top: 415px;
             .contact-trabaja-banner {
-                width: 100%;
+                position: absolute;
+                width: 353px;
                 height: auto;
                 left: 0rem;
-                top: -16rem;
-                // height: 100%;
+                top: -120px;
             }
         }
 
@@ -886,16 +903,16 @@
                 .contact-form-container {
 
                     .contact-form {
-                        top: 3rem;
                         left: 0rem;
-                        // transform: translateX(-50%);
                         width: 100%;
-                        height: 100%;
+                        height: 50vh;
+                        z-index: 2;
                         .contact-form-input {
                             .contact-input-icon {
                                 input,
                                 textarea {
                                     width: 100%;
+                                    height: 30px;
                                     font-size: large;
                                     padding: 0.5rem 0.9375rem 2rem 5rem;
                                     background: #383c94;
@@ -913,7 +930,7 @@
                         }
                         .contact-register-btn {
                             width: 50%;
-                            top: 10rem;
+                            top: 15px;
                             position: relative;
                         }
                     }
@@ -925,6 +942,10 @@
         height: 31px;
         width: 100%;
 
+    }
+    .comentarios{
+        height: 100%;
+        margin-top: 10px;
     }
     .comments{
         width: 100%;
@@ -941,14 +962,13 @@
     }
     
     .footer-contact{
-        top: 90rem;
+        top: 830px;
         height:5vh ;
     }
 }
-@media(width:360px){
+@media(width:360px) {
     .footer-contact{
-        top:94rem; 
-    
+        top:827px; 
     }
     .media-contacto{
         left: 4.2rem !important;
@@ -965,7 +985,7 @@
                                 top: 2.95rem;      
                             }
                             h3{
-                                top: 3rem;
+                                top: 4rem;
                                 left:3rem;
 
                             }
@@ -988,42 +1008,58 @@
         top: 149rem;
         height: 7vh;
     }
-   .redes-sociales-contacto {
-    text-align: center;
-    margin-top: 1rem;
-}
+ .contact-panel{
+    .informacion-contacto{
+        .info-container{
+            .monitor-container{
+                .escribenos{
+                    .redes-sociales-contacto{
+                        position: relative;
+                        width: 167px;
+                        height: auto;
+                        h3{
+                            top:104px ;
+                            left: 140px;
+                        }
+                        img {
+                            max-width: 353px;
+                            height: auto;
+                            display: block;
+                            margin: 0 auto;
+                            top: 75px;
+                        }
+                            .media-contacto {
+                                 display: flex;
+                                 justify-content: center;
+                                 align-items: center;
+                                 left: 122px ;
+                                 top: 38px ;
+                                }
+                        
+                                .media-contacto a {
+                                    img {
+                                    width: 65px;
+                                    height: auto;
+                                    object-fit: contain;
+                                    transition: transform 0.2s ease;
+                                    }
+                                }
+                                .media-contacto a img:hover {
+                                    transform: scale(1.1);
+                                     }
 
-.redes-sociales-contacto img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.media-contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px; /* Espacio entre íconos */
-    margin-top: -10px; /* Súbelo un poco para que se vea pegado a la imagen */
-}
-
-.media-contacto 
-a{ 
-    top: 0rem;
-    left: 0rem;
-    img {
-    width: 26px;
-    height: 26px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-}
-}
-
-.media-contacto a img:hover {
-    transform: scale(1.1);
-}
-
+                    }
+                }
+            }
+        }
+    }
+ }
 
 }
-
+@media (width:1905px) and (height:2466.8px) {
+    .footer-contact{
+        img{
+        top: 130rem;
+    }
+    }
+}

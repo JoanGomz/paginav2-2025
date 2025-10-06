@@ -18,19 +18,19 @@ include_once '../includes/head.php';
                     <div class="escribenos">
                         <h3>ESCRIBENOS AL SIGUIENTE NUMERO</h3>
                         <img src="../images/fotos/contactos/imagenes/numero.png" alt="numero al que se puede escribir">
-                    <div class="redes-sociales-contacto">
-                        <h3>O A NUESTRAS REDES</h3>
-                        <img src="../images/fotos/contactos/imagenes/redes.png" alt="redes sociales">
-                        <div class="media-contacto">
-                            <a href="https://www.facebook.com/starparkco" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png" alt="Facebook"></a>
-                            <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png" alt="Instagram"></a>
-                            <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png" alt="TikTok"></a>
+                        <div class="redes-sociales-contacto">
+                            <h3>O A NUESTRAS REDES</h3>
+                            <img src="../images/fotos/contactos/imagenes/redes.png" alt="redes sociales">
+                            <div class="media-contacto">
+                                <a href="https://www.facebook.com/starparkco" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png" alt="Instagram"></a>
+                                <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png" alt="TikTok"></a>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                    
-                    
-                   
+
+
+
         </section>
 
         <section class="trabaja-con-nosotros">
@@ -48,69 +48,69 @@ include_once '../includes/head.php';
                         <input type="hidden" name="_subject" value="Nuevo contacto desde Star Park Web">
                         <input type="hidden" name="_template" value="box">
                         <div class="equipo-star-park">
-                                <h3>¿QUIERES PERTENECER AL EQUIPO STAR PARK?</h3>
+                            <h3>¿QUIERES PERTENECER AL EQUIPO STAR PARK?</h3>
                         </div>
-                        <div class= "nombres">
-                        <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-solid fa-circle-user"></i>
-                                <input type="text" name="nombre" required>
-                                <label>Nombres...</label>
-                            </div>
-                        </div>
+                        <div class="nombres">
                             <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-regular fa-circle-user"></i>
-                                <input type="text" name="apellido" required>
-                                <label>Apellidos...</label>
+                                <div class="contact-input-icon">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                    <input type="text" name="nombre" required>
+                                    <label>Nombres...</label>
+                                </div>
                             </div>
-                        </div>
-                        
+                            <div class="contact-form-input">
+                                <div class="contact-input-icon">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                    <input type="text" name="apellido" required>
+                                    <label>Apellidos...</label>
+                                </div>
+                            </div>
+
                         </div>
 
-                        
-                    <div class="email">
-                        <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                                <input type="email" name="email" required>
-                                <label>Email...</label>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="info-complementaria">
-                        <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <input type="text" name="direccion" required>
-                                <label>Dirección...</label>
+                        <div class="email">
+                            <div class="contact-form-input">
+                                <div class="contact-input-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" name="email" required>
+                                    <label>Email...</label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-solid fa-phone-flip"></i>
-                                <input class="number" placeholder="Numero de telefono.." type="tel" name="telefono" required>
-        
+                        <div class="info-complementaria">
+                            <div class="contact-form-input">
+                                <div class="contact-input-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="text" name="direccion" required>
+                                    <label>Dirección...</label>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="contact-form-input">
+                                <div class="contact-input-icon">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                    <input class="number" placeholder="Numero de telefono.." type="tel" name="telefono" required>
+
+                                </div>
+                            </div>
                         </div>
 
-                    <div class="comments">
-                        <div class="contact-form-input">
-                            <div class="contact-input-icon">
-                                <i class="fa-solid fa-comment-dots"></i>
-                                <textarea name="comentarios" required></textarea>
-                                <label>Comentarios...</label>
+                        <div class="comments">
+                            <div class="contact-form-input">
+                                <div class="contact-input-icon">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <textarea name="comentarios" class="comentarios" required></textarea>
+                                    <label>Comentarios...</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                         <div class="contact-form-terms">
                             <input type="checkbox" id="terminos" name="terminos" required>
                             <label for="terminos">Aplican Términos Y Condiciones.<br> <a href="politica.php">https://www.starpark.com.co/politica</a></label>
-                        </div>        
+                        </div>
                         <button class="contact-register-btn" type="submit"><img src="../images/fotos/contactos/imagenes/registrar.png" alt="Boton para registrarse"></button>
                     </form>
                 </div>
