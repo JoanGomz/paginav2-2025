@@ -355,7 +355,7 @@
 }
 .footer-contact{
     position: absolute;
-    top: 135rem;
+    top: 130rem;
     z-index: 5;
     width: 100%;
     height: 7vh;
@@ -363,15 +363,21 @@
 
 /* Media queries simplificadas */
 @media (min-width: 768px) and (max-width:800px){
+    .equipo-star-park{
+        position: relative;
+        left: 40px;
+    }
     .contact-panel {
-        height: 130vh;
+        height: 1721px;
         .formulario-contacto{
             .main-contact-form{
                 .contact-form-container{
+                    width: 100px;
+
                     .contact-form{
                         .contact-form-terms{
                             position: relative;
-                            top: 4.5rem;
+                            top: 36px;
                         }
                     }
                 }
@@ -435,7 +441,7 @@
         .trabaja-con-nosotros {
             .contact-trabaja-banner {
                 width: 100%;
-                height: 14vh;
+                height: auto;
                 left: 0rem;
                 top: -28rem;
                 // height: 100%;
@@ -450,7 +456,7 @@
             
             .main-contact-form {
                 overflow: hidden;
-                height: 100vh;
+                height: 736px;
                 width: 100%;
                 .contact-form-bgImage {
                     width: 150%;
@@ -477,6 +483,7 @@
                                     border: 0.0625rem solid rgba(0, 247, 255, 0.842);
                                     border-radius: 1rem;
                                     color: white;
+                                    height: 30px;
                                 }
                             }
                         }
@@ -491,16 +498,31 @@
             }
         }
     }
-    
+    .nombres{
+    width: 85%;
+    .contact-form-input{
+        flex: 1;
+    }
+    }
+    .info-complementaria{
+        width: 85%;
+        position: relative;
+        top: 30px;
+        .contact-form-input{
+            flex: 1;
+        }
+    }
     .email{
         width: 85%;
         height: 3.5rem;
     }
     .comments{
         width: 85%;
+        position: relative;
+        top: 30px;
     }
     .footer-contact{
-        top: 85rem;
+        top: 1861px;
     }
 }
 @media(width:800px){
@@ -512,20 +534,40 @@
         }
     }
     .contact-panel{
-        height: 100vh;
+        height: 1250px;
         .formulario-contacto{
             .main-contact-form{
                 height: 80vh;
                 .contact-form-container{
                     .contact-form{
                         left: 5rem;
+                        .contact-register-btn{
+                            top: 1rem;
+                        }
                     }
                 }
             }
         }
         .informacion-contacto{
             top:-6rem;
+            .info-container{
+                .monitor-container{
+                    .escribenos{
+                        .redes-sociales-contacto{
+                            h3{
+                                left: 20.4rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
+    }
+    .nombres{
+        width: 82%;
+    }
+    .info-complementaria{
+        width: 82%;
     }
     .email{
         width: 82%;
@@ -565,8 +607,9 @@
 @media (min-width:820px) and (max-width:839px){
     
     .contact-panel{
-        height: 115vh;
+        height: 1223px;
         .informacion-contacto{
+            width: 925px;
             .info-container{
                 .monitor-container{
                     img{
@@ -574,8 +617,8 @@
                         height:auto;
                     }
                     .escribenos{
-                        top: 9rem;
-                        left: 13rem;
+                        top: 11rem;
+                        left: 15.8rem;
                         .redes-sociales-contacto{
                             top:0.5rem;
                             img{
@@ -583,7 +626,7 @@
                                 top: 2.5rem;
                             }
                             h3{
-                                left: 19rem; 
+                                left: 16.5rem; 
                                 top: 5rem;
                                 width: 100vh;
                             }
@@ -626,6 +669,10 @@
     .equipo-star-park{
         position: relative;
         left: -4rem;
+        h3{
+            position: relative;
+            font-size: 3.5px;
+        }
 
     }
     .trabaja-con-nosotros{
@@ -633,6 +680,13 @@
             top: 0rem !important;
         }
     }
+    .nombres{
+        width: 81.5%;
+    }
+    .info-complementaria{
+        width: 81.5%;
+    }
+
     .email{
         width: 81.5%;
     }
@@ -1055,11 +1109,4 @@
     }
  }
 
-}
-@media (width:1905px) and (height:2466.8px) {
-    .footer-contact{
-        img{
-        top: 130rem;
-    }
-    }
 }

@@ -99,6 +99,9 @@ include_once '../includes/head.php';
             </form>
         </div>
     </div>
+    <div class="service-foot">
+        <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+    </div>
 </main>
 <!-- Botones de whatsapp y dominick, lado derecho -->
 

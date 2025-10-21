@@ -644,7 +644,7 @@
   transform: scale(1.1);
 }
 }
-@media(min-width:884px){
+@media(min-width:884px) and (max-width:900px){
   .planets-row{
     gap: 5rem; 
   }
@@ -845,8 +845,8 @@
     padding: 0;
     position: fixed;
     img {
-      width: 40%;
-      left: 5rem;
+      width: 60%;
+      left: 24px;
       top: 1rem;
       position: relative; 
     }
@@ -880,10 +880,10 @@
     background: none;
   }
   
-  /* Styles for the image inside the link */
+  
   .enlaces-derecha-parques .dominik-icon img {
     position: relative;
-    left: 35rem;
+    left: 274px;
     top: 52rem;
     width: 20%;
     height: auto;

@@ -62,11 +62,9 @@ include_once '../includes/head.php';
         </div>
     </div>
 </div>
-<!-- Botones de whatsapp y dominick, lado derecho -->
-<?php
-// Incluye el aside
-include_once '../includes/aside.php';
-?>
+<div class="footer-company">
+    <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+</div>
 <?php
 // Incluye el footer
 include_once '../includes/footer.php';

@@ -94,6 +94,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ){
       link.classList.add('active')
     }
+    else if(
+      current.includes('nuestraempresa')&&
+      linkText.includes('servicios')){
+      link.classList.add('active');
+    }
   });
 });
 

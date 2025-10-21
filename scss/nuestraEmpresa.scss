@@ -97,6 +97,16 @@
     font-weight: bold;
   }
 }
+ .footer-company{
+     background: none;
+     position: absolute;
+     top: 88rem;
+     width: 100%; 
+     img{
+      height: 7vh;
+      width: 100%;
+     }
+  }
 
 @keyframes smallNeonPulse {
   from {
