@@ -3,7 +3,7 @@ require_once '../includes/config.php';
 $use_carousel = false;
 $use_carouselParque = true;
 include_once '../includes/head.php';
-$whatsapp_link = "https://wa.me/573118090610";
+$whatsapp_link = "https://wa.me/573228264406";
 $fotos = [
 
     'galeria' => [
@@ -57,7 +57,7 @@ $fotos = [
         <!-- Llamado a la acción -->
         <div class="cta-section-service">
             <img src="../images/fotos/servicios/imagenes/text_cotizar.png" alt="cotizar fiesta">
-            <a href="cotizar."><img src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
+            <a href='<?php echo $whatsapp_link ?>' target="_blank"><img src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
         </div>
         </div>
     </article>

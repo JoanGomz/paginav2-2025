@@ -197,7 +197,7 @@ $parque = $parques[$parque_id];
 
                     </div>
                     <div class="dominick-container">
-                        <a href="https://wa.me/573118090610" class="whatsapp" target="_blank">
+                        <a href="https://wa.me/573228264406" class="whatsapp" target="_blank">
                             <img src="../images/fotos/Planetas_Sedes/DOMINIC.png" alt="Dominick">
                         </a>
                     </div>
