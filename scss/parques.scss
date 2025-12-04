@@ -191,7 +191,7 @@
   img{
     width: 100%;
     position: absolute;
-    top: -5rem;
+    top: -7rem;
   } 
 }
 @media(width:1536px){
@@ -260,9 +260,21 @@
      left: 5rem;
    }
    .footer2{
-     top: 150rem;
+     top: 168rem;
      transform: rotate(0.7deg);
    }
+    .dropdown-content{
+      position: relative;
+      left: -23px;
+  }
+  .planet-item{
+    width: 24rem;
+  }
+  .enlaces-derecha-parques{
+    img{
+      left: 0rem;
+    }
+  }
  }
 @media (max-width: 768px) {
   /* Ajustes para los títulos */
@@ -455,6 +467,11 @@
   transform: scale(1.1);
 }
 }   
+@media(min-width:800px) and (max-width:810px){
+  .dropdown-content{
+    left:59px;
+  }
+}
 @media(min-width:790px) and (max-width:840px) {
   //planetas de bogota 
   .location-central {
@@ -606,7 +623,7 @@
   
   position: absolute;
   top: 100%; 
-  left: 0;
+  left: 88px;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;

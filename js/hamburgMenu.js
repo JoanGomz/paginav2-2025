@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 //script del aside
-var dropdownButton = document.querySelector('.dropbtn');
+var dropdownButton = document.querySelector('.dominick-dropbtn');
 
 
 dropdownButton.addEventListener('click', function() {
@@ -143,7 +143,7 @@ dropdownButton.addEventListener('click', function() {
 
 
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn') && !event.target.closest('.dropbtn')) {
+  if (!event.target.matches('.dominick-dropbtn') && !event.target.closest('.dominick-dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {

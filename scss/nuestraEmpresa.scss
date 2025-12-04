@@ -191,3 +191,29 @@
     font-size: 2.5em;
   }
 }
+@media(max-width:1280px){
+  .footer-company{
+    top: 92rem;
+  }
+}
+@media(min-width:360px) and (max-width:480px){
+  .footer-company{
+    top: 103rem;
+  }
+}
+
+@media(min-width:768px) and (max-width:800px){
+  .footer-company{
+    top: 97rem;
+  }
+}
+@media(max-width:800){
+  .footer-company{
+    top: 137rem;
+  }
+}
+@media(min-width:820px) and (max-width:880px){
+  .footer-company{
+    top: 106rem;
+  }
+}

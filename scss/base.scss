@@ -263,7 +263,7 @@ a{
   }
 /* Estilos whatsapp y dominik icon*/
 
-.enlaces-derecha {
+.dominick-derecha {
   display: fixed;
   justify-content: center;
   align-items: center;
@@ -498,7 +498,7 @@ a{
   }
 
 
-  .enlaces-derecha {
+  .dominick-derecha {
    
     position: relative; // Fija el aside en relación al viewport
     top: -68rem;       // Distancia desde el borde superior
@@ -518,10 +518,9 @@ a{
     a.dominik-icon img {
  
       position: relative; // Vuelve a su posicionamiento normal dentro del <a>
-      left: 38rem;      // Desactiva 'left'
-      top: 28rem;       // Desactiva 'top'
-
-      width: 15%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
+      left: 2rem;      // Desactiva 'left'
+      top: 0rem;       // Desactiva 'top'
+      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
       height: auto;    // Mantiene la proporción
       transition: all .3s ease-in-out;
 
@@ -530,7 +529,7 @@ a{
       }
     }
   } 
-  .dropbtn {
+  .dominick-dropbtn {
     display: flex;
     background: none;
     border: none;
@@ -586,7 +585,7 @@ a{
   }
   
 @media(width:1536px){
-  .enlaces-derecha{
+  .dominick-derecha{
     bottom: -54rem;
   }
   .opciones{
@@ -611,7 +610,7 @@ a{
     }
   }
 
-  .enlaces-derecha {
+  .dominick-derecha {
     position: fixed; // Fija el aside en relación al viewport
     top: 1rem;       // Distancia desde el borde superior
     right: 1rem;     // Distancia desde el borde derecho
@@ -675,7 +674,7 @@ a{
 
 /* Media query para pantallas grandes */
 @media(width:1366px){
-  .enlaces-derecha{
+  .dominick-derecha{
     display: flex;
     bottom: -38rem;
     right: -7.875rem;
@@ -692,9 +691,12 @@ a{
    :root {
      font-size: calc(0.4vw + 0.4vh + 0.4vmin);
    }
-   .enlaces-derecha{
-     bottom: -19rem;
-     right: 9.125rem;
+   .dominick-derecha{
+    bottom: -19rem;
+    right: 9.125rem;
+    img{
+        position: relative;
+    }
    }
   .opciones{
    gap: 1.3rem;
@@ -708,10 +710,10 @@ a{
   } 
  
  
- }
+}
     
 @media(width:800px){
-.enlaces-derecha{
+.dominick-derecha{
   bottom: 40rem !important;
 }
 }
@@ -719,13 +721,16 @@ a{
   .navigation-container .direeciones {
     display: none;
   }
-  .enlaces-derecha{
-    bottom: 24rem;
-    right: 6rem;
+  .dominick-derecha{
+    bottom: 26rem;
+    right: 14rem;
     a{
       img{
         width: 6rem;
         height: auto;
+        position: relative;
+        left: 8rem;
+        top: 1rem;
       }
     }
   }
@@ -848,8 +853,45 @@ a{
 }
 
 @media(width:428px) {
-  .enlaces-derecha{
+  .dominick-derecha{
     top: -73rem;
     right: -33rem;
   }  
+}
+
+@media(width:820px) {
+  .dominick-derecha{
+    a{
+      img{
+        position: relative;
+        left:8rem;
+        top: 5rem;
+      }
+    }
+
+  }
+}
+@media(width:834px) {
+  .dominick-derecha{
+    a{
+      img{
+        position: relative;
+        left:8rem;
+        top: 5rem;
+      }
+    }
+
+  }
+}
+@media(width:800px) {
+  .dominick-derecha{
+    a{
+      img{
+        position: relative;
+        left:6rem;
+        top: -2rem;
+      }
+    }
+
+  }
 }
