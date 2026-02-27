@@ -22,9 +22,15 @@ include_once '../includes/head.php';
                             <h3>O A NUESTRAS REDES</h3>
                             <img src="../images/fotos/contactos/imagenes/redes.png" alt="redes sociales">
                             <div class="media-contacto">
-                                <a href="https://www.facebook.com/starparkco" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png" alt="Facebook"></a>
-                                <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png" alt="Instagram"></a>
-                                <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png" alt="TikTok"></a>
+                                <a href="https://www.facebook.com/starparkco" target="_blank"><img
+                                        src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/facebook.png"
+                                        alt="Facebook"></a>
+                                <a href="https://www.instagram.com/starparkco/?hl=es-la" target="_blank"><img
+                                        src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/instagram.png"
+                                        alt="Instagram"></a>
+                                <a href="http://tiktok.com/@starparkco?lang=es" target="_blank"><img
+                                        src="<?php echo SITE_URL; ?>images/fotos/Home/Botones/tiktok.png"
+                                        alt="TikTok"></a>
                             </div>
                         </div>
                     </div>
@@ -34,7 +40,8 @@ include_once '../includes/head.php';
         </section>
 
         <section class="trabaja-con-nosotros">
-            <img class="contact-trabaja-banner" src="../images/fotos/contactos/imagenes/trabaja_con_nosotros.png" alt="Trabaja con nosotros">
+            <img class="contact-trabaja-banner" src="../images/fotos/contactos/imagenes/trabaja_con_nosotros.png"
+                alt="Trabaja con nosotros">
         </section>
 
         <section class="formulario-contacto">
@@ -91,8 +98,10 @@ include_once '../includes/head.php';
                             <div class="contact-form-input">
                                 <div class="contact-input-icon">
                                     <i class="fa-solid fa-phone-flip"></i>
-                                    <input class="number" placeholder="Numero de telefono.." type="tel" name="telefono" required>
-
+                                    <input class="number" type="tel" name="telefono" required>
+                                    <label>
+                                        Telefono...
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +118,12 @@ include_once '../includes/head.php';
 
                         <div class="contact-form-terms">
                             <input type="checkbox" id="terminos" name="terminos" required>
-                            <label for="terminos">Aplican Términos Y Condiciones.<br> <a href="politica.php">https://www.starpark.com.co/politica</a></label>
+                            <label for="terminos">Aplican Términos Y Condiciones.<br> <a
+                                    href="politica.php">https://www.starpark.com.co/politica</a></label>
                         </div>
-                        <button class="contact-register-btn" type="submit"><img src="../images/fotos/contactos/imagenes/registrar.png" alt="Boton para registrarse"></button>
+                        <button class="contact-register-btn" type="submit"><img
+                                src="../images/fotos/contactos/imagenes/registrar.png"
+                                alt="Boton para registrarse"></button>
                     </form>
                 </div>
             </div>

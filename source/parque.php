@@ -21,7 +21,12 @@ $parques = [
             '../images/hayuelos.mp4'
 
         ],
-        'mapa' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.603604350199!2d-74.13261482520849!3d4.664551895310337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c7c0cec0711%3A0x4652f39cd69ea2d0!2sStar%20Park%20Hayuelos!5e0!3m2!1ses-419!2sco!4v1752786663849!5m2!1ses-419!2sco%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade%22'
+        'mapa' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.603604350199!2d-74.13261482520849!3d4.664551895310337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c7c0cec0711%3A0x4652f39cd69ea2d0!2sStar%20Park%20Hayuelos!5e0!3m2!1ses-419!2sco!4v1752786663849!5m2!1ses-419!2sco%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade%22',
+        'atracciones' => [
+            'Time Pump',
+            'Gravity',
+            'KIDDIES'
+        ]
     ],
     'altavista' => [
         'nombre' => 'ALTAVISTA',
@@ -71,7 +76,6 @@ $parques = [
         'park-site' => '../images/fotos/Planetas_Sedes/Mosquera/imagenes/Mosquera.png',
         'galeria' => [
             '../images/mosquera.mp4',
-
         ],
         'mapa' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4934.172056476821!2d-74.22427962502063!3d4.712317595262732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f7801081bfef7%3A0x19fe5e58b776dff8!2sEcoplaza%20Centro%20Comercial!5e1!3m2!1sen!2sco!4v1737477518410!5m2!1sen!2sco'
     ],
@@ -149,7 +153,8 @@ $parque = $parques[$parque_id];
                 <!-- Sección del carrusel -->
                 <main class="park-carousel-container">
                     <!-- Almacenamos las imágenes como JSON para que JavaScript las procese -->
-                    <div class="galeria-container" data-imagenes='<?php echo json_encode($parque['galeria']); ?>' style="display:none;"></div>
+                    <div class="galeria-container" data-imagenes='<?php echo json_encode($parque['galeria']); ?>'
+                        style="display:none;"></div>
 
                     <article class="park-carousel">
                         <!-- El contenedor donde JavaScript insertará los items del carrusel -->
@@ -167,7 +172,9 @@ $parque = $parques[$parque_id];
             <!-- Sección de nave -->
             <section class="nave-container">
                 <img src="../images/fotos/Planetas_Sedes/nave.png" alt="Nave">
-
+                <div class="flechas">
+                    <img src="../images/abajo.png" alt="Flechas indicando hacia abajo">
+                </div>
             </section>
             <div class="sede-container">
                 <div class="park-site">
@@ -181,7 +188,17 @@ $parque = $parques[$parque_id];
                     <img src="<?php echo $parque['park_ubicacion']; ?>" alt="Imagen informativa del parque ">
                 </div>
                 <div class="planeta">
-                    <img src="<?php echo $parque['planeta']; ?>" alt="Imagen informativa del parque ">
+                    <button onclick="lista()" class="boton-accion"
+                        style="  background: transparent; border: none; cursor: pointer;">
+                        <div class="letrero">
+                            <span>
+                                Nuestras <br>
+                                Atracciones
+                            </span>
+                            <img src="../images/letrero.png" alt="">
+                        </div>
+                        <img src="<?php echo $parque['planeta']; ?>" alt="Imagen informativa del parque ">
+                    </button>
                 </div>
                 <div class="galeria-item">
                     <img src="<?php echo $parque['park_horarios']; ?>" alt="Imagen informativa del parque ">
@@ -208,7 +225,8 @@ $parque = $parques[$parque_id];
                         <img src="../images/fotos/Planetas_Sedes/como_llegar.png" alt="Nuestras sedes">
                     </div>
                     <div class="map">
-                        <iframe src="<?php echo $parque['mapa']; ?>" width="100%" height="900px" style="border:0;" allowfullscreen="">
+                        <iframe src="<?php echo $parque['mapa']; ?>" width="100%" height="900px" style="border:0;"
+                            allowfullscreen="">
                         </iframe>
                     </div>
                 </div>
@@ -217,6 +235,14 @@ $parque = $parques[$parque_id];
 
         </div>
     </div>
+</div>
+<div id="modal" class="modal">
+    <div class="header">
+        <button id="close" class="close">&times;</button>
+        <span>Atracciones que encontraras en</span>
+        <img width="100px" height="100px" src="<?php echo $parque['planeta']; ?>" alt="imagen de la sede">
+    </div>
+
 </div>
 <div class="footer-2">
     <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">

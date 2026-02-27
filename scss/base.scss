@@ -1,4 +1,8 @@
 /* Configuracion general de la pagina */
+@keyframes slideUp {
+    from { transform: translate(0, 100px); opacity: 0; }
+    to { transform: translate(0, 0); opacity: 1; }
+}
 body {
   overflow-x: hidden;
   // height: 100vh;
@@ -43,14 +47,14 @@ body {
     transform: scale(1);
   }
   &:not(:last-child)::after { 
-    content: ''; // Obligatorio para pseudo-elementos
+    content: ''; 
     position: absolute;
-    right: 0; // Posiciona la línea en el borde derecho del h3
-    top: 50%; // Centra verticalmente
-    transform: translateY(-50%); // Ajusta para un centrado perfecto
-    width: 3px; // Grosor de la línea
-    height: 90%; // Altura de la línea (ajusta este porcentaje si quieres que sea más larga/corta)
-    background-color: #4da3cf; // Color de la línea
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 3px;
+    height: 90%; 
+    background-color: #4da3cf; 
     margin-right:  -20px ;
 }
 }
@@ -133,9 +137,57 @@ body {
     display: none;
 }
 
+// estilos para el aparatdo de proximamente
+ .visible-footer{
+  height: 27%;
+  position:absolute;
+  top: 323%;
+  right: 1rem;
+  width: 90%;
+  max-width: 500px;
+  background: linear-gradient(135deg, #00bfb3, #231576 ); 
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideUp 0.5s ease-out; 
 
+  .header-footer{
+   display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    span{
+      font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    flex-grow: 1;
+    text-align: center;
+    }
+    button{
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+ }
+ .blog-footer{
+  display: none;  
+ }
+ .header-footer{
+  display: none;
+  align-items: center;
+    gap: 15px;
+    width: 100%;
+ }
+ 
 
-/* Estilos de la seccion de De Interés (FOOER) */
+/* Estilos de la seccion de De Interés (FOOTER) */
 .footer {
   font-family: Arial, sans-serif;
   width: 100%;
@@ -161,6 +213,18 @@ body {
   flex: 1;
   padding: 0 20px;
   flex-direction: row;
+  button{
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+      &:hover {
+                color: #00eeffd3; // Color al pasar el ratón
+                text-decoration: underline;
+            }
+  }
   ul { // Estilos para las listas dentro de las columnas
     list-style: none;
     padding: 0;
@@ -265,12 +329,9 @@ a{
 
 .dominick-derecha {
   display: fixed;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position: absolute;
-  bottom: -40rem;
-  right: 0.125rem;
+  bottom: -17rem;
+  right: 10.125rem;
   z-index: 5;
 
   i {
@@ -288,17 +349,57 @@ a{
   }
   a img {
     margin-top: 0.625rem;
-    width: 14rem;
-    height: 12rem;
+    width: 11rem;
+    height: auto;
     filter: drop-shadow(0 0 10px rgb(93, 189, 204));
     transition: all 0.3s ease-in-out;
-
     &:hover {
       transform: scale(1.1);
 
     }
 
   }
+  .onomatopeya {
+  display: none;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 0;
+  position: absolute;
+  top: -39px;
+  left: -136px;
+  color:black;
+  font-size: large;
+  font-weight: bold;
+  animation:typing 10s steps(24) infinite alternate , blink .5s infinite step-end ;
+  overflow: hidden;
+  }
+  .imagen {
+  display: none;
+  position:absolute;
+  top: -79px;
+  left: -170px;
+    img{
+      width: 300px;
+    height: 100px;
+    color: black;
+    }
+  }
+
+  @keyframes typing {
+    0% , 10%{ width:0;}
+    40%, 50%{ width:24ch;}
+    90%,100%{ width:0;}
+  }
+  @keyframes blink {
+    50% { border-color: transparent;}
+  }
+  &:hover {
+      .imagen, 
+      .onomatopeya {
+        display: block;
+      }
+    }
 }
 /* Media query sólo para ajustes mínimos en pantallas muy pequeñas */
 @media(min-width:320px) and (max-width:428px) {
@@ -332,7 +433,6 @@ a{
     top: 0;
     right: -100%;
     background-color:#231884 ;
-    //background: linear-gradient(90deg, rgba(22, 82, 149, 1) 0%, rgba(22, 82, 149, 1) 26%, rgba(10, 148, 206, 1) 100%);
     z-index: 15;
     transition: 0.3s ease;
     padding-top: 3.75rem;
@@ -436,8 +536,8 @@ a{
     }
     a{
       color: #ffffff;
-      text-decoration: none; // Quita el subrayado por defecto de los enlaces
-        transition: color 0.3s ease; // Transición suave para el hover
+      text-decoration: none; 
+        transition: color 0.3s ease; 
         &:hover {
             color: #4da3cf; // Color azul al pasar el mouse
             text-decoration: underline; // Añade un subrayado al pasar el mouse si lo deseas
@@ -465,10 +565,10 @@ a{
       font-size: 25px;
       color: white;
       background-image: linear-gradient(#4da3cf, #4da3cf); /* Tu color */
-      background-size: 54% 4px; /* ancho (largo) grosor (altura) */
+      background-size: 54% 4px; 
       background-repeat: no-repeat;
       background-position: center bottom; 
-      padding-bottom: 10px; /* Espacio para el subrayado */
+      padding-bottom: 10px; 
       text-align: center;
     }
     p{
@@ -487,6 +587,8 @@ a{
     a {
       left: 0;
       img {
+        position:absolute;
+        left: 1rem;
         width: 70%;
         height: 100%;
       }
@@ -500,35 +602,52 @@ a{
 
   .dominick-derecha {
    
-    position: relative; // Fija el aside en relación al viewport
-    top: -68rem;       // Distancia desde el borde superior
-    right: -33rem;     // Distancia desde el borde derecho
-    width: 6rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
-    height: auto;    // Ajusta la altura del contenedor
-    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
+    position: relative; 
+    top: -70rem;      
+    right: -38rem;   
+    width: 6rem;    
+    height: auto;   
+    z-index: 100;   
 
 
-    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
-      position: static; // Vuelve a su posicionamiento normal dentro del aside
-      display: block; // Asegura que el 'a' ocupe su propio espacio
-      width: 100%; // Hace que el 'a' ocupe el ancho del aside
-      height: 100%; // Hace que el 'a' ocupe la altura del aside
+    a.dominik-icon {
+      position: static; 
+      display: block; 
+      width: 100%; 
+      height: 100%; 
     }
 
     a.dominik-icon img {
  
-      position: relative; // Vuelve a su posicionamiento normal dentro del <a>
-      left: 2rem;      // Desactiva 'left'
-      top: 0rem;       // Desactiva 'top'
-      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
-      height: auto;    // Mantiene la proporción
+      position: relative; 
+      left: 2rem;     
+      top: 0rem;      
+      width: 100%;     
+      height: auto;    
       transition: all .3s ease-in-out;
 
       &:hover {
         transform: scale(1.1);
       }
     }
+    .onomatopeya{
+      font-size: small;
+      left: -88px;
+    }
+    .imagen{
+      left: -110px;
+      img{
+        width: 200px;
+        
+      }
+    }
   } 
+  .intersection{
+      .imagen ,.onomatopeya{
+        display: block;
+        transition: opacity 0.8s ease, visibility 0.8s;
+      }
+    }
   .dominick-dropbtn {
     display: flex;
     background: none;
@@ -611,29 +730,29 @@ a{
   }
 
   .dominick-derecha {
-    position: fixed; // Fija el aside en relación al viewport
-    top: 1rem;       // Distancia desde el borde superior
-    right: 1rem;     // Distancia desde el borde derecho
-    width: 10rem;    // Ajusta el ancho del contenedor del astronauta si es necesario
-    height: auto;    // Ajusta la altura del contenedor
-    z-index: 100;    // Asegura que esté por encima de la mayoría de los otros elementos
+    position: fixed; 
+    top: 1rem;     
+    right: 1rem;    
+    width: 10rem; 
+    height: auto;  
+    z-index: 100;   
 
   
-    a.dominik-icon { // Usamos la clase específica para asegurar que es el astronauta
-      position: fixed; // Vuelve a su posicionamiento normal dentro del aside
-      display: block; // Asegura que el 'a' ocupe su propio espacio
-      width: 100%; // Hace que el 'a' ocupe el ancho del aside
-      height: 100%; // Hace que el 'a' ocupe la altura del aside
+    a.dominik-icon { 
+      position: fixed;
+      display: block; 
+      width: 100%;
+      height: 100%;
     }
 
     a.dominik-icon img {
       // **CLAVE:** Resetear los estilos de posicionamiento anteriores
-      position: static; // Vuelve a su posicionamiento normal dentro del <a>
-      left: auto;      // Desactiva 'left'
-      top: auto;       // Desactiva 'top'
+      position: static; 
+      left: auto;     
+      top: auto;     
 
-      width: 100%;     // Ocupa el 100% del ancho del 'a.dominik-icon'
-      height: auto;    // Mantiene la proporción
+      width: 100%;     
+      height: auto;  
       filter: drop-shadow(0 0 10px rgb(93, 189, 204));
       transition: all .3s ease-in-out;
 

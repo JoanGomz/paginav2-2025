@@ -9,9 +9,7 @@ $fotos = [
     'galeria' => [
         '../images/fotos/servicios/imagenes/CelebraCumple.png',
         '../images/fotos/servicios/imagenes/FiestasColegios.png',
-        '../images/fotos/servicios/imagenes/SuperDiversion.png',
         '../images/fotos/servicios/imagenes/EventosEmpresariales.png',
-        '../images/fotos/servicios/imagenes/FiestasInfantiles.png',
 
     ],
 ]
@@ -33,8 +31,7 @@ $fotos = [
         <section class="servicios">
             <main class="park-carousel-container-service">
                 <!-- Almacenamos las imágenes como JSON para que JavaScript las procese -->
-                <div class="galeria-container-service"
-                    data-imagenes='<?php echo json_encode($fotos['galeria']); ?>'
+                <div class="galeria-container-service" data-imagenes='<?php echo json_encode($fotos['galeria']); ?>'
                     data-whatsapp="<?php echo $whatsapp_link; ?>">
 
                 </div>
@@ -57,7 +54,8 @@ $fotos = [
         <!-- Llamado a la acción -->
         <div class="cta-section-service">
             <img src="../images/fotos/servicios/imagenes/text_cotizar.png" alt="cotizar fiesta">
-            <a href='<?php echo $whatsapp_link ?>' target="_blank"><img src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
+            <a href='<?php echo $whatsapp_link ?>' target="_blank"><img
+                    src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
         </div>
         </div>
     </article>

@@ -19,7 +19,7 @@ include_once '../includes/head.php';
             </section>
             <!-- Primera fila de planetas - Bogotá -->
             <section class="planets-row">
-            <div class="planet-item planet-orange">
+                <div class="planet-item planet-orange">
                     <a href="../source/parque.php?id=hayuelos">
                         <div class="planet-content">
                             <img src="../images/fotos/Parques/botones/hayuelos.png" alt="Hayuelos">
@@ -43,10 +43,11 @@ include_once '../includes/head.php';
                 <div class="planet-item planet-pink">
                     <a href="../source/parque.php?id=paseovillaDelrio">
                         <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/paseo_villa_del_rio.png" alt="Paseo Villa del Río">
+                            <img src="../images/fotos/Parques/botones/paseo_villa_del_rio.png"
+                                alt="Paseo Villa del Río">
                         </div>
                     </a>
-                </div> 
+                </div>
             </section>
         </article>
 
@@ -58,62 +59,68 @@ include_once '../includes/head.php';
             </section>
             <!-- Segunda fila de planetas - Resto del país -->
             <section class="planets-row">
-            <div class="superior">
-            <div class="planet-item2 planet-blue">
-                    <a href="../source/parque.php?id=mosquera">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/mosquera.png" alt="Mosquera">
-                        </div>
-                    </a>
-                </div>
-                <div class="planet-item planet-green">
-                    <a href="../source/parque.php?id=bello">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/bello.png" alt="Bello">
-                        </div>
-                    </a>
-                </div>
-                <div class="planet-item2 planet-saturn">
-                    <a href="../source/parque.php?id=cali">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/cali.png" alt="Cali">
-                        </div>
-                    </a>
-                </div>
+                <div class="superior">
+                    <div class="planet-item2 planet-blue">
+                        <a href="../source/parque.php?id=mosquera">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/mosquera.png" alt="Mosquera">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="planet-item planet-green">
+                        <a href="../source/parque.php?id=bello">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/bello.png" alt="Bello">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="planet-item2 planet-saturn">
+                        <a href="../source/parque.php?id=cali">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/cali.png" alt="Cali">
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="inferior">
-                <div class="planet-item planet-red">
-                    <a href="../source/parque.php?id=neiva">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/neiva.png" alt="Neiva">
-                        </div>
-                    </a>
-                </div>
-                <div class="planet-item planet-earth">
-                    <a href="../source/parque.php?id=mayorca">
-                        <div class="planet-content">
-                            <img src="../images/fotos/Parques/botones/mayorca.png" alt="Mayorca">
-                        </div>
-                    </a>
-                </div>
-              
+                    <div class="planet-item planet-red">
+                        <a href="../source/parque.php?id=neiva">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/neiva.png" alt="Neiva">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="planet-item planet-earth">
+                        <a href="../source/parque.php?id=mayorca">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/mayorca.png" alt="Mayorca">
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </section>
         </article>
         <div class="footer2">
-        <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
-    </div>
+            <img src="../images/fotos/Home/imagenes/Footer2.png" alt="">
+        </div>
     </div>
     <aside class="enlaces-derecha-parques">
-    <button class="dropbtn">
-      <img src="../images/ver-mas.png" alt="Ver más">
-    </button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="../source/index.php" class="dominik-icon ">
-          <img src="../images/fotos/Home/Botones/DOMINIC.png" alt="Dominick">
-      </a>
-    </div>
-</aside>
+        <button class="dropbtn">
+            <img src="../images/ver-mas.png" alt="Ver más">
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="../source/index.php" class="dominik-icon ">
+                <img src="../images/fotos/Home/Botones/DOMINIC.png" alt="Dominick">
+            </a>
+            <div class="imagen-parques">
+                <img src="../images/cuadro_de_texto.png" alt="imagen decorativa para el texto">
+            </div>
+            <span class="onomatopeya-parques">
+                Hola Tripulante espacial
+            </span>
+        </div>
+    </aside>
 </main>
 <!-- Botones de whatsapp y dominick, lado derecho -->
 <!-- Contenedor del footer -->

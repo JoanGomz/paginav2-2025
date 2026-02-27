@@ -178,7 +178,48 @@
     position: relative;
     left: 4rem;
   }
+  .onomatopeya-parques {
+  display: none;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 0;
+  position: absolute;
+  top: -39px;
+  left: -136px;
+  color:black;
+  font-size: large;
+  font-weight: bold;
+  animation:typing 10s steps(24) infinite alternate , blink .5s infinite step-end ;
+  overflow: hidden;
+}
+.imagen-parques {
+ display: none;
+ position:absolute;
+ top: -79px;
+ left: -247px;
+  img{
+  width: 300px;
+  height: 100px;
+  color: black;
+  }
+  
+}
 
+@keyframes typing {
+  0% , 10%{ width:0;}
+  40%, 50%{ width:24ch;}
+  90%,100%{ width:0;}
+}
+@keyframes blink {
+  50% { border-color: transparent;}
+}
+&:hover {
+    .imagen-parques, 
+    .onomatopeya-parques {
+      display: block;
+    }
+  }
 }
 .dropbtn{
   display: none;
@@ -193,6 +234,15 @@
     position: absolute;
     top: -7rem;
   } 
+}
+.close{
+  background-color: transparent;
+  color: black;
+  font: bold;
+  border: none;
+  &:hover{
+    cursor: pointer;
+  }
 }
 @media(width:1536px){
   .footer2{
@@ -629,7 +679,6 @@
   z-index: 1;
 }
 
-/* The class that shows the dropdown content when clicked */
 .show {
   display: block;
   top: -9rem;
@@ -781,8 +830,8 @@
   .resto-pais .planet-item2,
   .resto-pais .planet-item-3 {
     position: absolute;
-    width: 10rem;  /* Aumentado de 7rem a 10rem */
-    height: 10rem; /* Aumentado de 7rem a 10rem */
+    width: 10rem; 
+    height: 10rem; 
     padding: 0;
     margin: 0;
     top: auto;
@@ -844,23 +893,45 @@
     position: relative;
     top: 14rem;
   }
-  .enlaces-derecha-parques {
-    position: fixed;
+ 
+.enlaces-derecha-parques {
     width: 5rem;
     height: auto;
-    z-index: 100;
-    top: 54rem;
-    left: 34rem;
-  }
+    .onomatopeya-parques {
+    display: none;
+    top: 56.7rem;
+    left: 12rem;
+    font-size: small;
+    }  
+    .imagen-parques {
+    display: none;
+    position:absolute;
+    top: 52rem;
+    left: 6rem;
+      img{
+      width: 200px;
+      height: 100px;
+      color: black;
+      }
+    }
+}
+.aparecer {
+    .imagen-parques, 
+    .onomatopeya-parques {
+      display: block;
+      }
+    }
   
   /* The button that opens the dropdown */
   .dropbtn {
     display: flex;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0;
     position: fixed;
+    width: 20%;
+    right: 1rem;
+    bottom: 24rem;
     img {
       width: 60%;
       left: 24px;
@@ -868,12 +939,11 @@
       position: relative; 
     }
   }
-  
-  /* The dropdown content (hidden by default) */
+
   .dropdown-content {
     display: none;
     position: fixed;
-    top: 100%; /* Position it below the button */
+    top: 100%; 
     left: 0;
     background:none;
     min-width: 160px;
@@ -881,17 +951,16 @@
     z-index: 1;
   }
   
-  /* The class that shows the dropdown content when clicked */
   .show {
     display: flex;
-    top: -6rem;
+    top: -5rem;
     background-color: transparent;
   }
   
 
   .enlaces-derecha-parques .dominik-icon {
  
-    display: block; /* Make the link a block-level element */
+    display: block;
     padding: 12px 16px;
     text-decoration: none;
     background: none;
@@ -908,7 +977,6 @@
     transition: all .3s ease-in-out;
   }
   
-  /* Your hover effect for the image */
   .enlaces-derecha-parques .dominik-icon img:hover {
     transform: scale(1.1);
   }

@@ -3,7 +3,7 @@
 }
 .fondo-header{
   width: 100%;
-  height: 4.5rem;
+  height: 2.5rem;
   img{
     width: 100%;
   }
@@ -11,7 +11,7 @@
 .social-media{
   width: 100%;
   position: absolute;
-  top: 1.8rem;
+  top:-0.2rem;
   left: 100rem;
   z-index: 2;
   img{
@@ -29,7 +29,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100rem;
+  height: 76rem;
   background-image: url("../images/fotos/Home/imagenes/centro_de_control.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -55,7 +55,6 @@
 /* Estilos del video centrado */
 .inicio-video-container {
   position: absolute;
-  top: 40%;
   left: 50%;
   transform: translatex(-50%);
   display: flex;
@@ -69,26 +68,46 @@
     z-index: 0;
     width: 58vw;
     height: 72vh;
-    top:-10rem;
+    top:3rem;
   }
 }
 
 /* Estilos de los botones de navegacion */
 .nav-container {
   position: absolute;
-  top: 52%;
-  left: 50%;
+  top: 51%;
+  left: 56%;
   transform: translateX(-50%);
   z-index: 3;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
   align-items: center;
+  .boton-izquierdo{
+    position: relative;
+    top: 3rem;
+    left: -3.5rem;
 
+  }
+  .button-center{
+    position: relative;
+    left: -6.6rem;
+  }
+  .boton-derecho{
+    position: relative;
+    left: -9rem;
+    top: 2.4rem;
+  }
+   .boton-derecho-1{
+    position: relative;
+    left: -12rem;
+    top: 0rem;
+  }
   a img {
     
     
-    width: 17rem;
-    height: 9.5rem;
+    width: 15rem;
+    height: auto;
     position: relative;
     left: 1rem;
     top: -1rem;
@@ -130,7 +149,7 @@
     margin-bottom: 2rem;
     img {
       position: absolute;
-      top: 97rem;
+      bottom: -48rem;
       width: 100%;
       max-width: 100%;
       margin: 0;
@@ -284,7 +303,7 @@
 }
 .footer_2{      
   position: absolute;
-  top:209rem;
+  top:183rem;
   transform:rotate(1.7deg) ;
   z-index: 5;
   width: 100%;
@@ -677,8 +696,9 @@ top: 29%;
     overflow: hidden;
     z-index: 1;
     transform: scale(1);
-    width: 100%;
-    height: 30rem;
+    width: 140%;
+    height: 44rem;
+    left: -10rem;
     background-image: url("../images/fotos/Home/imagenes/centro_de_control.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -689,8 +709,11 @@ top: 29%;
       position: relative;
       z-index: 2;
       display: flex;
+      left: 7rem;
       justify-content: center;
       align-items: center;
+      width: 80%;
+      height: auto;
   
       img {
         width: 100%;
@@ -717,10 +740,10 @@ top: 29%;
     video {
       position: relative;
       top: -12.5rem;
-      left: 26%;
-      height: 26vw;
+      left: 25%;
+      height: 36vw;
       object-fit: cover;
-      width: 28vh;
+      width: 51vh;
     }
   }
   
@@ -734,11 +757,27 @@ top: 29%;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    .boton-izquierdo{
+    position: relative;
+    top: 0.7rem;
+    left: 1rem;
+    }
+    .button-center{
+      left:0rem;
+      top: -0.7rem;
+    }
+    .boton-derecho{
+      left: -0.4rem;
+      top: 0.5rem;
+    }
+    .boton-derecho-1{
+      left: -1.3rem;
+      top:-1.2rem;
+    }
     a img {     
       transform: scale(1.2); //agranda los botones
-      width: 14vw;
-      height: 3.85vh;
+      width: 18vw;
+      height: auto;
       position: relative;
       left: 0.3rem;
       top: -0.2rem;
@@ -1004,7 +1043,7 @@ top: 29%;
 }
 @media(width:428px){
 .background-header{
-  height: 45rem;
+  height: 56rem;
   .logo-container{
     width: 100%;
     height: 12vh;
@@ -1026,12 +1065,17 @@ top: 29%;
   }
 }
 .inicio-video-container{
-  top: 3%;
+  top: -97px;
+  video{
+    width: 110vw;
+    top: 2rem;
+    left: 1.5%;
+  }
 }
 .carousel-container{
   .title-novedades{
     img{
-      top: 47rem;
+      top: 55rem;
     }
   }
   .carousel{
@@ -1048,7 +1092,7 @@ top: 29%;
   }
 }
 .footer_2{
-  top: 111rem;
+  top: 120rem;
   height: 8%;
 }
 }
