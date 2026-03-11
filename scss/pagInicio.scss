@@ -362,6 +362,17 @@
   }
 }
 @media(min-width: 768px) and (max-width:800px){
+  .nav-container{
+    .button-center{
+      position: relative;
+      left: 0.4rem;
+    }
+  }
+  .inicio-video-container{
+    video{
+      top: -12rem;
+    }
+  }
   .background-header{
     height: 31rem;
     .logo-container{
