@@ -48,7 +48,7 @@ include_once '../includes/head.php';
       </a>
     </div>
     <div class="boton-derecho-1">
-      <a href="../source/servicios.php">
+      <a href="../source/promociones.php">
         <img src="../images/fotos/Home/Botones/servicios.png" alt="Botón Servicos">
       </a>
     </div>

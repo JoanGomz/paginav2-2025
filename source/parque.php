@@ -130,6 +130,14 @@ $parques = [
 
         ],
         'mapa' => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3645.6578972973143!2d-76.5473719!3d3.4137529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6a7e04342fd%3A0xc7fcee81107f9811!2sLa%2014%20Cosmo%20Centro%2C%20Cl.%205%20%2350-103%2C%20panamericano%2C%20Cali%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1740425339999!5m2!1ses!2sco'
+    ],
+    'cucuta' => [
+        'nombre' => 'CUCUTA',
+        'park_horarios' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/Horario.png',
+        'planeta' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/planeta.png',
+        'park_ubicacion' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/Ubicacion.png',
+        'telefono' => '(+57) 3118080084',
+        'park-site' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/cucuta.png',
     ]
 ];
 // Verificar si existe el parque
@@ -175,6 +183,10 @@ $parque = $parques[$parque_id];
                 <div class="flechas">
                     <img src="../images/abajo.png" alt="Flechas indicando hacia abajo">
                 </div>
+            </section>
+            <div class="flechas-1">
+                <img src="../images/abajo.png" alt="Flechas indicando hacia abajo">
+            </div>
             </section>
             <div class="sede-container">
                 <div class="park-site">

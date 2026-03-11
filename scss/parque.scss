@@ -52,7 +52,20 @@
   height: auto;
   position: absolute;
   top: 565px;
-  left: 448px;
+  left: -23rem;
+  z-index: 10;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  animation: bounce 2s ease-in-out infinite, zoom 1s ease-in-out infinite;
+}
+.flechas-1{
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 565px;
+  left: 83rem;
   z-index: 10;
   img{
     width: 100%;
