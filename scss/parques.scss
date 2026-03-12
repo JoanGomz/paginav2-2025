@@ -1,7 +1,7 @@
 /* Background principal */
 .parques-space-background {
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   /* Cambiado de height a min-height */
   background-image: url("../images/fotos/Parques/imagenes/fondo.png");
   background-size: cover;
@@ -36,6 +36,12 @@
     align-items: center;
     margin-top: 2rem;
 
+    .resto-pais-planetas {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: -33rem;
+    }
     .location-central {
       width: 100%;
       height: 100%;
@@ -128,50 +134,84 @@
 /* Efectos de brillo para los planetas */
 .planet-orange {
   filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.6));
-}
+    position: relative;
+    left: -90px;
+  }
 
 .planet-purple {
   filter: drop-shadow(0 0 20px rgba(147, 112, 219, 0.6));
   position: relative;
-  top:8rem;
+  top: 8rem;
+  left: -200px;
 }
 
 .planet-yellow {
-  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+  filter: drop-shadow(0 0 20px rgba(151, 136, 47, 0.6));
   position: relative;
-  top:8rem;
+  top: 7rem;
+  left: -280px;
 }
 
 .planet-pink {
   filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.6));
+  position: relative;
+  top: -35rem;
+  right: -500px; 
 }
 
 .planet-blue {
   filter: drop-shadow(0 0 20px rgba(0, 191, 255, 0.6));
+  position: relative;
+  top: 1rem;
+  right: -410px;
 }
 
 .planet-red {
   filter: drop-shadow(0 0 20px rgba(220, 20, 60, 0.6));
+  top: -58rem;
+  left: -250px ;
+
 }
 
 .planet-green {
   filter: drop-shadow(0 0 20px rgba(50, 205, 50, 0.6));
   position: relative;
-  top: 7rem;
+  top: -7rem;
+  left: 500px;
 }
 
 .planet-earth {
   filter: drop-shadow(0 0 20px rgba(100, 149, 237, 0.6));
+  position: relative;
   left: 8rem;
+  top: -58rem;
 }
 
 .planet-saturn {
   filter: drop-shadow(0 0 20px rgba(218, 165, 32, 0.6));
+  position: relative;
+  right: 60px;
+  top: -37rem; 
+}
+
+
+.planet-gray {
+  filter: drop-shadow(0 0 20px rgba(155, 152, 149, 0.6));
+  position: relative;
+  left: -22px;
+  top: -40rem; 
+}
+
+.planet-black {
+  filter: drop-shadow(0 0 20px rgba(200, 212, 219, 0.6));
+  position: relative;
+  left: -800px;
+  top: -45rem; 
 }
 .enlaces-derecha-parques{
   position: fixed;
   top: 20rem;
-  left: 104rem;
+  left: 80rem;
   z-index: 2;
   img{
     width: 10rem;
@@ -254,10 +294,7 @@
   .inferior{
     left: 19rem;
   }
-  .planet-earth{
-    position: relative;
-    left:-5rem;
-  }
+  
 }
 @media(min-width:1366px) and (max-width:1380px){
   .planets-row{

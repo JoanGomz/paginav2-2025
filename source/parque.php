@@ -202,13 +202,7 @@ $parque = $parques[$parque_id];
                 <div class="planeta">
                     <button onclick="lista()" class="boton-accion"
                         style="  background: transparent; border: none; cursor: pointer;">
-                        <div class="letrero">
-                            <span>
-                                Nuestras <br>
-                                Atracciones
-                            </span>
-                            <img src="../images/letrero.png" alt="">
-                        </div>
+                        
                         <img src="<?php echo $parque['planeta']; ?>" alt="Imagen informativa del parque ">
                     </button>
                 </div>

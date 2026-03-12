@@ -54,7 +54,7 @@ include_once '../includes/head.php';
         <!-- Resto del país -->
         <article class="resto-pais location-section">
             <!-- Resto de países title -->
-            <section class="location-central">
+            <section class="location-central resto-pais-planetas ">
                 <img src="../images/fotos/Parques/imagenes/resto_del_país.png" alt="RestoDelPaís">
             </section>
             <!-- Segunda fila de planetas - Resto del país -->
@@ -71,6 +71,20 @@ include_once '../includes/head.php';
                         <a href="../source/parque.php?id=bello">
                             <div class="planet-content">
                                 <img src="../images/fotos/Parques/botones/bello.png" alt="Bello">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="planet-item planet-gray">
+                        <a href="../source/parque.php?id=cucuta">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/cucuta.png" alt="cucuta">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="planet-item planet-black">
+                        <a href="../source/parque.php?id=villavo">
+                            <div class="planet-content">
+                                <img src="../images/fotos/Parques/botones/villavo.png" alt="villavo">
                             </div>
                         </a>
                     </div>
