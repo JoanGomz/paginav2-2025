@@ -51,8 +51,8 @@
   width: 50%;
   height: auto;
   position: absolute;
-  top: 565px;
-  left: -23rem;
+  top: 50rem;
+  left: -7rem;
   z-index: 10;
   img{
     width: 100%;
@@ -64,14 +64,14 @@
   width: 50%;
   height: auto;
   position: absolute;
-  top: 565px;
-  left: 83rem;
+  top: 50rem;
+  left: 54rem;
   z-index: 10;
   img{
     width: 100%;
     height: auto;
   }
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite, zoom 1s ease-in-out infinite;
 }
 .sede-container {
   position: absolute;
@@ -183,6 +183,8 @@
   height: auto;
   margin-bottom: 3rem;
   position: absolute;
+  top: 13rem;
+  left: 2rem;
 
   
   }
@@ -547,7 +549,7 @@
 }
 .footer-2{
   img{
-    top: 116rem;
+    top: 127rem;
   }
 }
 .hablemos-content{

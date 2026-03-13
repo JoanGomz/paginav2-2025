@@ -39,7 +39,7 @@ include_once '../includes/head.php';
     </div>
     <div class="button-center">
       <a href="../source/servicios.php">
-        <img src="../images/fotos/Home/Botones/servicios.png" alt="Botón Servicos">
+        <img src="../images/fotos/Home/Botones/fiestas.png" alt="Botón Servicos">
       </a>
     </div>
     <div class="boton-derecho">
@@ -49,7 +49,7 @@ include_once '../includes/head.php';
     </div>
     <div class="boton-derecho-1">
       <a href="../source/promociones.php">
-        <img src="../images/fotos/Home/Botones/servicios.png" alt="Botón Servicos">
+        <img src="../images/fotos/Home/Botones/promociones.png" alt="Botón Servicos">
       </a>
     </div>
   </nav>

@@ -80,6 +80,25 @@
     transform: scale(1);
   }
 }
+.cta-section-service1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 8rem 0;
+  position: relative;
+  margin-bottom: 2rem;
+  img{
+  width:30vw;
+  height: 50%;
+  position: relative;
+  top: -38rem;
+  left: -30rem;
+  }
+  &:hover{
+    transform: scale(1);
+  }
+}
 
 .servicios{
     display: flex;

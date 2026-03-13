@@ -7,7 +7,7 @@ $whatsapp_link = "https://wa.me/573228264406";
 $fotos = [
 
     'galeria' => [
-        '../images/fotos/servicios/imagenes/CelebraCumple.png',
+        '../images/fotos/servicios/imagenes/Fiestasinfantiles.png',
         '../images/fotos/servicios/imagenes/FiestasColegios.png',
         '../images/fotos/servicios/imagenes/EventosEmpresariales.png',
 
@@ -53,9 +53,13 @@ $fotos = [
         </section>
         <!-- Llamado a la acción -->
         <div class="cta-section-service">
-            <img src="../images/fotos/servicios/imagenes/text_cotizar.png" alt="cotizar fiesta">
+            
             <a href='<?php echo $whatsapp_link ?>' target="_blank"><img
                     src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
+        </div>
+        <div class="cta-section-service1">
+            <img src="../images/fotos/servicios/imagenes/text_cotizar.png" alt="cotizar fiesta">
+            
         </div>
         </div>
     </article>

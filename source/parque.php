@@ -138,6 +138,14 @@ $parques = [
         'park_ubicacion' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/Ubicacion.png',
         'telefono' => '(+57) 3118080084',
         'park-site' => '../images/fotos/Planetas_Sedes/Cucuta/imagenes/cucuta.png',
+    ],
+    'villavo' => [
+        'nombre' => 'VILLAVO',
+        'park_horarios' => '../images/fotos/Planetas_Sedes/Villavo/imagenes/Horario.png',
+        'planeta' => '../images/fotos/Planetas_Sedes/villavo/imagenes/planeta.png',
+        'park_ubicacion' => '../images/fotos/Planetas_Sedes/villavo/imagenes/Ubicacion.png',
+        'telefono' => '(+57) 3118080084',
+        'park-site' => '../images/fotos/Planetas_Sedes/villavo/imagenes/villavo.png',
     ]
 ];
 // Verificar si existe el parque
