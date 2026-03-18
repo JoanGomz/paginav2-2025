@@ -44,7 +44,7 @@ $fotos = [
                     </div>
                     <div class="carousel-controls-service">
                         <button class="carousel-prev-service" aria-label="Anterior">
-                            << /button>
+                            </button>
                                 <div class="carousel-indicators-service"></div>
                                 <button class="carousel-next-service" aria-label="Siguiente">></button>
                     </div>
