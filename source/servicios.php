@@ -4,6 +4,7 @@ $use_carousel = false;
 $use_carouselParque = true;
 include_once '../includes/head.php';
 $whatsapp_link = "https://wa.me/573228264406";
+$whatsapp_link_especial = "https://wa.me/573107744480";
 $fotos = [
 
     'galeria' => [
@@ -32,7 +33,8 @@ $fotos = [
             <main class="park-carousel-container-service">
                 <!-- Almacenamos las imágenes como JSON para que JavaScript las procese -->
                 <div class="galeria-container-service" data-imagenes='<?php echo json_encode($fotos['galeria']); ?>'
-                    data-whatsapp="<?php echo $whatsapp_link; ?>">
+                    data-whatsapp="<?php echo $whatsapp_link; ?>"
+                    data-whatsapp-especial="<?php echo $whatsapp_link_especial; ?>">
 
                 </div>
 

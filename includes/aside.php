@@ -1,7 +1,7 @@
 <aside class="dominick-derecha">
   <div id="myDropdown" class="dropdown-dominick-content">
     <!-- Imagen de Dominick -->
-    <a href="https://wa.me/573228264406" class="dominik-icon ">
+    <a href="https://wa.me/573107744480" class="dominik-icon ">
       <img src="../images/fotos/Home/Botones/DOMINIC.png" alt="Dominick">
     </a>
     <div class="imagen">

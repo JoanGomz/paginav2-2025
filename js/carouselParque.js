@@ -106,7 +106,7 @@ function cargarMedios() {
 
 // Función para cargar imágenes y videos en el carrusel de servicios
 function cargarMediosCarrusel(galeriaSelector, itemsSelector) {
-    console.log("Cargando segundo carrusel...");
+    console.log("Cargando carrusel de servicios...");
     const carouselItems = document.querySelector(itemsSelector);
     const galeriaContainer = document.querySelector(galeriaSelector);
 
@@ -118,19 +118,28 @@ function cargarMediosCarrusel(galeriaSelector, itemsSelector) {
 
     try {
         const medios = JSON.parse(galeriaContainer.getAttribute('data-imagenes'));
-        const whatsappLink = galeriaContainer.getAttribute('data-whatsapp');
+        
+        // --- CAPTURAMOS AMBOS LINKS ---
+        const whatsappGeneral = galeriaContainer.getAttribute('data-whatsapp');
+        const whatsappEspecial = galeriaContainer.getAttribute('data-whatsapp-especial');
 
         medios.forEach((src, index) => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('park-carousel-item');
             if (index === 0) itemDiv.classList.add('active');
 
-            // Lógica para determinar si es un video o una imagen
             const isVideo = src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg');
+            
+            // --- LÓGICA DE SELECCIÓN POR NOMBRE ---
+            // Si el nombre de la imagen contiene 'EventosEmpresariales', usa el link especial
+            let linkFinal = whatsappGeneral;
+            if (src.includes('Fiestasinfantiles') && whatsappEspecial) {
+                linkFinal = whatsappEspecial;
+            }
+
             let content;
 
             if (isVideo) {
-                // Si es un video, crea un elemento <video>
                 content = document.createElement('video');
                 content.classList.add('park-image-media-service');
                 content.controls = false;
@@ -141,15 +150,14 @@ function cargarMediosCarrusel(galeriaSelector, itemsSelector) {
                 source.type = `video/${src.split('.').pop()}`;
                 content.appendChild(source);
             } else {
-                 // Si es una imagen, usa la lógica existente
                 const img = document.createElement('img');
                 img.classList.add('park-image-media-service');
                 img.src = src;
-                img.alt = "Imagen del parque";
+                img.alt = "Imagen del servicio";
 
-                if (whatsappLink) {
+                if (linkFinal) {
                     const link = document.createElement('a');
-                    link.href = whatsappLink;
+                    link.href = linkFinal;
                     link.target = '_blank';
                     link.appendChild(img);
                     content = link;
