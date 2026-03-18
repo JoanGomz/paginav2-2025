@@ -54,12 +54,14 @@ $fotos = [
         <!-- Llamado a la acción -->
         <div class="cta-section-service">
             
-            <a href='<?php echo $whatsapp_link ?>' target="_blank"><img
-                    src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
+            <a href='<?php echo $whatsapp_link ?>' target="_blank">
+                <img src="../images/fotos/servicios/imagenes/boton-cotizar.png" alt="cotizar fiesta"></a>
         </div>
         <div class="cta-section-service1">
             <img src="../images/fotos/servicios/imagenes/text_cotizar.png" alt="cotizar fiesta">
-            
+        </div>
+        <div class="cta-section-service2">
+            <img src="../images/fotos/servicios/imagenes/fondo.png" alt="cotizar fiesta">
         </div>
         </div>
     </article>

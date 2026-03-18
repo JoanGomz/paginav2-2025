@@ -801,20 +801,12 @@
 @media(min-width:320px) and (max-width:428px){
   .cc-parques{
     .location-section{
-      .location-central{
-        img{
+      img{
           position: relative;
           top: -15rem;
         }
-      }
     }
   }
-  .location-central {
-    width: 12rem;
-    height: 10rem;
-    margin-bottom: 1rem;
-  }
-  
   /* Ajuste general para primera sección (Bogotá) */
   .starpark-locations .planets-row {
     position: relative;
@@ -831,23 +823,24 @@
   
   /* Posicionamiento específico para planetas de Bogotá */
   .starpark-locations .planet-orange {
-    top: -5%;
-    left: 7%;
+    top: -34%;
+    left: 3%;
   }
   
   .starpark-locations .planet-purple {
-    top: 40%;
+    top: 46%;
     right: 6%;
+    left: 7rem;
   }
   
   .starpark-locations .planet-yellow {
-    top: 40%;
-    left: 6%;
+    top: 42%;
+    left: 50%;
   }
   
   .starpark-locations .planet-pink {
-    top: -5%;
-    right: 6%;
+    top: -38%;
+    right: 2%;
   }
   
   /* Ajustes para la sección Resto del País */
@@ -883,30 +876,39 @@
   
   /* Posicionamiento específico para cada planeta de Resto del País */
   .resto-pais .planet-red {
-    top: -1rem;
-    left: -52%;
+    top: 9rem;
+    left: -55%;
   }
   
   .resto-pais .planet-saturn {
-    top:2rem;
-    right: 6%;
+    top:0rem;
+    right: 2%;
   }
   
   .resto-pais .planet-earth {
-    top: -11rem;
-    left: -6%;
+    top: 8rem;
+    left: 29%;
     transform: translateX(-50%);
   }
   
   .resto-pais .planet-blue {
-    top: -15rem;
-    left: 6%;
+    top: 25rem;
+    left: 21%;
   }
   
   .resto-pais .planet-green {
-    top: -15rem;
-    right: 6%;
+    top: 24rem;
+    right: 24%;
   }
+  .resto-pais .planet-black{
+    top: 1rem;
+    right: 72%;
+  }
+  .resto-pais .planet-gray{
+    top: 6rem;
+    right: 38%;
+  }
+
   
   /* Ajustar comportamiento de hover en móvil */
   .resto-pais .planet-item:hover,
@@ -916,6 +918,19 @@
   
   .resto-pais .planet-earth:hover {
     transform: translateX(-50%) scale(1.1);
+    
+  }
+  .cc-parques{.location-section{
+  .location-central{
+    top: 4rem;
+  }
+  }
+    
+  }
+  .parques-space-background {
+    width: 100%;
+    height: 126vh;
+    overflow: hidden;
   }
   .footer2{
     position: relative;
@@ -926,12 +941,12 @@
       width: 100%;
       height: 7vh;
       position: absolute;
-      top: 1rem;
+      top: 6rem;
     }
   }
   .bogota{
     position: relative;
-    top: 14rem;
+    top: 6rem;
   }
  
 .enlaces-derecha-parques {
@@ -1024,7 +1039,7 @@
 @media(width:428px){
   .footer2{
     img{
-      top: 5rem;
+      top: 10rem;
     }
   }
 }

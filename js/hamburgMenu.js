@@ -213,12 +213,17 @@ document.addEventListener("DOMContentLoaded", function () {
 function lista() {
   var attracctionList = document.getElementById("modal");
   var close = document.getElementById("close");
+  var screen = document.getElementById("cerrar");
   attracctionList.classList.add("visible");
   attracctionList.classList.remove("modal");
   close.addEventListener("click", function () {
     attracctionList.classList.add("modal");
     attracctionList.classList.remove("visible");
   });
+  screen.addEventListener("click",function(){
+  attracctionList.classList.add("modal");
+  attracctionList.classList.remove("visible"); 
+ });
 }
 
 function proximamente() {
