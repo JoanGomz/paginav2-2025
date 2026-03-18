@@ -112,7 +112,10 @@ body {
   object-fit: contain;
   position: relative;
   z-index: 10;
-
+  .logo-star-park{
+    position: relative;
+    top: -1.5rem;
+  }
   a {
     position: relative;
     top: 1.5rem;
@@ -707,7 +710,9 @@ a{
   
 @media(width:1536px){
   .dominick-derecha{
-    bottom: -54rem;
+            bottom: -53rem;
+        top: 63rem;
+        left: 77rem;
   }
   .opciones{
     left: 50%;

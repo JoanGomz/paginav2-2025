@@ -4,7 +4,7 @@
   background-position: center;
   background-repeat: repeat-y;
   width: 100%;
-  height: 360vh;
+  height: 188vh;
   
 }
 
@@ -34,7 +34,7 @@
     position: relative;
     width: 20%;
     height: 100%;
-    top: 30rem;
+    top: -42rem;
     left: 37rem;
     }
   }
@@ -43,27 +43,51 @@
     position: relative;
     width: 10%;
     height: 100%;
-    top: 26rem;
+    top: -45rem;
     left: 80rem;
     }
   }
 
   .boton-izq {
+    top: -5.5rem;
+    position: relative;
     img {
     position: relative;
     width: 10%;
     height: 100%;
-    top: 21rem;
+    top: -45rem;
     left: 5rem;
     }
   }
 
 
 }
-.fooder-promo{
+.mensaje{
+    position: absolute;
+    left: 41rem;
+    top: 45rem;
+    z-index: 1;
+    font-size: 30px;
+}
+.promo-center{
   width: 100%;
-  height: 100%;
-
+  height: auto;
+  img{
+    width: 70%;
+    height: 55%;
+    position: relative;
+    top: -4rem;
+    left: 13rem;
+  }
+}
+.fooder-promo{
+  position: absolute;
+  top: 73rem;
+  transform: rotate(1deg);
+  img{
+    width: 100%;
+    height: 60%;    
+  }
 }
 @media(min-width:320px) and (max-width:428px)
 {
@@ -80,34 +104,57 @@
     .boton-izq{
       img{
         width: 27%;
-        top: 30.5rem;
+        top: -30.5rem;
         left: 1rem;
       }
     }
     .boton-centro{
       img{
         width: 50%;
-        top:29rem;
-        left: 10.4rem;
+        top:-33rem;
+        left: 10.6rem;
       }
     }
     .boton-der{
       img{
-        top:36rem;
-        left:28rem;
+        top:-24rem;
+        left:31rem;
         width: 27%;
       }
     }
 
   }
   .fooder-promo{
-  img{
     width: 100%;
     height: 10%;
+  img{
+    width: 100%;
+    height: 100%;
     position: relative;
-    top:35rem;
+    top:-26rem;
     transform:rotate(2deg) ;
   }
+  
+}
+.promo-center{
+  width: 100%;
+  height: auto;
+  img{
+    width: 70%;
+    height: 55%;
+    position: relative;
+    top: -2rem;
+    left: 5rem;
+  }
+
+}
+.mensaje{
+  
+    position: absolute;
+    left: 12rem;
+    top: 29.5rem;
+    font-size: 27px;
+    z-index: 1;
   
 }
   .promociones-space-background{

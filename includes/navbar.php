@@ -1,7 +1,7 @@
 <!-- Barra de navegacion para los parques -->
 <nav class="navigation-container">
     <a href="<?php echo SITE_URL; ?>source/index.php" class="logo-link">
-        <img src="<?php echo SITE_URL; ?>images/fotos/Parques/botones/starpark.png" alt="LogoStarPark">
+        <img class="logo-star-park" src="<?php echo SITE_URL; ?>images/fotos/Parques/botones/starpark.png" alt="LogoStarPark">
     </a>
     <div class="opciones">
         <h3 class="direeciones"><a class="desktop-nav-header" href="<?php echo SITE_URL; ?>source/index.php">INICIO</a></h3>

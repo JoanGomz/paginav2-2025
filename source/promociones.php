@@ -18,9 +18,12 @@ include_once '../includes/head.php';
         </div>
 
         <div class="content" style="justify-content: center; height:100%; padding-bottom:14px; display:flex;">
-                <div>
-                    <img src="images\fotos\Planetas_Sedes\DOMINIC.png" alt="">
+                <div class="promo-center">
+                    <img src="../images/fotos/promociones/imagenes/DOMINIC-PROMO.png" alt="">
                 </div>
+                <span class = " mensaje">
+                    Proximamente
+                </span>
         </div>
 
         <!-- Llamado a la acción -->
